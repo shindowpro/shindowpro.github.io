@@ -1,0 +1,947 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> Wall Street Group - WSG </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <!-- Addition Special   -->
+  <link rel="stylesheet" href="assets/css/AutoSlideShow.css"/> 
+
+  <!-- Fixed Side Menu   -->
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+
+  <!-- Main CSS File -->
+  <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
+  <link href="assets/css/styleAR.css" rel="stylesheet">
+  <link href="assets/css/Timelines.css" rel="stylesheet">
+  
+  <script src="myFun.js"></script>
+  <script src="assets/js/TimelinesVer.js"></script>
+  
+  <!-- ------------------------------------------------------------------------------------------------------------------ -->
+    
+  <!-- Second Hero Section  -->
+  <style>
+    .slider {
+      position: relative;
+      margin-top: 3rem;
+      margin-right: auto;
+      margin-left: auto;
+      overflow: hidden;
+      /* width: 40.625rem; */
+      width: 20rem;
+      height: 26.25rem;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+
+    .slider__list {
+      position: absolute;
+      left: 0;
+      width: 162.5rem;
+    }
+
+    .slider__slide {
+      float: left;
+    }
+    /* ------------------------------ */
+    .slider__control {
+      margin-right: auto;
+      margin-left: auto;
+      width: 4.5rem;
+      font-family: sans-serif;
+    }
+    .slider__control label {
+      position: relative;
+      display: block;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      width: 4.5rem;
+      height: 2rem;
+      font-size: 1rem;
+      font-weight: normal;
+      line-height: 1.5;
+      color: transparent;
+      background: #ddd;
+      border-radius: 2rem;
+      cursor: pointer;
+      -webkit-transition: left 0.15s ease-out;
+      transition: left 0.15s ease-out;
+    }
+    .slider__control label:before {
+      content: "autoplay";
+      position: absolute;
+      top: 2.5rem;
+      left: 0;
+      color: #333;
+      font-size: .95rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .slider__control label:after {
+      content: "";
+      position: absolute;
+      top: .25rem;
+      left: .25rem;
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 2rem;
+      background: #fff;
+      -webkit-transition: left 0.001s ease-out;
+      transition: left 0.001s ease-out;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    .slider__switch:checked + .slider > .slider__list {
+      -webkit-animation-name: autoplay;
+      animation-name: autoplay;
+      /* This will change the time it takes to move to next slide */
+      -webkit-animation-duration: 40s;
+      animation-duration: 40s;
+      animation-delay: 2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
+    .slider__switch:checked + .slider + .slider__control > label { background: #455a64; }
+    .slider__switch:checked + .slider + .slider__control > label:after { left: 2.75rem; }
+
+    @-webkit-keyframes 
+    autoplay {   /* position of the first slide */
+      0% {
+        left: 0;
+      }
+      /* position of the second slide */
+      25% {
+        left: -40.625rem;
+      }
+      /* position of the third slide */
+      50% {
+        left: -81.25rem;
+      }
+      /* position of the fourth slide */
+      100% {
+        left: -121.875rem;
+      }
+    }
+    
+    @keyframes 
+    autoplay {   /* position of the first slide */
+      0% {
+        left: 0;
+      }
+      /* position of the second slide */
+      25% {
+        left: -40.625rem;
+      }
+      /* position of the third slide */
+      50% {
+        left: -81.25rem;
+      }
+      /* position of the fourth slide */
+      100% {
+        left: -121.875rem;
+      }
+    }
+
+  </style>
+
+  <!-- Social Network Side Bar -->
+  <!-- <style>
+    *{margin:0;}
+    .s-soft{
+      position: fixed; top: 100px ;
+      left: 10; z-index: 1000; transition:all linear 0.3s ;
+    }
+    .s-soft a:first-child{
+       border-radius: 0 5px 0 0;
+    }
+    .s-soft a:last-child{
+       border-radius: 0 0 5px 0;
+    }
+    .s-item {
+      display:block; width: 60px;height: 60px;
+      color: white; font-size: 25px;line-height: 60px;
+      text-align: center;transition:all linear 0.3s ;
+    }
+    .s-item:hover { 
+      width:110px;
+      border-radius:0px 20px 20px 0px; 
+    }
+    #so-open {
+      position: fixed; top: 100px ;
+      left: -90px;border-radius:0 30px 30px 0;
+      transition:all linear 0.3s ;
+    }
+    .facebook {background-color:  #3b5999;}
+    .twitter {background-color: #3AAFD6;}
+    .print {background-color: #de3c7d;}
+    .pinterest{background-color: #BD081C;}
+    .linkedin{background-color: #0e76a8 ;}
+    .instagram{background-color:  #c32aa3;}
+    .so-collapse{left: -60px; }
+  </style> -->
+</head>
+<!-- -=================================================================================================================== -->
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center">
+      
+      <a id="logo" href="indexAR.html" class="logo mr-auto" style="margin-left:-90px">
+        <!-- <img src="assets/img/Resources/Pages/new/ws 1.jpg" alt="" class="img-fluid" > -->
+        <img src="" alt="" class="img-fluid" >
+        <!-- <h1 class="logo mr-auto">
+          <a href="index.html"> WSG </a>
+        </h1>       -->
+      </a>
+
+      <nav class="nav-menu d-none d-lg-block" style="direction: rtl ; margin-right: -50px;" >
+        <ul>                          
+          <li class="active"><a href="indexAR.html"> الصفحة الرئيسية </a></li>
+          
+           <!-- <li><a href="#about"> من نحن </a> -->
+          <li class="drop-down"><a href="#about"> من نحن </a>
+           <ul>
+              <!-- <li><a href="#about"> فريق العمل  </a></li> -->
+              <li><a href="#about"> رؤيتنا </a></li>
+              <li><a href="#about"> رسالتنا </a></li>                    
+              <li><a href="#about"> قيمنا  </a></li>                    
+              <li><a href="#about"> فلسفتنا  </a></li>                    
+            </ul>                   
+          </li>          
+
+          <!-- <li><a href="#services"> خدماتنا </a></li> -->
+          <li class="drop-down"><a href="#services"> خدماتنا </a> 
+              <ul>
+                <li><a href="#ExhibitionsManagementOrganization"> إدارة وتنظيم المعارض </a></li>
+                <li><a href="#IntegratedMarketingServicesSolutions"> خدمات وحلول التسويق المتكاملة  </a></li>
+                <li><a href="#IntegratedMarketingCampaigns"> حملات التسويق الخارجية </a></li>
+                <li><a href="#EMarketingSolutionsServices"> خدمات وحلول التسويق الالكتروني </a></li>
+                <li><a href="#MarketingServicesTVRadio"> خدمات التسويق عبر الراديو والتلفزيون </a></li>
+                <!-- <li><a href="#">Drop Down 1</a></li> -->
+                <!-- <li class="drop-down"><a href="#">Deep Drop Down</a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li> -->
+              </ul>
+          </li> 
+          <li><a href="#portfolio"> سابقة أعمالنا </a></li>
+          <li><a href="#clients"> شركاء النجاح </a></li>
+          <li><a href="#customers"> عملائنا </a></li>
+          <li><a href="#plans"> خطط المعارض </a></li>
+          <li><a href="#counts"> احصائيات </a></li>
+          <li><a href="#media"> ميديا </a></li>
+          <!-- <li><a href="#"> اراء الناس بنا  </a></li> -->
+          <!-- <li><a href="#portfolio"> عملائنا </a></li> -->          
+          <li><a href="#contact"> تواصل معنا </a></li>          
+          <li><a href="indexEN.html" class='switcher'> English </a></li>          
+        </ul>
+      </nav>
+      <!-- .nav-menu -->
+    
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- ============================ -->
+
+  <!-- ======= Hero Section ======= -->
+  <!-- First HERO Section {Intro} -->
+  <!-- <section id="hero" class="d-flex align-items-center justify-content-center" style="z-index:1; margin-bottom: 0px;"> -->
+    
+  <!-- End Hero -->
+  <!-- ---------------------- -->
+
+  <!-- Second Section HERO Section {Slider} -->
+    <!-- <section id="portfolio-details" class="portfolio-details">          
+      <div class="portfolio-details-container" style="margin-bottom: 50px">  
+        <div class="owl-carousel portfolio-details-carousel" style='width:100%;'>      
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0002.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0003.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0004.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0005.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0006.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0007.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0008.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0009.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0010.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0011.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0012.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0013.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0014.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0015.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0016.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0017.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0018.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0019.jpg" class="img-fluid" alt="">                              
+        </div>              
+      </div>    
+    </section> -->
+  <!-- --------------------------------------------- -->
+  <main id="main">    
+    <!-- <header>
+      <h1>Responsive Vertical Timeline</h1>
+    </header> -->
+  
+    <section class="intro">
+      <div class="container">
+        <h1> خطط المعارض &darr;</h1>
+      </div>
+    </section>
+    
+    <section class="timeline">
+      <ul>
+        <li>
+          <div>
+            <img src="assets/img/Resources/Pages/new/plan Su.jpg" class="img-fluid" alt="">
+            <time> من 9 مارس الى 11 مارس </time> ...................................تفاصيل اكثر
+          </div>
+        </li>
+        
+        <li>
+          <div>
+            <img src="assets/img/Resources/Pages/new/plan Qa.jpg" class="img-fluid" alt="">                            
+            <time> من 17 مارس الى 19 مارس || من 10 نوفمبر الى 12 نوفمبر </time> ...................................تفاصيل اكثر
+          </div>
+        </li>
+        
+        <li>
+          <div>
+            <img src="assets/img/Resources/Pages/new/plan Eg.jpg" class="img-fluid" alt="">
+            <time> من 12 مارس الى 14 مارس </time> ...................................تفاصيل اكثر
+          </div>
+        </li>
+        
+        <li>
+          <div>
+            <img src="assets/img/Resources/Pages/new/plan Ku.jpg" class="img-fluid" alt="">
+            <time> من 27 اكتوبر الى 29 اكتوبر </time> ...................................تفاصيل اكثر
+          </div>
+        </li>
+        
+        <li>
+          <div>
+            <img src="assets/img/Resources/Pages/new/plan Em.jpg" class="img-fluid" alt="">
+            <time> من 3 نوفمبر الى 5 نوفمبر </time> ...................................تفاصيل اكثر
+          </div>
+        </li>
+        
+        <!-- <li>
+          <div>
+            <time>1956</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>1977</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>1985</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>2000</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>2005</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+          </div>
+        </li>
+      </ul> -->
+    </section>
+    
+    <!-- <script>  
+      (function () {
+        "use strict";
+
+        // define variables
+        var items = document.querySelectorAll(".timeline li");
+
+        // check if an element is in viewport
+        // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+        function isElementInViewport(el) {
+          var rect = el.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+
+        function callbackFunc() {
+          for (var i = 0; i < items.length; i++) {
+            if (isElementInViewport(items[i])) {
+              items[i].classList.add("in-view");
+            }
+          }
+        }
+
+        // listen for events
+        window.addEventListener("load", callbackFunc);
+        window.addEventListener("resize", callbackFunc);
+        window.addEventListener("scroll", callbackFunc);
+      })();
+
+    
+    </script> -->
+
+    <script src='assets/js/TimelinesVer.js'></script>
+
+  </main>
+
+  
+  <!-- End #main -->
+
+  <!-- ======= Footer [ تذييل الصفحة ] ======= -->
+  <footer id="footer" style="direction: rtl; text-align: right;">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row" style="font-weight: bold;">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3 style="text-align: right;"> WS Group </h3>
+            <p>
+              فيلا174/ الياسمين1 / التجمع الأول / <br>
+              القاهرة الجديدة <br>
+              جمهورية مصر العربية <br><br>
+              <strong> الهاتف : </strong> +(20) 111 7777 353  <br>
+              <strong> البريد الالكتروني </strong> m.wsgexpo@info <br> 
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links" style="font-weight: bold;">
+            <h4> الاقسام الرئيسية</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="indexAr.html"> الصفحة الرئيسية </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about"> من نحن </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services"> خدماتنا </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio"> سابقة الأعمال </a></li>          
+              <li><i class="bx bx-chevron-right"></i> <a href="#clients"> شركاء النجاح </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#customers"> عملائنا </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#media"> ميديا </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact"> تواصل معنا </a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4> خدماتنا </h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#ExhibitionsManagementOrganization"> إدارة وتنظيم المعارض </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#IntegratedMarketingServicesSolutions"> خدمات وحلول التسويق المتكاملة  </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#IntegratedMarketingCampaigns"> حملات التسويق الخارجية </a></li>              
+              <li><i class="bx bx-chevron-right"></i> <a href="#EMarketingSolutionsServices"> خدمات وحلول التسويق الالكتروني </a></li>                            
+              <li><i class="bx bx-chevron-right"></i> <a href="#MarketingServicesTVRadio"> خدمات التسويق عبر الراديو والتلفزيون  </a></li>                            
+
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4> اشترك معنا ليصلك كل جديد </h4>
+            <!-- <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p> -->
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://www.facebook.com" class="facebook" title='facebook' target="_blank"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com" class="instagram" title='instagram' target="_blank"><i class="bx bxl-instagram"></i></a>
+        <a href="https://twitter.com" class="twitter" title='twitter' target="_blank"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.linkedin.com" class="linkedin" title='linkedin' target="_blank"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://web.whatsapp.com/" class="" title='whatsapp' target="_blank"><i class="bx bxl-whatsapp"></i></a>
+        <!-- <a href="#" class="google-plus" title='google-plus'><i class="bx bxl-skype"></i></a> -->
+      </div>
+      
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span class='copy' style="color:gold">Wall Street Group</span></strong>. All Rights Reserved
+        </div>                
+      </div>
+
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!--  Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+<!-- =========================================================================== -->
+<!-- =========================================================================== -->
+
+<!-- ======= Cta Section ======= {Call Us} -->
+    <!-- <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="text-center">
+          <h3>Call To Action</h3>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a class="cta-btn" href="#">Call To Action</a>
+        </div>
+
+      </div>
+    </section> -->
+    
+    <!-- End Cta Section -->
+<!-- ================================================================ -->
+
+<!-- ======= Pricing Section ======= -->
+    <!-- <section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="box">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+            <div class="box featured">
+              <h3>Business</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="box">
+              <h3>Developer</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="box">
+              <span class="advanced">Advanced</span>
+              <h3>Ultimate</h3>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Pricing Section -->
+<!-- =========================================== -->
+<!-- Auto Slide Show [abanded] -->
+  <!-- <div id="slider">
+    <ul id="slideWrap"> 
+      <li><img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0001.jpg"  alt=""></li>
+      <li><img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0002.jpg" alt=""></li>
+      <li><img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0003.jpg" alt=""></li>
+      <li><img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0004.jpg" alt=""></li>
+      <li><img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0005.jpg" alt=""></li>
+    </ul>
+    <a id="prev" href="#">&#8810;</a>
+    <a id="next" href="#">&#8811;</a>
+  </div> -->
+
+  <!-- <script>
+      var responsiveSlider = function() {
+
+      var slider = document.getElementById("slider");
+      var sliderWidth = slider.offsetWidth;
+      var slideList = document.getElementById("slideWrap");
+      var count = 1;
+      var items = slideList.querySelectorAll("li").length;
+      var prev = document.getElementById("prev");
+      var next = document.getElementById("next");
+
+      window.addEventListener('resize', function() {
+        sliderWidth = slider.offsetWidth;
+      });
+
+      var prevSlide = function() {
+        if(count > 1) {
+          count = count - 2;
+          slideList.style.left = "-" + count * sliderWidth + "px";
+          count++;
+        }
+        else if(count = 1) {
+          count = items - 1;
+          slideList.style.left = "-" + count * sliderWidth + "px";
+          count++;
+        }
+      };
+
+      var nextSlide = function() {
+        if(count < items) {
+          slideList.style.left = "-" + count * sliderWidth + "px";
+          count++;
+        }
+        else if(count = items) {
+          slideList.style.left = "0px";
+          count = 1;
+        }
+      };
+
+      next.addEventListener("click", function() {
+        nextSlide();
+      });
+
+      prev.addEventListener("click", function() {
+        prevSlide();
+      });
+
+      setInterval(function() {
+        nextSlide()
+      }, 5000);
+
+      };
+
+      window.onload = function() {
+      responsiveSlider();  
+    }
+
+  </script> -->
+  <!-- =================================================== -->
+
+
+  <!-- Social side bar Menu  -->
+  <!-- <div class="s-soft" style="z-index:9999">
+    <a href="https://www.facebook.com" class="s-item facebook" >
+      <span class="fa fa-facebook"></span>
+    </a>
+    <a href="https://twitter.com" class="s-item twitter">
+      <span class="fa fa-twitter"></span>
+    </a>
+    <a href="https://www.pinterest.com" class="s-item pinterest">
+      <span class="fa fa-pinterest"></span>
+    </a>
+    <a href="https://www.linkedin.com" class="s-item linkedin">
+      <span class="fa fa-linkedin"></span>
+    </a>
+    <a href="https://www.instagram.com" class="s-item instagram">
+      <span class="fa fa-instagram"></span>
+    </a>
+  </div> -->
+  
+  <!-- <a id="so-close" class="s-item print">
+    <span class="fa fa-arrow-left"></span>
+  </a> -->
+
+  <!-- <a id="so-open" class="s-item print so-collapse">
+    <span class="fa fa-arrow-right"></span>
+  </a> -->
+<!-- =-================================================= -->
+
+<!-- shiny Text Effected -->
+    <!-- <span class="shiny" style="top:-10px; left:-50px; text-align: center; justify-content: center; align-items: center;" >
+      <span class="inner-shiny"> WSG </span>
+    </span> -->
+<!-- ====================================================================================== -->
+  
+  <!-- Type writing section -->
+      <!--<section id="Typewriting" class="Typewriting" style="z-index: 999; left:250px; position: absolute; padding:20px; bottom:-100px">              
+        <h4 class="mytext" style=" font-size:20px; color:#fff; font-weight: bold; margin-top:20px; padding: 10px; letter-spacing: -1px; word-spacing: 2px;"></h4>
+         <h4 class="mytext" style=" font-size:20px; color:#fff; font-weight: bold; margin-top:20px; padding: 10px;"></h4> -->
+        <!--<script>
+            document.addEventListener('DOMContentLoaded',function(event){
+            // array with texts to type in typewriter
+            // var dataText = [ "We Think Globally...", "We act Locally...", "We have clients in over 40 countries ..."];
+            // var dataText = [ "We Think Globally... We act Locally..."];
+            var dataText = [ " نـحـن نـفـكـر دولـيـا ونـعـمـل مـحـلـيـا "];
+            
+            // type one text in the typwriter
+            // keeps calling itself until the text is finished
+            function typeWriter(text, i, fnCallback) {
+              // chekc if text isn't finished yet
+              if (i < (text.length)) {
+                // add next character to h1
+                document.querySelector("h4").innerHTML = text.substring(0, i+1) +'<span class="txtCursor" aria-hidden="true"></span>';
+    
+                // wait for a while and call this function again for next character
+                setTimeout(function() {
+                  typeWriter(text, i + 2, fnCallback)
+                }, 130);
+              }
+              // text finished, call callback if there is a callback function
+              else if (typeof fnCallback == 'function') {
+                // call callback after timeout
+                setTimeout(fnCallback, 5000);
+              }
+            }
+            // start a typewriter animation for a text in the dataText array
+            function StartTextAnimation(i) {
+              if (typeof dataText[i] == 'undefined'){
+                  setTimeout(function() {
+                    StartTextAnimation(0);
+                  }, 5000);
+              }
+              // check if dataText[i] exists
+              if (i < dataText[i].length) {
+                // text exists! start typewriter animation
+              typeWriter(dataText[i], 0, function(){
+                // after callback (and whole text has been animated), start next text
+                StartTextAnimation(i + 1);
+              });
+              }
+            }
+            // start the text animation
+            StartTextAnimation(0);
+          });      
+        </script>    
+      </section>-->
+
+      <!---- <a href="#about" class="btn-get-started scrollto" style="margin-left: 0px; position:relative">Get Started</a> -->  <!-- Type writing section -->
+      <!--<section id="Typewriting" class="Typewriting" style="z-index: 999; left:250px; position: absolute; padding:20px; bottom:-100px">              
+        <h4 class="mytext" style=" font-size:20px; color:#fff; font-weight: bold; margin-top:20px; padding: 10px; letter-spacing: -1px; word-spacing: 2px;"></h4>
+         <h4 class="mytext" style=" font-size:20px; color:#fff; font-weight: bold; margin-top:20px; padding: 10px;"></h4> -->
+        <!--<script>
+            document.addEventListener('DOMContentLoaded',function(event){
+            // array with texts to type in typewriter
+            // var dataText = [ "We Think Globally...", "We act Locally...", "We have clients in over 40 countries ..."];
+            // var dataText = [ "We Think Globally... We act Locally..."];
+            var dataText = [ " نـحـن نـفـكـر دولـيـا ونـعـمـل مـحـلـيـا "];
+            
+            // type one text in the typwriter
+            // keeps calling itself until the text is finished
+            function typeWriter(text, i, fnCallback) {
+              // chekc if text isn't finished yet
+              if (i < (text.length)) {
+                // add next character to h1
+                document.querySelector("h4").innerHTML = text.substring(0, i+1) +'<span class="txtCursor" aria-hidden="true"></span>';
+    
+                // wait for a while and call this function again for next character
+                setTimeout(function() {
+                  typeWriter(text, i + 2, fnCallback)
+                }, 130);
+              }
+              // text finished, call callback if there is a callback function
+              else if (typeof fnCallback == 'function') {
+                // call callback after timeout
+                setTimeout(fnCallback, 5000);
+              }
+            }
+            // start a typewriter animation for a text in the dataText array
+            function StartTextAnimation(i) {
+              if (typeof dataText[i] == 'undefined'){
+                  setTimeout(function() {
+                    StartTextAnimation(0);
+                  }, 5000);
+              }
+              // check if dataText[i] exists
+              if (i < dataText[i].length) {
+                // text exists! start typewriter animation
+              typeWriter(dataText[i], 0, function(){
+                // after callback (and whole text has been animated), start next text
+                StartTextAnimation(i + 1);
+              });
+              }
+            }
+            // start the text animation
+            StartTextAnimation(0);
+          });      
+        </script>    
+      </section>-->
+
+      <!---- <a href="#about" class="btn-get-started scrollto" style="margin-left: 0px; position:relative">Get Started</a> -->
+  <!-- ========================================================================================== -->
+  <!-- Services section old Desgin -->
+  <!-- <div class="section-title">
+    <h2> خدماتنا </h2>
+     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> 
+  </div> -->
+
+  <!-- <div class="row">
+
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+      <div class="icon-box iconbox-blue">
+        <div class="icon">
+          <i class="bx bxl-dribbble"></i>
+        </div>
+        <h4><a href="">Lorem Ipsum</a></h4>
+        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+      <div class="icon-box iconbox-orange ">
+        <div class="icon">
+          <i class="bx bx-file"></i>
+        </div>
+        <h4><a href="">Sed Perspiciatis</a></h4>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+      <div class="icon-box iconbox-pink">
+        <div class="icon">
+          <i class="bx bx-tachometer"></i>
+        </div>
+        <h4><a href="">Magni Dolores</a></h4>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+      <div class="icon-box iconbox-yellow">
+        <div class="icon">
+          <i class="bx bx-layer"></i>
+        </div>
+        <h4><a href="">Nemo Enim</a></h4>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+      <div class="icon-box iconbox-red">
+        <div class="icon">
+          <i class="bx bx-slideshow"></i>
+        </div>
+        <h4><a href="">Dele Cardo</a></h4>
+        <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+      <div class="icon-box iconbox-teal">
+        <div class="icon">
+          <i class="bx bx-arch"></i>
+        </div>
+        <h4><a href="">Divera Don</a></h4>
+        <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+      </div>
+    </div>
+
+  </div> -->
+<!-- ============================================== -->
+
+<!-- Checkbox Switcher Designs -->
+      <!-- <div class="checkbox" style="position: absolute; display: flex; right:-10px; top:55px; width:200px; height:50px; transform: scale(.7); ">  
+        <label for="click" class="text"> AR </label>
+        <input type="checkbox" id="click" value="indexEN.html" onClick="if (this.checked) { window.location = this.value; }">
+        <label for="click" class="text"> EN </label>
+      </div> -->
+                  
+      <!-- <a href="indexEN.html" class="switcher" style="display: flex;" >
+        <img
+          src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0001.jpg" 
+          alt="Language Switcher"
+          title="Language Switcher"
+          class="img-fluid"           
+          style="position: absolute; right:10px; top:20px; width:70px; height:50px; ">      
+      </a>  -->
+<!-- ============================================== -->
+<!-- <a href="indexEN.html" class="switcher">
+        EN
+         <img
+          src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0001.jpg" 
+          alt="Language Switcher"
+          title="Language Switcher"
+          class="img-fluid"           
+          style="position: absolute; right:10px; top:20px; width:70px; height:50px; ">       
+      </a>  -->
+      

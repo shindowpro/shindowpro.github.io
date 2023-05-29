@@ -1,0 +1,1959 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> Wall Street Group - WSG </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <!-- Addition Special   -->
+  <link rel="stylesheet" href="assets/css/AutoSlideShow.css"/> 
+
+  <!-- Fixed Side Menu   -->
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+
+  <!-- Main CSS File -->
+  <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
+  <link href="assets/css/styleEN.css" rel="stylesheet">
+  
+  <script src="myFun.js"></script>
+  
+  <!-- ------------------------------------------------------------------------------------------------------------------ -->
+    
+  <!-- Second Hero Section  -->
+  <style>
+    .slider {
+      position: relative;
+      margin-top: 3rem;
+      margin-right: auto;
+      margin-left: auto;
+      overflow: hidden;
+      /* width: 40.625rem; */
+      width: 20rem;
+      height: 26.25rem;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+
+    .slider__list {
+      position: absolute;
+      left: 0;
+      width: 162.5rem;
+    }
+
+    .slider__slide {
+      float: left;
+    }
+    /* ------------------------------ */
+    .slider__control {
+      margin-right: auto;
+      margin-left: auto;
+      width: 4.5rem;
+      font-family: sans-serif;
+    }
+    .slider__control label {
+      position: relative;
+      display: block;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      width: 4.5rem;
+      height: 2rem;
+      font-size: 1rem;
+      font-weight: normal;
+      line-height: 1.5;
+      color: transparent;
+      background: #ddd;
+      border-radius: 2rem;
+      cursor: pointer;
+      -webkit-transition: left 0.15s ease-out;
+      transition: left 0.15s ease-out;
+    }
+    .slider__control label:before {
+      content: "autoplay";
+      position: absolute;
+      top: 2.5rem;
+      left: 0;
+      color: #333;
+      font-size: .95rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .slider__control label:after {
+      content: "";
+      position: absolute;
+      top: .25rem;
+      left: .25rem;
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 2rem;
+      background: #fff;
+      -webkit-transition: left 0.001s ease-out;
+      transition: left 0.001s ease-out;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    .slider__switch:checked + .slider > .slider__list {
+      -webkit-animation-name: autoplay;
+      animation-name: autoplay;
+      /* This will change the time it takes to move to next slide */
+      -webkit-animation-duration: 40s;
+      animation-duration: 40s;
+      animation-delay: 2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
+    .slider__switch:checked + .slider + .slider__control > label { background: #455a64; }
+    .slider__switch:checked + .slider + .slider__control > label:after { left: 2.75rem; }
+
+    @-webkit-keyframes 
+    autoplay {   /* position of the first slide */
+      0% {
+        left: 0;
+      }
+      /* position of the second slide */
+      25% {
+        left: -40.625rem;
+      }
+      /* position of the third slide */
+      50% {
+        left: -81.25rem;
+      }
+      /* position of the fourth slide */
+      100% {
+        left: -121.875rem;
+      }
+    }
+    
+    @keyframes 
+    autoplay {   /* position of the first slide */
+      0% {
+        left: 0;
+      }
+      /* position of the second slide */
+      25% {
+        left: -40.625rem;
+      }
+      /* position of the third slide */
+      50% {
+        left: -81.25rem;
+      }
+      /* position of the fourth slide */
+      100% {
+        left: -121.875rem;
+      }
+    }
+
+  </style>
+
+  <!-- Social Network Side Bar -->
+  <!-- <style>
+    *{margin:0;}
+    .s-soft{
+      position: fixed; top: 100px ;
+      left: 10; z-index: 1000; transition:all linear 0.3s ;
+    }
+    .s-soft a:first-child{
+       border-radius: 0 5px 0 0;
+    }
+    .s-soft a:last-child{
+       border-radius: 0 0 5px 0;
+    }
+    .s-item {
+      display:block; width: 60px;height: 60px;
+      color: white; font-size: 25px;line-height: 60px;
+      text-align: center;transition:all linear 0.3s ;
+    }
+    .s-item:hover { 
+      width:110px;
+      border-radius:0px 20px 20px 0px; 
+    }
+    #so-open {
+      position: fixed; top: 100px ;
+      left: -90px;border-radius:0 30px 30px 0;
+      transition:all linear 0.3s ;
+    }
+    .facebook {background-color:  #3b5999;}
+    .twitter {background-color: #3AAFD6;}
+    .print {background-color: #de3c7d;}
+    .pinterest{background-color: #BD081C;}
+    .linkedin{background-color: #0e76a8 ;}
+    .instagram{background-color:  #c32aa3;}
+    .so-collapse{left: -60px; }
+  </style> -->
+</head>
+<!-- -=================================================================================================================== -->
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <!-- <a id="switcher" href="indexAR.html" class="switcher">
+        AR
+         <img
+          src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0001.jpg" 
+          alt="Language Switcher"
+          title="Language Switcher"
+          class="img-fluid"           
+          style="position: absolute; right:10px; top:20px; width:70px; height:50px; ">       
+      </a>  -->
+      
+      <a id="logo" href="indexEN.html" class="logo mr-auto" style="margin-left:-90px">
+        <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0001.jpg" alt="" class="img-fluid" >
+        <!-- <h1 class="logo mr-auto">
+          <a href="index.html"> WSG </a>
+        </h1>       -->
+      </a>
+
+      <nav class="nav-menu d-none d-lg-block" style="direction: ltr" >
+        <ul>                          
+          <li class="active"><a href="indexEN.html"> Home Page </a></li>
+          <li class="drop-down"><a href="#about"> About Us </a>
+            <ul>
+              <li><a href="#teamwork"> Teamwork  </a></li>
+              <li><a href="#vision"> Our Vision </a></li>
+              <li><a href="#message"> Our Message </a></li>                    
+              <li><a href="#values"> Our Values  </a></li>                    
+              <li><a href="#philosophy">  Our philosophy  </a></li>                    
+            </ul>                  
+          </li>          
+
+          <!-- <li><a href="#services"> خدماتنا </a></li> -->
+          <li class="drop-down"><a href="#services"> Services </a> 
+              <ul>
+                <li><a href="#ExhibitionsManagementOrganization"> Exhibitions Management Organization </a></li>
+                <li><a href="#IntegratedMarketingServicesSolutions"> Integrated Marketing Services Solutions  </a></li>
+                <li><a href="#IntegratedMarketingCampaigns"> Integrated Marketing Campaigns </a></li>
+                <li><a href="#EMarketingSolutionsServices"> E-Marketing Solutions Services </a></li>
+                <li><a href="#MarketingServicesTVRadio"> Marketing Services TV Radio </a></li>
+                <!-- <li><a href="#">Drop Down 1</a></li> -->
+                <!-- <li class="drop-down"><a href="#">Deep Drop Down</a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li> -->
+              </ul>
+          </li> 
+          <li><a href="#portfolio"> Portfolio</a></li>
+          <li><a href="#clients"> Clients </a></li>
+          <li><a href="#customers"> Customers </a></li>
+          <li><a href="#counts"> Statistics </a></li>
+          <li><a href="#media"> Media </a></li>
+          <!-- <li><a href="#"> اراء الناس بنا  </a></li> -->
+          <!-- <li><a href="#portfolio"> عملائنا </a></li> -->          
+          <li><a href="#contact"> Contact Us </a></li>          
+          <li><a href="indexAR.html" class='switcher'> Arabic </a></li>          
+        </ul>
+      </nav>
+      <!-- .nav-menu -->
+    
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- ============================ -->
+
+  <!-- ======= Hero Section ======= -->
+  <!-- First HERO Section {Intro} -->
+  <!-- <section id="hero" class="d-flex align-items-center justify-content-center" style="z-index:1; margin-bottom: 0px;"> -->
+    <section id="hero" class="d-flex align-items-center justify-content-center" style="z-index: 1;">
+      <div class="container position-relative">
+      <!-- <h1> Welcome </h1> -->                          
+      </div>
+    </section>
+  <!-- End Hero -->
+  <!-- ---------------------- -->
+
+  <!-- Second Section HERO Section {Slider} -->
+    <!-- <section id="portfolio-details" class="portfolio-details">          
+      <div class="portfolio-details-container" style="margin-bottom: 50px">  
+        <div class="owl-carousel portfolio-details-carousel" style='width:100%;'>      
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0002.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0003.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0004.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0005.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0006.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0007.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0008.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0009.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0010.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0011.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0012.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0013.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0014.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0015.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0016.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0017.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0018.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0019.jpg" class="img-fluid" alt="">                              
+        </div>              
+      </div>    
+    </section> -->
+  <!-- --------------------------------------------- -->
+
+  <main id="main">    
+    <!-- Slider Side Menu -->
+    <!-- <div id="mySidenav" class="sidenav" style="top:170px; z-index:9999;">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Dr.Rady Word</a>
+      <a href="#">Our Services</a>
+      <a href="#">Our Clients</a>                
+    </div> -->
+    
+    <!-- Use any element to open the sidenav -->
+    <!-- <a class='openBtn' style="top:830px; z-index: 9999;"> 
+      <span class='openBtn' onclick="openNav()">
+        <i style='font-size: xx-large;' class="ri-arrow-right-line"></i>
+      </span>
+    </a> -->
+
+    <!-- <script src="myFun.js"></script> -->
+    <!-- ================================================================ -->
+            
+  <!-- ======= About Section [ من نحن ] ======= -->
+    <section id="about" class="about">                      
+      <!-- About us section => a) main [عام]  -->
+      
+      <!---  <div class="row" style=" text-align: right;">
+           <div class="col-lg-6">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div> 
+                                
+            <div class="col-lg-6 pt-4 pt-lg-0" style="direction: rtl; text-align: center;">
+              <h2> من نحن </h2>
+              <h2> شركة WSG Group </h2>
+              <p style="font-size:larger">
+                هى شركة تختـــص بتقديـــم خدمـــات إدارة المعـــارض و Events ضمــن أعلــى المعاييـــر والمقاييـــس التـى تضمـن تقديـم قيـم رفيعة المسـتوى لشـركائنا . 
+              </p>              
+               <div class="row" style="width: 200%;">
+                <div class="col-md-6" >
+                  <i class="bx bx-receipt"></i>
+                  <h4>مـا يميزنـا فـي هـذا المجـال هـو تكامـل وشـمولية الخدمـات
+                    الرئيســية المســاندة التــي نقدمهــا تحــت ســقف واحــد
+                    إلدارة المعــارض و Events والتــي تشــمل خدمـات اإلعالم
+                    والتســويق واإلنتاج والترويـج والحلــول التقنيـة المتخصصة
+                    فـــي مجـــال إدارة المعـــارض و الفعاليـات ، باإلضافـة إلـى
+                    تقديــم الخدمــات الإستشــارية الإداريــة و التســويقية.</h4>                  
+                </div>
+
+                 <div class="col-md-6">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Ullamco laboris nisi</h4>
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>              
+                </div> 
+
+              </div> 
+        </div>                       
+      </div> -->
+      <div id="about" class="section-title" style="margin-top:50px;">
+        <h2> About us </h2>        
+      </div>  
+      
+      <section id="portfolio-details" class="portfolio-details" style="margin-top:-45px; top:-45px">          
+        <div class="portfolio-details-container" style="margin-bottom: 50px">  
+          <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>      
+            <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0002.jpg" class="img-fluid" alt="">                                        
+          </div>              
+        </div>    
+      </section>          
+
+      <!-- <div class="container"> -->
+    <!-- --------------------------------------------- -->
+
+        <!-- About us => b) Teamwork [فريق العمل ] -> Auto Slider Images  -->
+        <div id ="teamwork" class="section-title" style="margin-top:50px; margin-bottom:10px">
+          <h2>  teamwork </h2>          
+        </div>
+
+        <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">          
+          <div class="portfolio-details-container">  
+            <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+              <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0004.jpg" class="img-fluid" alt="">                              
+            </div>              
+          </div>    
+        </section>                          
+            <!-- <div class="col-lg-6 pt-4 pt-lg-0" style="direction: rtl; text-align: right;">
+              <h2> فريق العمل </h2>
+              <h2> شركة WSG Group </h2>
+              <p style="font-size:larger">
+                هى شركة تختـــص بتقديـــم خدمـــات إدارة المعـــارض و Events ضمــن أعلــى المعاييـــر والمقاييـــس التـى تضمـن تقديـم قيـم رفيعة المسـتوى لشـركائنا . 
+              </p>
+              
+              <div class="row" style="width: 200%;">
+                <div class="col-md-6" >
+                  <i class="bx bx-receipt"></i>
+                  <h4>مـا يميزنـا فـي هـذا المجـال هـو تكامـل وشـمولية الخدمـات
+                    الرئيســية المســاندة التــي نقدمهــا تحــت ســقف واحــد
+                    إلدارة المعــارض و Events والتــي تشــمل خدمـات اإلعالم
+                    والتســويق واإلنتاج والترويـج والحلــول التقنيـة المتخصصة
+                    فـــي مجـــال إدارة المعـــارض و الفعاليـات ، باإلضافـة إلـى
+                    تقديــم الخدمــات اإلستشــارية اإلداريــة و التســويقية.</h4>
+                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p> 
+                </div>
+
+                <div class="col-md-6">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Ullamco laboris nisi</h4>
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>              
+                </div> 
+
+              </div>
+            </div> -->
+      <!-- ------------------------------------------ -->
+
+        <!-- About us => c) Vision [رؤيتنا ] -> Auto Slider Images  -->
+        <div id="vision" class="section-title"  style="margin-top:40px; margin-bottom:10px">
+          <h2> Vision </h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">
+            <div class="portfolio-details-container">  
+              <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+                <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0005.jpg" class="img-fluid" alt="">                
+                <!-- <div class="portfolio-description">
+                    <h2>This is an example of portfolio detail</h2>
+                    <p>
+                      Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                    </p>
+                  </div> -->
+              </div>              
+            </div>    
+        </section>                          
+    <!--- ---------------------------------------------- -->
+
+      <!-- About us => d) Message [ رسالتنا ] -> Auto Slider Images  -->
+        <div id="message" class="section-title"  style="margin-top:40px; margin-bottom:10px">
+            <h2> Message </h2>          
+        </div>
+
+        <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">
+            <div class="portfolio-details-container">  
+              <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+                <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0006.jpg" class="img-fluid" alt="">                                
+              </div>              
+            </div>    
+        </section>                          
+          <!------------------------------------------------------------------------------------- -->
+          
+          <!-- About us => e) Values [قيمنا ] -> Auto Slider Images  -->
+        <div id="values" class="section-title"  style="margin-top:-20px; margin-bottom:-20px">
+            <h2> Values </h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <section id="portfolio-details" class="portfolio-details" style="margin-top:-45px; top:-45px">
+            <div class="portfolio-details-container">  
+              <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+                <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0007.jpg" class="img-fluid" alt="">                                
+              </div>              
+            </div>    
+        </section>                                  
+          <!------------------------------------------------------------------------------------- -->
+          
+          <!-- About us => f) Pholosophy [فلسفة اعمالنا ] -> Auto Slider Images  -->
+        <div id="philosophy" class="section-title"  style="margin-top:40px; margin-bottom:10px">
+            <h2> Philosophy </h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">
+            <div class="portfolio-details-container">  
+              <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+                <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0008.jpg" class="img-fluid" alt="">                           
+              </div>              
+            </div>    
+        </section>                                          
+        <!-- ------------------------------------------------------------------------------------ -->      
+    </section>
+    <!-- End About Section -->
+  <!-- ================================================== -->
+  
+  <!-- ======= Services Section [ خدماتنا ] ======= -->
+    <section id="services" class="services" style="top:-100px; margin-top: -100px">
+            
+        <!-- services section => a) main [خدماتنا]  -->      
+        <div class="section-title"  style="margin-top:0px; margin-bottom:10px">
+          <h2> Services </h2>          
+        </div>
+
+        <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">          
+          <div class="portfolio-details-container">  
+            <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+              <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0009.jpg" class="img-fluid" alt="">                            
+            </div>              
+          </div>    
+        </section>              
+  
+          <!-- Services => b) Exhibition Administration & Organizing [إدارة وتنطيم الExhibitions ] -> Auto Slider Images  -->
+          <div id="ExhibitionsManagementOrganization" class="section-title"  style="margin-top:50px; margin-bottom:10px">
+            <h2> Exhibitions Management Organization </h2>            
+          </div>
+  
+          <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">          
+            <div class="portfolio-details-container">  
+              <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+                <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0010.jpg" class="img-fluid" alt="">                                
+              </div>              
+            </div>    
+          </section>                          
+              <!-- <div class="col-lg-6 pt-4 pt-lg-0" style="direction: rtl; text-align: right;">
+                <h2> فريق العمل </h2>
+                <h2> شركة WSG Group </h2>
+                <p style="font-size:larger">
+                  هى شركة تختـــص بتقديـــم خدمـــات إدارة المعـــارض و Events ضمــن أعلــى المعاييـــر والمقاييـــس التـى تضمـن تقديـم قيـم رفيعة المسـتوى لشـركائنا . 
+                </p>
+                
+                <div class="row" style="width: 200%;">
+                  <div class="col-md-6" >
+                    <i class="bx bx-receipt"></i>
+                    <h4>مـا يميزنـا فـي هـذا المجـال هـو تكامـل وشـمولية الخدمـات
+                      الرئيســية المســاندة التــي نقدمهــا تحــت ســقف واحــد
+                      إلدارة المعــارض و Events والتــي تشــمل خدمـات اإلعالم
+                      والتســويق واإلنتاج والترويـج والحلــول التقنيـة المتخصصة
+                      فـــي مجـــال إدارة المعـــارض و الفعاليـات ، باإلضافـة إلـى
+                      تقديــم الخدمــات اإلستشــارية اإلداريــة و التســويقية.</h4>
+                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p> 
+                  </div>
+  
+                  <div class="col-md-6">
+                    <i class="bx bx-cube-alt"></i>
+                    <h4>Ullamco laboris nisi</h4>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>              
+                  </div> 
+  
+                </div>
+              </div> -->
+            <!-- ------------------------------------------ -->
+  
+          <!-- Services => c) Integrated Marketing solution & services  [خدمات وحلول التسويق المتكاملة] -> Auto Slider Images  -->
+          <div id="IntegratedMarketingServicesSolutions" class="section-title"  style="margin-top:40px; margin-bottom:10px">
+            <h2> Integrated Marketing Services Solutions </h2>
+          </div>
+  
+          <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">
+              <div class="portfolio-details-container">  
+                <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+                  <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0011.jpg" class="img-fluid" alt="">                                  
+                </div>              
+              </div>    
+          </section>                          
+          <!--- ---------------------------------------------- -->
+  
+            <!-- Services => d) External Marketing Campagns [ حملات التسويق المتكاملة  ] -> Auto Slider Images  -->
+          <div id="IntegratedMarketingCampaigns" class="section-title"  style="margin-top:40px; margin-bottom:10px">
+              <h2> Integrated Marketing Campaigns  </h2>
+            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+          </div>
+  
+          <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">
+              <div class="portfolio-details-container">  
+                <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+                  <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0012.jpg" class="img-fluid" alt="">                                  
+                </div>              
+              </div>    
+          </section>                          
+            <!------------------------------------------------------------------------------------- -->
+            
+            <!-- Serivces => e) E-Marketing Solutions & services [خدمات وحلول التسويق الالكتروني ] -> Auto Slider Images  -->
+          <div id="EMarketingSolutionsServices" class="section-title"  style="margin-top:40px; margin-bottom:10px">
+              <h2> EMarketing Solutions Services </h2>          
+          </div>
+  
+          <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">
+              <div class="portfolio-details-container">  
+                <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+                  <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0013.jpg" class="img-fluid" alt="">                                  
+                </div>              
+              </div>    
+          </section>                                  
+            <!------------------------------------------------------------------------------------- -->
+            
+            <!-- Services => f) Marketig services via TV & Radio  [ خدمات التسويق عبر الراديو والتلفزيون ] -> Auto Slider Images  -->
+          <div id="MarketingServicesTVRadio" class="section-title"  style="margin-top:40px; margin-bottom:10px">
+              <h2> Marketing Services TV Radio </h2>            
+          </div>
+  
+          <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">
+              <div class="portfolio-details-container">  
+                <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+                  <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0014.jpg" class="img-fluid" alt="">                                  
+                </div>              
+              </div>    
+          </section>                                          
+          <!-- ------------------------------------------------------------------------------------ -->          
+    </section>
+  <!-- End Services Section -->
+  <!-- ================================================= -->
+
+<!-- ======= Portfolio Section [ سابقة اعمالنا  ] ======= -->
+    <section id="portfolio" class="portfolio" style="margin-top:-50px; top:-50px">
+      <div class="container">
+
+          <div class="section-title">
+            <h2> Portfolio </h2>            
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active"> All </li>
+                <li data-filter=".filter-eve"> Events </li>
+                <li data-filter=".filter-conf"> Conferences </li>
+                <li data-filter=".filter-exh"> Exhibitions </li>
+                <li data-filter=".filter-media"> Media </li>                
+              </ul>
+            </div>
+          </div>
+
+          <div class="row portfolio-container">          
+              <div class="col-lg-4 col-md-6 portfolio-item filter-exh">
+                <img src="assets/img/Resources/Elements/exh1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Exhibition 1 </h4>
+                  <p> Exhibitions </p>
+                  <a href="assets/img/Resources/Elements/exh1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 1 Exhibition"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-conf">
+                <img src="assets/img/Resources/Elements/conf1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Conference 1 </h4>
+                  <p> Conferences </p>
+                  <a href="assets/img/Resources/Elements/conf1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 1 Conference "><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+                      
+              <div class="col-lg-4 col-md-6 portfolio-item filter-eve">
+                <img src="assets/img/Resources/Elements/eve1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Event 1 </h4>
+                  <p> Events </p>
+                  <a href="assets/img/Resources/Elements/eve1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 1 Event "><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+              
+              <div class="col-lg-4 col-md-6 portfolio-item filter-media">
+                <img src="assets/img/Resources/Elements/media1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Media 1 </h4>
+                  <p> Media </p>
+                  <a href="assets/img/Resources/Elements/media1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 1 Media "><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+              <!-- ----------------------------------- -->
+              
+              <div class="col-lg-4 col-md-6 portfolio-item filter-eve">
+                <img src="assets/img/Resources/Elements/eve2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Event 2 </h4>
+                  <p> Events </p>
+                  <a href="assets/img/Resources/Elements/eve2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 2 Event "><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-conf">
+                <img src="assets/img/Resources/Elements/conf2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Conference 2 </h4>
+                  <p> Conferences </p>
+                  <a href="assets/img/Resources/Elements/conf2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 2 Conference "><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-exh">
+                <img src="assets/img/Resources/Elements/exh2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Exhibition 2 </h4>
+                  <p> Exhibitions </p>
+                  <a href="assets/img/Resources/Elements/exh2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 2 Exhibition"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+              
+              <div class="col-lg-4 col-md-6 portfolio-item filter-media">
+                <img src="assets/img/Resources/Elements/media2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Media 2 </h4>
+                  <p> Media </p>
+                  <a href="assets/img/Resources/Elements/media2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 2 Media "><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+              <!-- -------------------------------------- -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-eve">
+                <img src="assets/img/Resources/Elements/eve3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Event 3 </h4>
+                  <p> Events </p>
+                  <a href="assets/img/Resources/Elements/eve3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 3 Event "><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-conf">
+                <img src="assets/img/Resources/Elements/conf3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Conference 3 </h4>
+                  <p> Conferences </p>
+                  <a href="assets/img/Resources/Elements/conf3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 3 Conference "><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-exh">
+                <img src="assets/img/Resources/Elements/exh3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Exhibition 3 </h4>
+                  <p> Exhibitions </p>
+                  <a href="assets/img/Resources/Elements/exh3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 3 Exhibition"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+
+              
+              <div class="col-lg-4 col-md-6 portfolio-item filter-media">
+                <img src="assets/img/Resources/Elements/media3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Media 3 </h4>
+                  <p> Media </p>
+                  <a href="assets/img/Resources/Elements/media3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 3 Media "><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            <!-- ------------------------------------------- -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-eve">
+                <img src="assets/img/Resources/Elements/eve4.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Event 4 </h4>
+                  <p> Events </p>
+                  <a href="assets/img/Resources/Elements/eve4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 4 Event "><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-conf">
+                <img src="assets/img/Resources/Elements/conf4.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Conference 4 </h4>
+                  <p> Conferences </p>
+                  <a href="assets/img/Resources/Elements/conf4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 4 Conference "><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-exh">
+                <img src="assets/img/Resources/Elements/exh4.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Exhibition 4 </h4>
+                  <p> Exhibitions </p>
+                  <a href="assets/img/Resources/Elements/exh4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 4 Exhibition"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+              
+              <div class="col-lg-4 col-md-6 portfolio-item filter-media">
+                <img src="assets/img/Resources/Elements/media4.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Media 4 </h4>
+                  <p> Media </p>
+                  <a href="assets/img/Resources/Elements/media4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 4 Media"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+              
+            <!-- ------------------------------------------- -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-eve">
+                <img src="assets/img/Resources/Elements/eve5.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Event 5 </h4>
+                  <p> Events </p>
+                  <a href="assets/img/Resources/Elements/eve5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 5 Event "><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-conf">
+                <img src="assets/img/Resources/Elements/conf5.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Conference 5 </h4>
+                  <p> Conferences </p>
+                  <a href="assets/img/Resources/Elements/conf5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 5 Conference "><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-exh">
+                <img src="assets/img/Resources/Elements/exh5.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Exhibition 5 </h4>
+                  <p> Exhibitions </p>
+                  <a href="assets/img/Resources/Elements/exh5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title=" 5 Exhibition"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+        
+          </div>
+      
+      </div>
+    </section>
+<!-- End Portfolio Section -->
+<!-- ======================================================= -->
+
+  <!-- ======= Clients Section [ شركاء النجاح ] ======= -->
+    <!-- <section id="clients" class="clients section-bg">       -->
+    <section id="clients" class="services">      
+
+      <!-- <div class="section-title">
+        <h2> شركاء النجاح </h2>        
+      </div> -->
+
+      <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">
+          <div class="portfolio-details-container">  
+            <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+              <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0015.jpg" class="img-fluid" alt="">                           
+            </div>              
+          </div>    
+      </section>                                          
+    
+      <!-- <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/AhlMisr.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/Al Nahar.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/AlBost.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/alAqariya.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/AlBoursa.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/AlMaal.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/AlWafi.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/AqarAds.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/AqarYaMisr.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/CBC.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/eiec.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/ElBoursagia.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/ElShams.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/FourSeasons.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/Hook.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/Hoopoe.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/Intercontinental.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/JCFE.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/Kempinski.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/logo1.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/NogomFM.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/Osoule.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/Royia.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/Sada El Balad.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/Sheco.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/partners/SmartHome.jpg" class="img-fluid" alt="">
+          </div>
+
+        </div>
+      </div> -->
+    </section>
+  <!-- End Clients Section -->
+  <!-- ========================================================== -->
+
+  <!-- ======= Customers Section [ عملائنا ] ======= -->
+    <section id="customers" class="services" style="margin-top:0px">
+      
+      <!-- <div class="section-title">
+        <h2> عملائنا </h2>        
+      </div> -->
+      
+      <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">
+        <div class="portfolio-details-container">  
+          <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+            <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0016.jpg" class="img-fluid" alt="">                           
+          </div>              
+        </div>    
+      </section>                                          
+
+      <!-- <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/Akadia.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/Captain.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/Dahab.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/Genoa.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/GoldenTown.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/Gosor.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/I Capital.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/IHD.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/img457.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/KhaledSabry.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/logo2.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/logo3.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/Mardev.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/Maxim.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/Nile.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/Owagik.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/Radix.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/Reportage.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/RNA.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/SafwaNewCapital.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/TagMisr.jpg" class="img-fluid" alt="">
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/Resources/Elements/logo/customers/Tamayoz.jpg" class="img-fluid" alt="">
+          </div>
+          
+        </div>
+      </div> -->
+    </section>
+  <!-- End Clients Section -->
+  <!-- ========================================================== -->
+
+  <!-- ======= Counts Section [ احصائيات ] ======= -->
+    <section id="counts" class="counts section-bg" style="margin-top:0px">
+      
+      <div class="section-title">
+        <h2> Statistics </h2>        
+      </div>
+
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">232</span>
+            <p> Clients </p>
+          </div>
+          
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">232</span>
+            <p> Partneres </p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">521</span>
+            <p> Projects </p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">15</span>
+            <p> Management Staff </p>
+          </div>
+
+          <!-- <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1,463</span>
+            <p>Hours Of Support</p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+  <!-- End Counts Section -->
+        
+  <!-- ======= Testimonials Section [ اراء الناس عنا ] ======= -->
+    <!-- <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="section-title">
+          <h2> أراء الناس بنا  </h2>          
+        </div>
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+            <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Founder</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+          </div>
+
+        </div>
+
+      </div>
+    </section>  -->
+  <!-- End Testimonials Section -->
+  <!-- ============================================ -->
+  
+<!-- Media Section {Auto - Slider} -->
+    <section id="portfolio-details" class="portfolio-details" style="margin-top:20px">
+    <!-- <div class="" style='width:100%; '>   -->
+      <!-- Media Section {Auto - Slider} Images  -->
+      <div id="media" class="section-title">
+        <h2> Media  </h2>
+        <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+      </div>
+
+      <div class="portfolio-details-container" style="margin-bottom: 50px; ">  
+        <div class="owl-carousel portfolio-details-carousel" style='width:50%; margin:0px auto'>
+          <!-- <img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0001.jpg" class="img-fluid" alt="">                           -->
+          <img src="assets/img/Resources/Elements/media1.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Elements/media2.jpg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/Elements/media3.jpg" class="img-fluid" alt="">                            
+          <img src="assets/img/Resources/Elements/media4.jpg" class="img-fluid" alt="">                            
+                        
+          <!-- <div class="portfolio-description">
+            <h2>This is an example of portfolio detail</h2>
+            <p>
+              Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+            </p>
+          </div> -->
+        </div>              
+      </div>    
+    </section>
+<!-- =================================================================== -->
+
+    <!-- ======= Team Section [ فريق العمل  ] ======= -->
+    <!-- <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->    
+    <!-- End Team Section -->
+    <!-- ============================================================== -->
+    
+    <!-- ======= Frequently Asked Questions Section [الاسئلة الاكثر تداولا] ======= -->
+    <!-- <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                <p>
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                <p>
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                <p>
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+                <p>
+                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+                <p>
+                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section [تواصل معنا] ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2> Contact us  </h2>          
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3> Address </h3>
+                  <p> Villa 174 / El Yasmeen / First Sattelment / new cairo / Egypt </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-envelope"></i>
+                  <h3> E-mail  </h3>
+                  <p>info@example.com<br>contact@example.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3> Contact us </h3>
+                  <p> +(20) 111 7777 353  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Text Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading"> Loading </div>
+                <div class="error-message"></div>
+                <div class="sent-message">  Your message has been sent </div>
+              </div>
+              <div class="text-center"><button type="submit"> Send </button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>    
+    <!-- End Contact Section -->
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer [ تذييل الصفحة ] ======= -->
+  <footer id="footer" style="direction: ltr; text-align: left;">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row" style="font-weight: bold;">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3 style="text-align: left;"> WS Group </h3>
+            <p>
+              villa 174 / El Yasmeen / First Settlement <br>
+              New Cairo <br>
+              Egypt <br><br>
+              <strong> Phone : </strong> +(20) 111 7777 353  <br>
+              <strong> E-mail : </strong> m.wsgexpo@info <br> 
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links" style="font-weight: bold;">
+            <h4> Main Sectors </h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="indexAr.html"> Home Page </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about"> About Us </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services"> Services </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio"> Portfolio </a></li>          
+              <li><i class="bx bx-chevron-right"></i> <a href="#clients"> clients </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#customers"> Customers </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#media"> Media </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact"> Contact Us </a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4> Services </h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#ExhibitionsManagementOrganization"> Exhibitions Management Organization </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#IntegratedMarketingServicesSolutions"> Integrated Marketing Services Solutions  </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#IntegratedMarketingCampaigns"> Integrated Marketing Campaigns </a></li>              
+              <li><i class="bx bx-chevron-right"></i> <a href="#EMarketingSolutionsServices"> E-Marketing Solutions Services </a></li>                            
+              <li><i class="bx bx-chevron-right"></i> <a href="#MarketingServicesTVRadio"> Marketing Services TV Radio  </a></li>                            
+
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4> Join Our Newsletter </h4>
+            <!-- <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p> -->
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <!-- <div class="social-links text-center text-md-right pt-3 pt-md-0"> -->
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://www.facebook.com" class="facebook" title='facebook' target="_blank"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com" class="instagram" title='instagram' target="_blank"><i class="bx bxl-instagram"></i></a>
+        <a href="https://twitter.com" class="twitter" title='twitter' target="_blank"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.linkedin.com" class="linkedin" title='linkedin' target="_blank"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://web.whatsapp.com/" class="" title='whatsapp' target="_blank"><i class="bx bxl-whatsapp"></i></a>
+        <!-- <a href="#" class="google-plus" title='google-plus'><i class="bx bxl-skype"></i></a> -->
+      </div>
+      
+      <!-- <div class="mr-md-auto text-right text-md-right"> -->
+      <div class="mr-md-auto text-center text-md-right" style="margin-left: 450px ;">
+        <div class="copyright" >
+          &copy; Copyright <strong><span>Wall Street Group</span></strong>. All Rights Reserved
+        </div>                
+      </div>
+
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+<!-- =========================================================================== -->
+<!-- =========================================================================== -->
+
+<!-- ======= Cta Section ======= {Call Us} -->
+    <!-- <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="text-center">
+          <h3>Call To Action</h3>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a class="cta-btn" href="#">Call To Action</a>
+        </div>
+
+      </div>
+    </section> -->
+    
+    <!-- End Cta Section -->
+<!-- ================================================================ -->
+
+<!-- ======= Pricing Section ======= -->
+    <!-- <section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="box">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+            <div class="box featured">
+              <h3>Business</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="box">
+              <h3>Developer</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="box">
+              <span class="advanced">Advanced</span>
+              <h3>Ultimate</h3>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Pricing Section -->
+<!-- =========================================== -->
+<!-- Auto Slide Show [abanded] -->
+  <!-- <div id="slider">
+    <ul id="slideWrap"> 
+      <li><img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0001.jpg"  alt=""></li>
+      <li><img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0002.jpg" alt=""></li>
+      <li><img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0003.jpg" alt=""></li>
+      <li><img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0004.jpg" alt=""></li>
+      <li><img src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0005.jpg" alt=""></li>
+    </ul>
+    <a id="prev" href="#">&#8810;</a>
+    <a id="next" href="#">&#8811;</a>
+  </div> -->
+
+  <!-- <script>
+      var responsiveSlider = function() {
+
+      var slider = document.getElementById("slider");
+      var sliderWidth = slider.offsetWidth;
+      var slideList = document.getElementById("slideWrap");
+      var count = 1;
+      var items = slideList.querySelectorAll("li").length;
+      var prev = document.getElementById("prev");
+      var next = document.getElementById("next");
+
+      window.addEventListener('resize', function() {
+        sliderWidth = slider.offsetWidth;
+      });
+
+      var prevSlide = function() {
+        if(count > 1) {
+          count = count - 2;
+          slideList.style.left = "-" + count * sliderWidth + "px";
+          count++;
+        }
+        else if(count = 1) {
+          count = items - 1;
+          slideList.style.left = "-" + count * sliderWidth + "px";
+          count++;
+        }
+      };
+
+      var nextSlide = function() {
+        if(count < items) {
+          slideList.style.left = "-" + count * sliderWidth + "px";
+          count++;
+        }
+        else if(count = items) {
+          slideList.style.left = "0px";
+          count = 1;
+        }
+      };
+
+      next.addEventListener("click", function() {
+        nextSlide();
+      });
+
+      prev.addEventListener("click", function() {
+        prevSlide();
+      });
+
+      setInterval(function() {
+        nextSlide()
+      }, 5000);
+
+      };
+
+      window.onload = function() {
+      responsiveSlider();  
+    }
+
+  </script> -->
+  <!-- =================================================== -->
+
+
+  <!-- Social side bar Menu  -->
+  <!-- <div class="s-soft" style="z-index:9999">
+    <a href="https://www.facebook.com" class="s-item facebook" >
+      <span class="fa fa-facebook"></span>
+    </a>
+    <a href="https://twitter.com" class="s-item twitter">
+      <span class="fa fa-twitter"></span>
+    </a>
+    <a href="https://www.pinterest.com" class="s-item pinterest">
+      <span class="fa fa-pinterest"></span>
+    </a>
+    <a href="https://www.linkedin.com" class="s-item linkedin">
+      <span class="fa fa-linkedin"></span>
+    </a>
+    <a href="https://www.instagram.com" class="s-item instagram">
+      <span class="fa fa-instagram"></span>
+    </a>
+  </div> -->
+  
+  <!-- <a id="so-close" class="s-item print">
+    <span class="fa fa-arrow-left"></span>
+  </a> -->
+
+  <!-- <a id="so-open" class="s-item print so-collapse">
+    <span class="fa fa-arrow-right"></span>
+  </a> -->
+<!-- =-================================================= -->
+
+<!-- shiny Text Effected -->
+    <!-- <span class="shiny" style="top:-10px; left:-50px; text-align: center; justify-content: center; align-items: center;" >
+      <span class="inner-shiny"> WSG </span>
+    </span> -->
+<!-- ====================================================================================== -->
+  
+  <!-- Type writing section -->
+      <!--<section id="Typewriting" class="Typewriting" style="z-index: 999; left:250px; position: absolute; padding:20px; bottom:-100px">              
+        <h4 class="mytext" style=" font-size:20px; color:#fff; font-weight: bold; margin-top:20px; padding: 10px; letter-spacing: -1px; word-spacing: 2px;"></h4>
+         <h4 class="mytext" style=" font-size:20px; color:#fff; font-weight: bold; margin-top:20px; padding: 10px;"></h4> -->
+        <!--<script>
+            document.addEventListener('DOMContentLoaded',function(event){
+            // array with texts to type in typewriter
+            // var dataText = [ "We Think Globally...", "We act Locally...", "We have clients in over 40 countries ..."];
+            // var dataText = [ "We Think Globally... We act Locally..."];
+            var dataText = [ " نـحـن نـفـكـر دولـيـا ونـعـمـل مـحـلـيـا "];
+            
+            // type one text in the typwriter
+            // keeps calling itself until the text is finished
+            function typeWriter(text, i, fnCallback) {
+              // chekc if text isn't finished yet
+              if (i < (text.length)) {
+                // add next character to h1
+                document.querySelector("h4").innerHTML = text.substring(0, i+1) +'<span class="txtCursor" aria-hidden="true"></span>';
+    
+                // wait for a while and call this function again for next character
+                setTimeout(function() {
+                  typeWriter(text, i + 2, fnCallback)
+                }, 130);
+              }
+              // text finished, call callback if there is a callback function
+              else if (typeof fnCallback == 'function') {
+                // call callback after timeout
+                setTimeout(fnCallback, 5000);
+              }
+            }
+            // start a typewriter animation for a text in the dataText array
+            function StartTextAnimation(i) {
+              if (typeof dataText[i] == 'undefined'){
+                  setTimeout(function() {
+                    StartTextAnimation(0);
+                  }, 5000);
+              }
+              // check if dataText[i] exists
+              if (i < dataText[i].length) {
+                // text exists! start typewriter animation
+              typeWriter(dataText[i], 0, function(){
+                // after callback (and whole text has been animated), start next text
+                StartTextAnimation(i + 1);
+              });
+              }
+            }
+            // start the text animation
+            StartTextAnimation(0);
+          });      
+        </script>    
+      </section>-->
+
+      <!---- <a href="#about" class="btn-get-started scrollto" style="margin-left: 0px; position:relative">Get Started</a> -->  <!-- Type writing section -->
+      <!--<section id="Typewriting" class="Typewriting" style="z-index: 999; left:250px; position: absolute; padding:20px; bottom:-100px">              
+        <h4 class="mytext" style=" font-size:20px; color:#fff; font-weight: bold; margin-top:20px; padding: 10px; letter-spacing: -1px; word-spacing: 2px;"></h4>
+         <h4 class="mytext" style=" font-size:20px; color:#fff; font-weight: bold; margin-top:20px; padding: 10px;"></h4> -->
+        <!--<script>
+            document.addEventListener('DOMContentLoaded',function(event){
+            // array with texts to type in typewriter
+            // var dataText = [ "We Think Globally...", "We act Locally...", "We have clients in over 40 countries ..."];
+            // var dataText = [ "We Think Globally... We act Locally..."];
+            var dataText = [ " نـحـن نـفـكـر دولـيـا ونـعـمـل مـحـلـيـا "];
+            
+            // type one text in the typwriter
+            // keeps calling itself until the text is finished
+            function typeWriter(text, i, fnCallback) {
+              // chekc if text isn't finished yet
+              if (i < (text.length)) {
+                // add next character to h1
+                document.querySelector("h4").innerHTML = text.substring(0, i+1) +'<span class="txtCursor" aria-hidden="true"></span>';
+    
+                // wait for a while and call this function again for next character
+                setTimeout(function() {
+                  typeWriter(text, i + 2, fnCallback)
+                }, 130);
+              }
+              // text finished, call callback if there is a callback function
+              else if (typeof fnCallback == 'function') {
+                // call callback after timeout
+                setTimeout(fnCallback, 5000);
+              }
+            }
+            // start a typewriter animation for a text in the dataText array
+            function StartTextAnimation(i) {
+              if (typeof dataText[i] == 'undefined'){
+                  setTimeout(function() {
+                    StartTextAnimation(0);
+                  }, 5000);
+              }
+              // check if dataText[i] exists
+              if (i < dataText[i].length) {
+                // text exists! start typewriter animation
+              typeWriter(dataText[i], 0, function(){
+                // after callback (and whole text has been animated), start next text
+                StartTextAnimation(i + 1);
+              });
+              }
+            }
+            // start the text animation
+            StartTextAnimation(0);
+          });      
+        </script>    
+      </section>-->
+
+      <!---- <a href="#about" class="btn-get-started scrollto" style="margin-left: 0px; position:relative">Get Started</a> -->
+  <!-- ========================================================================================== -->
+  <!-- Services section old Desgin -->
+  <!-- <div class="section-title">
+    <h2> خدماتنا </h2>
+     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> 
+  </div> -->
+
+  <!-- <div class="row">
+
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+      <div class="icon-box iconbox-blue">
+        <div class="icon">
+          <i class="bx bxl-dribbble"></i>
+        </div>
+        <h4><a href="">Lorem Ipsum</a></h4>
+        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+      <div class="icon-box iconbox-orange ">
+        <div class="icon">
+          <i class="bx bx-file"></i>
+        </div>
+        <h4><a href="">Sed Perspiciatis</a></h4>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+      <div class="icon-box iconbox-pink">
+        <div class="icon">
+          <i class="bx bx-tachometer"></i>
+        </div>
+        <h4><a href="">Magni Dolores</a></h4>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+      <div class="icon-box iconbox-yellow">
+        <div class="icon">
+          <i class="bx bx-layer"></i>
+        </div>
+        <h4><a href="">Nemo Enim</a></h4>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+      <div class="icon-box iconbox-red">
+        <div class="icon">
+          <i class="bx bx-slideshow"></i>
+        </div>
+        <h4><a href="">Dele Cardo</a></h4>
+        <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+      <div class="icon-box iconbox-teal">
+        <div class="icon">
+          <i class="bx bx-arch"></i>
+        </div>
+        <h4><a href="">Divera Don</a></h4>
+        <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+      </div>
+    </div>
+
+  </div> -->
+<!-- ============================================== -->
+
+<!-- Checkbox Switcher Designs -->
+      <!-- <div class="checkbox" style="position: absolute; display: flex; right:-10px; top:55px; width:200px; height:50px; transform: scale(.7); ">  
+        <label for="click" class="text"> AR </label>
+        <input type="checkbox" id="click" value="indexEN.html" onClick="if (this.checked) { window.location = this.value; }">
+        <label for="click" class="text"> EN </label>
+      </div> -->
+                  
+      <!-- <a href="indexEN.html" class="switcher" style="display: flex;" >
+        <img
+          src="assets/img/Resources/Pages/Wall Street Interactive_pages-to-jpg-0001.jpg" 
+          alt="Language Switcher"
+          title="Language Switcher"
+          class="img-fluid"           
+          style="position: absolute; right:10px; top:20px; width:70px; height:50px; ">      
+      </a>  -->
+<!-- ============================================== -->

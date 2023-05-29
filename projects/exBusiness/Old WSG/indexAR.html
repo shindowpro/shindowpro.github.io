@@ -1,0 +1,734 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> Wall Street Group - WSG </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <!-- Addition Special   -->
+  <link rel="stylesheet" href="assets/css/AutoSlideShow.css"/> 
+
+  <!-- Fixed Side Menu   -->
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+
+  <!-- Main CSS File -->  
+  <link href="assets/css/styleAR.css" rel="stylesheet">
+  
+  <script src="myFun.js"></script>
+  
+  <!-- ------------------------------------------------------------------------------------------------------------------ -->
+    
+  <!-- Second Hero Section  -->
+  <style>
+    .slider {
+      position: relative;
+      margin-top: 3rem;
+      margin-right: auto;
+      margin-left: auto;
+      overflow: hidden;      
+      width: 20rem;
+      height: 26.25rem;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+
+    .slider__list {
+      position: absolute;
+      left: 0;
+      width: 162.5rem;
+    }
+
+    .slider__slide {
+      float: left;
+    }
+    /* ------------------------------ */
+    .slider__control {
+      margin-right: auto;
+      margin-left: auto;
+      width: 4.5rem;
+      font-family: sans-serif;
+    }
+    .slider__control label {
+      position: relative;
+      display: block;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      width: 4.5rem;
+      height: 2rem;
+      font-size: 1rem;
+      font-weight: normal;
+      line-height: 1.5;
+      color: transparent;
+      background: #ddd;
+      border-radius: 2rem;
+      cursor: pointer;
+      -webkit-transition: left 0.15s ease-out;
+      transition: left 0.15s ease-out;
+    }
+    .slider__control label:before {
+      content: "autoplay";
+      position: absolute;
+      top: 2.5rem;
+      left: 0;
+      color: #333;
+      font-size: .95rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .slider__control label:after {
+      content: "";
+      position: absolute;
+      top: .25rem;
+      left: .25rem;
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 2rem;
+      background: #fff;
+      -webkit-transition: left 0.001s ease-out;
+      transition: left 0.001s ease-out;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    .slider__switch:checked + .slider > .slider__list {
+      -webkit-animation-name: autoplay;
+      animation-name: autoplay;      
+      -webkit-animation-duration: 40s;
+      animation-duration: 40s;
+      animation-delay: 2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
+    .slider__switch:checked + .slider + .slider__control > label { background: #455a64; }
+    .slider__switch:checked + .slider + .slider__control > label:after { left: 2.75rem; }
+
+    @-webkit-keyframes 
+    autoplay {
+      0% {
+        left: 0;
+      }
+      
+      25% {
+        left: -40.625rem;
+      }
+      
+      50% {
+        left: -81.25rem;
+      }
+      
+      100% {
+        left: -121.875rem;
+      }
+    }
+    
+    @keyframes 
+    autoplay {
+      0% {
+        left: 0;
+      }
+      
+      25% {
+        left: -40.625rem;
+      }
+      
+      50% {
+        left: -81.25rem;
+      }
+      
+      100% {
+        left: -121.875rem;
+      }
+    }
+
+  </style>
+  
+</head>
+<!-- -=================================================================================================================== -->
+<body>  
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center">
+      
+      <a id="logo" href="indexAR.html" class="logo mr-auto" style="margin-left:-90px">
+        <img src="" alt="" class="img-fluid" >        
+      </a>
+
+      <nav class="nav-menu d-none d-lg-block" style="direction: rtl ; margin-right: -50px;" >
+        <ul>                          
+          <li class="active"><a href="indexAR.html"> الصفحة الرئيسية </a></li>
+                     
+          <li class="drop-down"><a href="#about"> من نحن </a>
+           <ul>          
+              <li><a href="#about"> رؤيتنا </a></li>
+              <li><a href="#about"> رسالتنا </a></li>                    
+              <li><a href="#about"> قيمنا  </a></li>                    
+              <li><a href="#about"> فلسفتنا  </a></li>                    
+            </ul>                   
+          </li>          
+          
+          <li class="drop-down"><a href="#services"> خدماتنا </a> 
+              <ul>
+                <li><a href="#ExhibitionsManagementOrganization"> إدارة وتنظيم المعارض </a></li>
+                <li><a href="#IntegratedMarketingServicesSolutions"> خدمات وحلول التسويق المتكاملة  </a></li>
+                <li><a href="#IntegratedMarketingCampaigns"> حملات التسويق الخارجية </a></li>
+                <li><a href="#EMarketingSolutionsServices"> خدمات وحلول التسويق الالكتروني </a></li>
+                <li><a href="#MarketingServicesTVRadio"> خدمات التسويق عبر الراديو والتلفزيون </a></li>             
+              </ul>
+          </li> 
+          <li><a href="#portfolio"> سابقة أعمالنا </a></li>
+          <li><a href="#clients"> شركاء النجاح </a></li>
+          <li><a href="#customers"> عملائنا </a></li>
+          <li><a href="#plans"> خطط المعارض </a></li>
+          <li><a href="#counts"> احصائيات </a></li>
+          <li><a href="#media"> ميديا </a></li>          
+          <li><a href="#contact"> تواصل معنا </a></li>          
+          <li><a href="indexAR.html" class='switcher'> English </a></li>          
+        </ul>
+      </nav>      
+    
+    </div>
+  </header>  
+  <!-- ============================ -->
+
+  <!-- ======= Hero Section ======= -->
+
+    <section id="hero" class="d-flex align-items-center justify-content-center" style="z-index: 1;">
+      <div class="container position-relative">                            
+      </div>
+    </section>
+
+  <!-- --------------------------------------------- -->
+
+  <main id="main">        
+    <!-- ================================================================ -->
+            
+  <!-- ======= About Section [ من نحن ] ======= -->
+    <section id="about" class="about">                            
+      <div id="about" class="section-title" style="margin-top:0px;">
+        <h2> من نحن </h2>        
+      </div>  
+      
+      <section id="portfolio-details" class="portfolio-details" style="margin-top:-45px; top:-45px">          
+        <div class="portfolio-details-container" style="margin-bottom: 50px">  
+          <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>      
+            <img src="assets/img/Resources/Pages/new/ws about1.jpg" class="img-fluid" alt="">                                        
+            <img src="assets/img/Resources/Pages/new/ws about2.jpg" class="img-fluid" alt=""> 
+            <img src="assets/img/Resources/Pages/new/ws about3.jpg" class="img-fluid" alt="">             
+          </div>              
+        </div>    
+      </section>          
+      
+    <!-- --------------------------------------------- -->
+          
+    </section>
+  <!-- ================================================== -->
+  
+  <!-- ======= Services Section [ خدماتنا ] ======= -->
+    <section id="services" class="services" style="top:-100px; margin-top: -100px">
+                  
+        <div class="section-title"  style="margin-top:-100px; margin-bottom:10px">
+          <h2> خدماتنا </h2>          
+        </div>
+
+        <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">          
+          <div class="portfolio-details-container">  
+            <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 60%'>              
+              <img src="assets/img/Resources/Pages/new/ws services.jpg" class="img-fluid" alt="">                            
+            </div>              
+          </div>    
+        </section>              
+            
+          <div id="ExhibitionsManagementOrganization" class="section-title"  style="margin-top:-20px; margin-bottom:10px">
+            <h2> إدارة وتنظيم المعارض </h2>            
+          </div>
+  
+          <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">          
+            <div class="portfolio-details-container">  
+              <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+                <img src="assets/img/Resources/Pages/new/PDF_compressed_pages-to-jpg-0006.jpg" class="img-fluid" alt="">                                
+              </div>              
+            </div>    
+          </section>                            
+            <!-- ------------------------------------------ -->
+            
+          <div id="IntegratedMarketingServicesSolutions" class="section-title"  style="margin-top:20px; margin-bottom:10px">
+            <h2> خدمات وحلول التسويق المتكاملة </h2>
+          </div>
+  
+          <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">
+              <div class="portfolio-details-container">  
+                <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+                  <img src="assets/img/Resources/Pages/new/PDF_compressed_pages-to-jpg-0007.jpg" class="img-fluid" alt="">                                  
+                </div>              
+              </div>    
+          </section>                          
+          <!--- ---------------------------------------------- -->
+    
+          <div id="IntegratedMarketingCampaigns" class="section-title"  style="margin-top:20px; margin-bottom:10px">
+              <h2> حملات التسويق المتكاملة  </h2>  
+          </div>
+  
+          <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">
+              <div class="portfolio-details-container">  
+                <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+                  <img src="assets/img/Resources/Pages/new/PDF_compressed_pages-to-jpg-0008.jpg" class="img-fluid" alt="">                                  
+                </div>              
+              </div>    
+          </section>                          
+            <!------------------------------------------------------------------------------------- -->
+                        
+          <div id="EMarketingSolutionsServices" class="section-title"  style="margin-top:20px; margin-bottom:10px">
+              <h2> خدمات وحلول التسويق الالكتروني </h2>          
+          </div>
+  
+          <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">
+              <div class="portfolio-details-container">  
+                <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+                  <img src="assets/img/Resources/Pages/new/PDF_compressed_pages-to-jpg-0009.jpg" class="img-fluid" alt="">                                  
+                </div>              
+              </div>    
+          </section>                                  
+            <!------------------------------------------------------------------------------------- -->
+                      
+          <div id="MarketingServicesTVRadio" class="section-title"  style="margin-top:20px; margin-bottom:10px">
+              <h2> خدمات التسويق عبر الراديو والتلفزيون </h2>            
+          </div>
+  
+          <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">
+              <div class="portfolio-details-container">  
+                <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+                  <img src="assets/img/Resources/Pages/new/PDF_compressed_pages-to-jpg-0010.jpg" class="img-fluid" alt="">                                  
+                </div>              
+              </div>    
+          </section>                                            
+    </section>  
+  <!-- ================================================= -->
+
+<!-- ======= Portfolio Section [ سابقة اعمالنا  ] ======= -->
+    <section id="portfolio" class="portfolio" style="margin-top:-50px; top:-50px">
+      <div class="container">
+
+          <div class="section-title">
+            <h2> سابقة اعمالنا </h2>            
+          </div>
+
+          <div class="row" >
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">الكل</li>
+                <li data-filter=".filter-eve"> الفعاليات </li>              
+                <li data-filter=".filter-exh"> المعارض </li>              
+              </ul>
+            </div>
+          </div>
+
+          <div class="row portfolio-container">          
+              <div class="col-lg-4 col-md-6 portfolio-item filter-exh">
+                <img src="assets/img/Resources/exh1.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> معرض 1 </h4>
+                  <p> معارض </p>
+                  <a href="assets/img/Resources/exh1.jpeg" data-gall="portfolioGallery" class="venobox preview-link" title=" 1 معرض"><i class="bx bx-plus"></i></a>                  
+                </div>
+              </div>              
+                      
+              <div class="col-lg-4 col-md-6 portfolio-item filter-eve">
+                <img src="assets/img/Resources/event1.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> فعالية 1 </h4>
+                  <p> الفعاليات </p>
+                  <a href="assets/img/Resources/event1.jpeg" data-gall="portfolioGallery" class="venobox preview-link" title=" 1 فعالية "><i class="bx bx-plus"></i></a>                  
+                </div>
+              </div>
+                            
+              <!-- ----------------------------------- -->
+              
+              <div class="col-lg-4 col-md-6 portfolio-item filter-eve">
+                <img src="assets/img/Resources/event2.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>  فعالية 2 </h4>
+                  <p> الفعاليات </p>
+                  <a href="assets/img/Resources/event2.jpeg" data-gall="portfolioGallery" class="venobox preview-link" title=" 2 فعالية "><i class="bx bx-plus"></i></a>              
+                </div>
+              </div>
+            
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-exh">
+                <img src="assets/img/Resources/exh2.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> معرض 2 </h4>
+                  <p> معارض </p>
+                  <a href="assets/img/Resources/exh2.jpeg" data-gall="portfolioGallery" class="venobox preview-link" title=" 2 معرض"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+                          
+              <!-- -------------------------------------- -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-eve">
+                <img src="assets/img/Resources/event3.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>  فعالية 3 </h4>
+                  <p> الفعاليات </p>
+                  <a href="assets/img/Resources/event3.jpeg" data-gall="portfolioGallery" class="venobox preview-link" title=" 3 فعالية "><i class="bx bx-plus"></i></a>                  
+                </div>
+              </div>
+              
+              <div class="col-lg-4 col-md-6 portfolio-item filter-exh">
+                <img src="assets/img/Resources/exh3.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> معرض 3 </h4>
+                  <p> معارض </p>
+                  <a href="assets/img/Resources/exh3.jpeg" data-gall="portfolioGallery" class="venobox preview-link" title=" 3 معرض"><i class="bx bx-plus"></i></a>
+                  <a href="#portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+
+            <!-- ------------------------------------------- -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-eve">
+                <img src="assets/img/Resources/event4.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>  فعالية 4 </h4>
+                  <p> الفعاليات </p>
+                  <a href="assets/img/Resources/event4.jpeg" data-gall="portfolioGallery" class="venobox preview-link" title=" 4 فعالية "><i class="bx bx-plus"></i></a>                  
+                </div>
+              </div>              
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-exh">
+                <img src="assets/img/Resources/exh4.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> معرض 4 </h4>
+                  <p> معارض </p>
+                  <a href="assets/img/Resources/exh4.jpeg" data-gall="portfolioGallery" class="venobox preview-link" title=" 4 معرض"><i class="bx bx-plus"></i></a>                  
+                </div>
+              </div>
+                            
+            <!-- ------------------------------------------- -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-eve">
+                <img src="assets/img/Resources/event5.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>  فعالية 5 </h4>
+                  <p> الفعاليات </p>
+                  <a href="assets/img/Resources/event5.jpeg" data-gall="portfolioGallery" class="venobox preview-link" title=" 5 فعالية "><i class="bx bx-plus"></i></a>                  
+                </div>
+              </div>
+              
+              <div class="col-lg-4 col-md-6 portfolio-item filter-exh">
+                <img src="assets/img/Resources/exh5.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> معرض 5 </h4>
+                  <p> معارض </p>
+                  <a href="assets/img/Resources/exh5.jpeg" data-gall="portfolioGallery" class="venobox preview-link" title=" 5 معرض"><i class="bx bx-plus"></i></a>                  
+                </div>
+              </div>
+              
+          </div>
+      
+      </div>
+    </section>
+<!-- ======================================================= -->
+  <!-- ======= Clients Section [ شركاء النجاح ] ======= -->
+    <section id="clients" class="services">      
+  
+      <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">
+          <div class="portfolio-details-container">  
+            <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+              <img src="assets/img/Resources/Pages/new/partners1.jpg" class="img-fluid" alt="">                           
+              <img src="assets/img/Resources/Pages/new/partners2.jpg" class="img-fluid" alt="">                           
+              <img src="assets/img/Resources/Pages/new/partners2.jpg" class="img-fluid" alt="">                           
+            </div>              
+          </div>    
+      </section>                                          
+        
+    </section>
+  <!-- End Clients Section -->
+  <!-- ========================================================== -->
+
+  <!-- ======= Customers Section [ عملائنا ] ======= -->
+    <section id="customers" class="services" style="margin-top:0px">
+                
+      <section id="portfolio-details" class="portfolio-details" style="margin-top:-50px; top:-50px">
+        <div class="portfolio-details-container">  
+          <div class="owl-carousel portfolio-details-carousel" style='width:100%; height: 80%'>              
+            <img src="assets/img/Resources/Pages/new/customers.jpg" class="img-fluid" alt="">                           
+          </div>              
+        </div>    
+      </section>                                          
+    
+    </section>
+  <!-- End Clients Section -->
+  <!-- ========================================================== -->
+<!-- Media Section {Auto - Slider} -->
+  <section id="plans" class="portfolio-details" style="margin-top:20px">  
+    <div id="plans" class="section-title">
+      <h2> خطط المعارض  </h2>      
+    </div>
+
+    <div class="portfolio-details-container" style="margin-bottom: 50px; ">  
+      <div class="owl-carousel portfolio-details-carousel" style='width:70%; height: 70%; margin:0px auto'>
+        <img src="assets/img/Resources/Pages/new/plan Eg.jpg" class="img-fluid" alt="">
+        <img src="assets/img/Resources/Pages/new/plan Ku.jpg" class="img-fluid" alt="">                            
+        <img src="assets/img/Resources/Pages/new/plan Em.jpg" class="img-fluid" alt="">
+        <img src="assets/img/Resources/Pages/new/plan Qa.jpg" class="img-fluid" alt="">                            
+        <img src="assets/img/Resources/Pages/new/plan Su.jpg" class="img-fluid" alt="">                                                        
+      </div>        
+
+      <div class="portfolio-description">
+        <h2> <a class ="plans" href="plans.html" target="_blank" > شاهد خطط المعارض بالترتيب الزمني </a> </h2>
+      </div>      
+
+    </div>    
+  </section>
+<!-- =================================================================== -->
+
+  <!-- ======= Counts Section [ احصائيات ] ======= -->
+    <section id="counts" class="counts section-bg" style="margin-top:0px">
+      
+      <div class="section-title">
+        <h2> احصائيات </h2>        
+      </div>
+
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">39</span>
+            <p> عملائنا </p>
+          </div>
+          
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">32</span>
+            <p> شركائنا </p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">521</span>
+            <p> معارضنا </p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">25</span>
+            <p> فريق العمل </p>
+          </div>
+      
+        </div>
+      </div>
+    </section>
+  <!-- End Counts Section -->
+         
+  <!-- ============================================ -->
+  
+<!-- Media Section {Auto - Slider} -->    
+    <section id="media" class="portfolio-details" style="margin-top:20px">    
+      <div id="media" class="section-title">
+        <h2> ميديا  </h2>        
+      </div>
+
+      <div class="portfolio-details-container" style="margin-bottom: 50px; ">  
+        <div class="owl-carousel portfolio-details-carousel" style='width:50%; margin:0px auto'>          
+          <img src="assets/img/Resources/media5.jpeg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/media6.jpeg" class="img-fluid" alt="">
+          <img src="assets/img/Resources/media7.jpeg" class="img-fluid" alt="">                            
+          <img src="assets/img/Resources/media8.jpeg" class="img-fluid" alt="">                            
+          <img src="assets/img/Resources/media1.jpeg" class="img-fluid" alt="">                            
+          <img src="assets/img/Resources/media2.jpeg" class="img-fluid" alt="">                            
+          <img src="assets/img/Resources/media3.jpeg" class="img-fluid" alt="">                            
+          <img src="assets/img/Resources/media4.jpeg" class="img-fluid" alt="">                            
+                                  
+        </div>              
+      </div>    
+    </section>
+<!-- =================================================================== -->
+    
+    <!-- ======= Contact Section [تواصل معنا] ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2> تواصل معنا  </h2>    
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3> العنوان </h3>
+                  <p> فيلا174/ الياسمين1 / التجمع الأول / القاهرة الجديدة / جمهورية مصر العربية </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4" >
+                  <i class="bx bx-envelope"></i>
+                  <h3> البريد الالكتروني  </h3>
+                  <p>info@example.com<br>contact@example.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3> إتصل بنا </h3>
+                  <p> +(20) 111 7777 353  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="الاسم" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="البريد الالكتروني" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="الموضوع" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="نص الرسالة"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading"> جاري التحميل </div>
+                <div class="error-message"></div>
+                <div class="sent-message">  تم ارسال رسالتك , شكرا لك </div>
+              </div>
+              <div class="text-center"><button type="submit"> أرسل </button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>    
+    <!-- End Contact Section -->
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer [ تذييل الصفحة ] ======= -->
+  <footer id="footer" style="direction: rtl; text-align: right;">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row" style="font-weight: bold;">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3 style="text-align: right;"> WS Group </h3>
+            <p>
+              فيلا174/ الياسمين1 / التجمع الأول / <br>
+              القاهرة الجديدة <br>
+              جمهورية مصر العربية <br><br>
+              <strong> الهاتف : </strong> <p style="direction:ltr; text-align: right;">  +(20) 111 7777 353 </p>  <br>
+              <strong> البريد الالكتروني </strong> <p style="direction:ltr; text-align: right;">  info@m.wsgexpo </p> <br> 
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links" style="font-weight: bold;">
+            <h4> الاقسام الرئيسية</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="indexAr.html"> الصفحة الرئيسية </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about"> من نحن </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services"> خدماتنا </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio"> سابقة الأعمال </a></li>          
+              <li><i class="bx bx-chevron-right"></i> <a href="#clients"> شركاء النجاح </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#customers"> عملائنا </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#media"> ميديا </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact"> تواصل معنا </a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4> خدماتنا </h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#ExhibitionsManagementOrganization"> إدارة وتنظيم المعارض </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#IntegratedMarketingServicesSolutions"> خدمات وحلول التسويق المتكاملة  </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#IntegratedMarketingCampaigns"> حملات التسويق الخارجية </a></li>              
+              <li><i class="bx bx-chevron-right"></i> <a href="#EMarketingSolutionsServices"> خدمات وحلول التسويق الالكتروني </a></li>                            
+              <li><i class="bx bx-chevron-right"></i> <a href="#MarketingServicesTVRadio"> خدمات التسويق عبر الراديو والتلفزيون  </a></li>                            
+
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4> اشترك معنا ليصلك كل جديد </h4>            
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://www.facebook.com" class="facebook" title='facebook' target="_blank"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com" class="instagram" title='instagram' target="_blank"><i class="bx bxl-instagram"></i></a>
+        <a href="https://twitter.com" class="twitter" title='twitter' target="_blank"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.linkedin.com" class="linkedin" title='linkedin' target="_blank"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://web.whatsapp.com/" class="" title='whatsapp' target="_blank"><i class="bx bxl-whatsapp"></i></a>        
+      </div>
+      
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span class='copy' style="color:gold">Wall Street Group</span></strong>. All Rights Reserved
+        </div>                
+      </div>
+
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+<!-- =========================================================================== -->
+<!-- =========================================================================== -->
