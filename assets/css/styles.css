@@ -970,6 +970,10 @@ section.active {
   background: #3498DB;
   animation: animate 4s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
+
+/* A] Bar length */
+/* 1- desinging skills */
+
 .bar .progress-line.Photoshop span {
   width: 70%;
 }
@@ -986,6 +990,8 @@ section.active {
   width: 70%;
 }
 
+
+/* 2- frontend skills */
 .bar .progress-line.html span {
   width: 95%;
 }
@@ -995,6 +1001,9 @@ section.active {
 .bar .progress-line.javascript span {
   width: 95%;
 }
+.bar .progress-line.DomBom span {
+  width: 95%;
+}
 .bar .progress-line.jquery span {
   width: 85%;
 }
@@ -1002,7 +1011,7 @@ section.active {
   width: 75%;
 }
 .bar .progress-line.vue span {
-  width: 75%;
+  width: 45%;
 }
 
 .bar .progress-line.python span {
@@ -1011,17 +1020,30 @@ section.active {
 .bar .progress-line.mysql span {
   width: 70%;
 }
+
+/* 3- backtend skills */
 .bar .progress-line.php span {
   width: 75%;
 }
 .bar .progress-line.nodeJs span {
   width: 65%;
 }
-.bar .progress-line.typescript span {
-  width: 55%;
+.bar .progress-line.java span {
+  width: 60%;
 }
+.bar .progress-line.typescript span {
+  width: 50%;
+}
+.bar .progress-line.ES6 span {
+  width: 50%;
+}
+.bar .progress-line.ajax span {
+  width: 50%;
+}
+
+/* 4- Web adminiatration skills */
 .bar .progress-line.github span {
-  width: 65%;
+  width: 70%;
 }
 .bar .progress-line.webHostDomain span {
   width: 70%;
@@ -1029,8 +1051,19 @@ section.active {
 .bar .progress-line.webEditContent span {
   width: 95%;
 }
+
+/* 5- web control skills */
+.bar .progress-line.vscode span {
+  width: 90%;
+}
 .bar .progress-line.CommandLine span {
   width: 45%;
+}
+.bar .progress-line.cmdBash span {
+  width: 55%;
+}
+.bar .progress-line.cmdCmder span {
+  width: 65%;
 }
 
 .bar .progress-line.vba span {
@@ -1067,6 +1100,10 @@ section.active {
   opacity: 0;
   animation: showText2 1s 3s linear forwards;
 }
+
+
+/* B] Bar data */
+/* 1- Desiging skills */
 .progress-line.Photoshop span::after {
   content: "70%";
 }
@@ -1083,6 +1120,7 @@ section.active {
   content: "70%";
 }
 
+/* 2- frontend skills */
 .progress-line.html span::after {
   content: "95%";
 }
@@ -1090,7 +1128,11 @@ section.active {
   content: "90%";
 }
 .progress-line.javascript span::after {
-  content: "95%";
+  content: "80%";
+}
+
+.progress-line.DomBom span::after {
+  content: "90%";
 }
 .progress-line.jquery span::after {
   content: "85%";
@@ -1099,6 +1141,11 @@ section.active {
   content: "75%";
 }
 .progress-line.vue span::after {
+  content: "45%";
+}
+
+/* 3- backend skills */
+.progress-line.php span::after {
   content: "75%";
 }
 .progress-line.python span::after {
@@ -1107,17 +1154,22 @@ section.active {
 .progress-line.mysql span::after {
   content: "70%";
 }
-.progress-line.php span::after {
-  content: "75%";
-}
 .progress-line.nodeJs span::after {
   content: "65%";
 }
 .progress-line.typescript span::after {
   content: "55%";
 }
+.progress-line.ES6 span::after {
+  content: "50%";
+}
+.progress-line.ajax span::after {
+  content: "Studying";
+}
+
+/* 4- Web adminiatration skills */
 .progress-line.github span::after {
-  content: "65%";
+  content: "70%";
 }
 .progress-line.webHostDomain span::after {
   content: "70%";
@@ -1125,8 +1177,17 @@ section.active {
 .progress-line.webEditContent span::after {
   content: "95%";
 }
+.progress-line.vscode span::after {
+  content: "90%";
+}
 .progress-line.CommandLine span::after {
   content: "45%";
+}
+.progress-line.cmdBash span::after {
+  content: "55%";
+}
+.progress-line.cmdCmder span::after {
+  content: "65%";
 }
 .progress-line.vba span::after {
   content: "65%";
@@ -1134,6 +1195,7 @@ section.active {
 .progress-line.visualBasic span::after {
   content: "75%";
 }
+/* ----------------------------------------------------- */
 
 .services-section .service-text {
   margin-bottom: 30px;
