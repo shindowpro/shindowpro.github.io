@@ -971,8 +971,8 @@ section.active {
   animation: animate 4s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
-/* A] Bar length */
-/* 1- desinging skills */
+/* A] Bar length 
+1- desinging skills */
 
 .bar .progress-line.Photoshop span {
   width: 70%;
@@ -1102,8 +1102,8 @@ section.active {
 }
 
 
-/* B] Bar data */
-/* 1- Desiging skills */
+/* B] Bar data 
+ 1- Desiging skills */
 .progress-line.Photoshop span::after {
   content: "70%";
 }

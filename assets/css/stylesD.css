@@ -926,8 +926,8 @@ section.active {
 }
 
 
-/* A] Bar length */
-/* 1- desinging skills */
+/* A] Bar length 
+ 1- desinging skills */
 
 .bar .progress-line.Photoshop span {
   width: 70%;
@@ -1057,8 +1057,8 @@ section.active {
 }
 
 
-/* B] Bar data */
-/* 1- Desiging skills */
+/* B] Bar data 
+ 1- Desiging skills */
 .progress-line.Photoshop span::after {
   content: "70%";
 }
