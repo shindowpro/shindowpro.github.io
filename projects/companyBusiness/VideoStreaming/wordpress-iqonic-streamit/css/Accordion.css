@@ -1,0 +1,140 @@
+/*---------------------------------------------------------------------
+                      FAQ
+    -----------------------------------------------------------------------*/
+
+.iq-accordion {
+    z-index: 9;
+    position: relative;
+}
+
+.iq-accordion .iq-accordion-title {
+    border-radius: 0.25em;
+    position: relative;
+    padding: 1.875em 4.6875em 1.875em 1.875em;
+    line-height: normal;
+    cursor: pointer;
+    display: flex;
+    text-align: left;
+    color: var(--white-color);
+    font-weight: 600;
+    text-decoration: none;
+    align-items: center;
+}
+
+.iq-accordion .iq-accordion-title .accordion-title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.iq-accordion .iq-accordion-details {
+    display: none;
+    text-align: left;
+    padding: 1.875em 0 0;
+}
+
+
+.iq-accordion .iq-accordion-details p {
+    margin-bottom: 0;
+}
+
+.iq-accordion .iq-accordion-block {
+    margin-bottom: 1.875em;
+    padding: 0;
+    overflow: hidden;
+    background: var(--iq-bg1);
+    border-radius: 0.3125em;
+}
+
+.iq-accordion .iq-accordion-block:last-child {
+    margin-bottom: 0;
+}
+
+.iq-accordion .iq-accordion-block .iq-accordion-title i {
+    color: var(--primary-color);
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.iq-accordion .iq-accordion-block .iq-accordion-title .iq-icon-right {
+    position: absolute;
+    right: 1.875em;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    background: var(--iq-primary);
+    height: 2.1875em;
+    width: 2.1875em;
+}
+.iq-accordion .iq-accordion-block .iq-accordion-title .iq-icon-left{
+    height: 2.1875em;
+    width: 2.1875em;
+    background: var(--iq-primary);
+    text-align: center;
+    line-height: 1.75em;
+}
+.iq-accordion .iq-accordion-block .iq-accordion-title .iq-icon-right>i {
+    line-height: 2.1875em;
+}
+
+.iq-accordion .iq-accordion-block .iq-accordion-title i::before {
+    vertical-align: middle;
+}
+
+.iq-accordion .iq-accordion-block .iq-accordion-title i.active {
+    display: none;
+}
+
+.iq-accordion .iq-accordion-block.iq-active .iq-accordion-title i.active {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.iq-accordion .iq-accordion-block.iq-active .iq-accordion-title i.inactive {
+    display: none;
+}
+
+.iq-accordion .iq-accordion-block .iq-accordion-title .iq-icon-left {
+    margin-right: 2.8125em;
+    line-height: 2.0625em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.iq-accordion-shadow .iq-accordion-block.iq-active {
+    -webkit-box-shadow: 0.3044em 2.1661em 1.875em 0px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0.3044em 2.1661em 1.875em 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0.3044em 2.1661em 1.875em 0px rgba(0, 0, 0, 0.06);
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.iq-accordion .iq-accordion-details {
+    padding: 1.875em 1.875em;
+    border: 0.0625em solid;
+    border-width: 0.0625em 0px 0px 0;
+    border-image-source: linear-gradient(to left, rgba(209, 208, 207, 0), rgba(209, 208, 207, 0.6), rgba(209, 208, 207, 0));
+    border-image-slice: 1;
+}
+
+@media(max-width:767px){
+    .iq-accordion .iq-accordion-title .accordion-title{
+        font-size: 1.333em;
+    }
+}
+/* For RLT Layout css */
+.rtl .iq-accordion .iq-accordion-details {
+    text-align: right;
+}
+.rtl .iq-accordion .iq-accordion-block .iq-accordion-title .iq-icon-right{
+    left: 1.875em;
+    right: unset ;
+}
+.rtl .iq-accordion .iq-accordion-title {
+    padding: 1.875em 1.875em 1.875em 4.6875em ;
+}
+.rtl .iq-accordion .iq-accordion-title .accordion-title{
+    direction: ltr;
+}

@@ -1,0 +1,7 @@
+.iq-show .search-box, header .iq-usermenu-dropdown .iq-show .iq-sub-dropdown {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    z-index: 99;
+  }
