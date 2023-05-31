@@ -1,0 +1,60 @@
+.container {
+    perspective: 1000px;
+}
+
+.container * {
+    border-radius: 50%;    
+    width: 50px;
+    height: 50px;
+    margin: 150px auto;
+    text-align: center;    
+    /* animation: rotateX 4s infinite;      */
+    opacity: 0;
+}
+
+.container > .ring0 {
+    border: 3px solid gold;    
+    margin-bottom: -100px;
+    animation: rotateY 1s infinite 2s;
+}
+
+.container > .ring1 {
+    border: 3px solid blue;    
+    animation: rotateX 2s infinite 1s;
+}
+
+.container > .ring2 {
+    border: 3px solid red;
+    margin-top: -103px;
+    animation: rotateY 2s infinite 1.5s;        
+}
+
+.container > .ring3 {
+    border: 3px solid green;
+    margin-top: -106px;
+    animation: rotateX 3s infinite 2s;        
+}
+
+.container > .ring4 {
+    border: 3px solid brown;
+    margin-top: -106px;    
+    animation: rotateY 1s infinite 0s;        
+}
+
+.container > .ring5 {
+    border: 3px solid orange;
+    margin-top: -106px;
+    animation: rotateX 2s infinite 0s;        
+}
+
+@keyframes rotateX {
+    0% { transform: rotateX(0deg) translateZ(0px); background-color:red; opacity: .3;}
+    50% { transform: rotateX(180deg) translateZ(150px); background-color:blue; opacity: 1;}
+    100% { transform: rotateX(360deg) translateZ(0px); background-color:green; opacity: .3;}
+}
+
+@keyframes rotateY {
+    0% { transform: rotateY(0deg) translateZ(0px); background-color:green; opacity: .3; }
+    50% { transform: rotateY(180deg) translateZ(150px); background-color:red; opacity: 1;}
+    100% { transform: rotateY(360deg) translateZ(0px); background-color:blue; opacity: .3;}
+}
