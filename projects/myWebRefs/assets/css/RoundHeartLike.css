@@ -1,0 +1,6 @@
+#like-button{
+    color:#888;font-size:1.5em;font-family:"Heebo",sans-serif;background-color:transparent;border:.1em solid;border-radius:1em;padding:.333em 1em .25em;line-height:1.2em;box-shadow:0 .25em 1em -0.25em;cursor:pointer;transition:color 150ms ease-in-out,background-color 150ms ease-in-out,transform 150ms ease-in-out;outline:0;margin:5em 0}
+    #like-button:hover{color:#cd5c5c}
+    #like-button:active{transform:scale(0.95)}#like-button.selected{color:#fff;background-color:#cd5c5c;border-color:#cd5c5c}
+    #like-button .heart-icon{display:inline-block;fill:currentColor;width:.8em;height:.8em;margin-right:.2em}
+    body{text-align:center}

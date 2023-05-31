@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.radio-wave-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+}
+.radio-wave-container.content {
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+$color: #000;
+
+.radio-source {
+  position: absolute;
+  right: 2rem;
+  width: 2rem;
+  fill: $color;
+}
+.radio-wave {
+  position: absolute;
+  right: 2rem;
+
+  stroke-linecap: round;
+  stroke-width: 16;
+  stroke: $color;
+  fill: none;
+
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  transform: scale(0.2) translateX(150%);
+  opacity: 0;
+
+  width: 10rem;
+  height: 10rem;
+}
+
+@mixin wave-animation () {
+  0% {
+    transform: scale(0.2) translateX(150%);
+    opacity: 0.2;
+  }
+  10% {
+    transform: scale(0.3) translateX(50%);
+    opacity: 0.3;
+  }
+  20% {
+    transform: scale(0.4) translateX(-40%);
+    opacity: 0.4;
+  }
+  30% {
+    transform: scale(0.5) translateX(-120%);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(0.6) translateX(-190%);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(0.7) translateX(-250%);
+    opacity: 0.7;
+  }
+  60% {
+    transform: scale(0.8) translateX(-300%);
+    opacity: 0.8;
+  }
+  70% {
+    transform: scale(0.9) translateX(-350%);
+    opacity: 0.9;
+  }
+  80% {
+    transform: scale(1) translateX(-400%);
+  }
+  90% {
+    transform: scale(1.1) translateX(-450%);
+  }
+  100% {
+    transform: scale(1.2) translateX(-500%);
+  }
+}
+
+$waves: (
+  (1, 0),
+  (2, 0.2),
+  (3, 0.4),
+  (4, 0.6),
+  (5, 0.8),
+  (6, 1)
+);
+
+@each $w in $waves {
+  .radio-wave-#{nth($w, 1)} {
+    animation-name: wave-#{nth($w, 1)};
+    animation-delay: #{nth($w, 2)}s;
+  }
+  @keyframes wave-#{nth($w, 1)} {
+    @include wave-animation();
+  }
+}

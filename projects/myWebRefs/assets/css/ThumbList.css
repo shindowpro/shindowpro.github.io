@@ -1,0 +1,33 @@
+body {margin:0; font-family: sans-serif; }
+
+#list, #thumbnail {display: none}
+
+label {
+	background: orange; 
+	padding: 5px; 
+	margin: 20px 0 0 20px;
+	float: left;
+	display: block;
+	font-size: .8em;
+	}
+.objwrapper, .object {
+	clear: left;
+	}
+
+.object {
+	margin-top: 20px;
+	margin-left: 20px;
+	height: 100px;
+	width: 300px;
+	padding: 10px;
+	box-sizing: border-box;
+	background: #222;
+	color: white;
+	float: left;
+  transition: .6s
+	}
+
+#thumbnail:checked ~ .objwrapper .object {
+	clear: none;
+	width: 100px;
+	}

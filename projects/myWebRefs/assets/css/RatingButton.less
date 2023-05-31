@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+*,
+*:before,
+*:after {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 95vh;
+  background: #1A2A3A;  
+  color: #FFF; 
+}
+
+svg.one {
+  .heart  {
+    fill: transparent;
+    stroke: #a00;
+    stroke-width: 6;
+    transition: all .6s ease-out;
+  }
+  .heartEX {
+    fill: none;
+    stroke: transparent;
+    transform-box: border-box;
+    transform-origin:50% 50%;
+    stroke-width: 12px;
+    transform: scale(.5);
+    transition:none;
+
+  }
+  &.on {
+    .heartEX {
+     transform: scale(2);
+      opacity:0;
+      stroke: #c00;
+      transform-box: border-box;
+    transform-origin:50% 50%;
+      transition: transform, stroke, opacity;
+      transition-duration: .6s, .01s, .4s;
+      transition-delay: 0s, 0s, .2s;
+      
+    }
+    .heart  {
+      fill: #a00;
+    }
+  }
+}
+
+svg.two {
+
+  .heart  {
+    fill: transparent;
+    stroke: #a00;
+    stroke-width:6;
+  }
+  .strahlen {
+    stroke:#f00;
+    stroke-width:22;
+    stroke-dasharray:20 78;
+    stroke-dashoffset:95;
+     opacity:0;
+  }
+}
+svg.two.on {
+  .strahlen {
+    animation: twoStrahlen .6s ease ;
+  }
+  .heart  {
+    fill: #a00;
+    stroke: #a00;
+    transition: all .3s ease;
+  }
+}
+@keyframes twoStrahlen {
+  0% {
+    opacity:1;
+  }
+  99.9% {
+    stroke-dashoffset:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+svg.three {
+  .heart  {
+    fill: transparent;
+    stroke: #a00;
+    stroke-width: 6;
+    transition: all .6s ease-out;
+    transform-box: border-box;
+    transform-origin:50% 50%;
+  }
+  .heartEX {
+    fill: #a00;
+    stroke: transparent;
+    transform-box: border-box;
+    transform-origin:50% 50%;
+    stroke-width: 12px;
+    transform: scale(0);
+    transition:none;
+
+  }
+  .points {
+    stroke:transparent;
+    fill:none;
+    transform-box: border-box;
+    transform-origin:50% 50%;
+    stroke-width:6;
+    stroke-dasharray: 20 20;
+    xstroke: #c00;
+    transform: scale(1.8);
+    opacity:1;
+    stroke-linecap:round;
+  }
+  &.on {
+    .points {
+      stroke: #c00a;
+      stroke-dasharray: 0 40;
+      opacity:0;
+      stroke-width:1;
+      transition: stroke-dasharray, opacity, stroke, stroke-width;
+      transition-duration: .5s, .05s, .3s , .2s;
+      transition-delay:    .4s, .7s, .4s, .7s;
+    }
+    .heartEX {
+     transform: scale(1.8);
+      opacity:0;
+      fill: transparent;
+      stroke: #c00;
+      stroke-width:0;
+      transition: transform, fill, stroke-width, opacity;
+      transition-duration: .6s, .2s, .3s, .4s;
+      transition-delay:    .0s, .4s, .5s, .4s;
+    }
+    .heart  {
+      transform: scale(.98);
+      fill: #a00;
+    }
+  }
+}
+
+svg#star {
+  stroke:#ff0;
+  fill:transparent;
+    stroke-width:3;
+  .star {
+    fill:transparent;
+  }
+  .starEX {
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    transform-box: border-box;
+    fill:#ff0;
+    opacity:1;
+    transition:none;
+  }
+}
+svg#star.on {
+  .star {
+    fill:#ff0;
+    transition: fill .4s ease .2s;
+  }
+  .starEX {
+    transform: scale(2);
+    opacity:0;
+    transition: transform, opacity;
+      transition-duration: .6s, .4s;
+      transition-delay: 0s, .2s;
+  }
+}
+
+svg {
+  overflow:visible;
+  width:50px;
+}
+
+
+
+
+
+
+
+
+
+.inhalt {
+xborder: 1px dotted #fff;
+  padding: 30px;
+  svg {
+    margin:0px 10px;
+  }
+}
+
+.dwf, .share {
+  position:fixed;
+  bottom:4px;
+  right:10px;
+  background-color:#0003;
+  padding:3px;
+  border-radius:3px;
+  .btn {
+    color:#fff;
+    text-decoration:none
+  }
+}
+.share {
+  right:auto;
+  left:10px;
+  border-radius:50%;
+  padding:5px;
+  .twitter {
+    width: 20px;
+    fill:#fff;
+    stroke:none;
+    overflow:visible;
+  }
+}
+

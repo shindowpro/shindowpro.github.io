@@ -1,0 +1,3689 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> My Programing References </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="" rel="icon">
+  <link href="" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Waving Effect  -->
+  <link href="assets/css/WaterWaving.css" rel="stylesheet">  
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+
+    /*-------------------------------------------- General ---------------------------------------------------*/
+    body {
+      font-family: "Open Sans", sans-serif;
+      color: black;
+      background-color: #3879cf;
+    }
+
+    a {
+      color: black;
+      transition: 1s all ease-in-out;
+    }
+
+    .inner-page .container .list ul li a {
+      color: #a1bee6;
+      transition: .7s all ease-in-out;
+    }
+
+    a:hover {  
+      color: gold;
+      text-decoration: none;
+      font-weight: bold;
+      transform: scale(1.1);
+    }
+
+    #title {
+      text-decoration: underline;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Roboto", sans-serif;
+    }
+
+    /*-------------------------------------------------------- Preloader ---------------------------*/
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    #preloader:before {
+      content: "";
+      position: fixed;
+      top: calc(50% - 30px);
+      left: calc(50% - 30px);
+      border: 6px solid #106eea;
+      border-top-color: #e2eefd;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      -webkit-animation: animate-preloader 1s linear infinite;
+      animation: animate-preloader 1s linear infinite;
+    }
+
+    @-webkit-keyframes animate-preloader {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes animate-preloader {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /*--------------------------------------------------------- Back to top button ----------------------------------------------*/
+    .back-to-top {
+      position: fixed;
+      display: none;
+      right: 15px;
+      bottom: 15px;
+      z-index: 99999;
+    }
+
+    .back-to-top i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      width: 40px;
+      height: 40px;
+      border-radius: 4px;
+      background: #106eea;
+      color: #fff;
+      transition: all 0.4s;
+    }
+
+    .back-to-top i:hover {
+      background: #3284f1;
+      color: #fff;
+    }
+
+    /*------------------------------------------------- Disable aos animation delay on mobile devices -------------------------------*/
+    @media screen and (max-width: 768px) {
+      [data-aos-delay] {
+        transition-delay: 0 !important;
+      }
+    }
+
+    /*--------------------------------------------------- Top Bar --------------------------------------------------------*/
+    #topbar {
+      background: #106eea;
+      height: 40px;
+      font-size: 14px;
+      transition: all 0.5s;
+      color: #fff;
+    }
+
+    #topbar.topbar-scrolled {
+      top: -40px;
+    }
+
+    #topbar .contact-info a {
+      line-height: 1;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    #topbar .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    #topbar .contact-info i {
+      padding-right: 4px;
+      margin-left: 15px;
+    }
+
+    #topbar .contact-info i:first-child {
+      margin-left: 0;
+    }
+
+    #topbar .social-links a {
+      color: rgba(255, 255, 255, 0.6);
+      padding-left: 15px;
+      display: inline-block;
+      line-height: 1px;
+      transition: 0.3s;
+    }
+
+    #topbar .social-links a:hover {
+      color: #fff;
+    }
+
+    /*---------------------------------------------------- Header ---------------------------------------------------------*/
+    #header {
+      background: #fff;
+      transition: all 0.5s;
+      z-index: 997;
+      padding: 25px 0;
+      top: 40px;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #header.header-scrolled {
+      top: 0;
+      padding: 15px;
+    }
+
+    #header .logo {
+      font-size: 32px;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    #header .logo a {
+      color: #222222;
+    }
+
+    #header .logo a span {
+      color: #106eea;
+    }
+
+    #header .logo img {
+      max-height: 40px;
+    }
+
+    @media (max-width: 992px) {
+      #header {
+        padding: 15px;
+        top: 0;
+      }
+      #header .logo {
+        font-size: 28px;
+      }
+    }
+
+    /*-------------------------------------------------------------- Navigation Menu -----------------------------------------------------*/
+    /* Desktop Navigation */
+    .nav-menu{
+      margin-right: 50px;
+      position: relative;
+    }
+
+
+    .nav-menu ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nav-menu > ul {
+      display: flex;
+    }
+
+    .nav-menu > ul > li {
+      position: relative;
+      white-space: nowrap;
+      padding: 10px 0 10px 28px;
+    }
+
+    .nav-menu a {
+      display: block;
+      position: relative;
+      color: #222222;
+      transition: 0.3s;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 0 3px;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .nav-menu > ul > li > a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: #106eea;
+      visibility: hidden;
+      width: 0px;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    .nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
+      visibility: visible;
+      width: 100%;
+    }
+
+    .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+      color: #106eea;
+      font-weight: bold;
+    }
+
+    .nav-menu .drop-down ul {
+      display: block;
+      position: absolute;
+      left: 26px;
+      top: calc(100% + 30px);
+      z-index: 99;
+      opacity: 0;
+      visibility: hidden;
+      padding: 10px 0;
+      background: #fff;
+      box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+      transition: 0.3s;
+    }
+
+    .nav-menu .drop-down:hover > ul {
+      opacity: 1;
+      top: 100%;
+      visibility: visible;
+    }
+
+    .nav-menu .drop-down li {
+      min-width: 180px;
+      position: relative;
+    }
+
+    .nav-menu .drop-down ul a {
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: none;
+      color: #062b5b;
+      transition: all .4s ease-in-out ;
+    }
+
+    .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
+      color: #106eea;
+      font-weight: bold;
+    }
+
+    .nav-menu .drop-down > a:after {
+      content: "\ea99";
+      font-family: IcoFont;
+      padding-left: 5px;
+    }
+
+    .nav-menu .drop-down .drop-down ul {
+      top: 0;
+      /* left: calc(100% - 30px); */
+      left: calc(100% - 30px);
+    }
+
+    .nav-menu .drop-down .drop-down:hover > ul {
+      opacity: 1;
+      top: 0;
+      left: 100%;
+      margin-right: 50px;
+    }
+
+    .nav-menu .drop-down .drop-down > a {
+      padding-right: 35px;
+    }
+
+    .nav-menu .drop-down .drop-down > a:after {
+      content: "\eaa0";
+      font-family: IcoFont;
+      position: absolute;
+      right: 15px;
+    }
+
+    @media (max-width: 1366px) {
+      .nav-menu .drop-down .drop-down ul {
+        left: -90%;
+      }
+      .nav-menu .drop-down .drop-down:hover > ul {
+        left: -100%;
+      }
+      .nav-menu .drop-down .drop-down > a:after {
+        content: "\ea9d";
+      }
+    }
+
+    /* Mobile Navigation */
+    .mobile-nav-toggle {
+      position: fixed;
+      right: 15px;
+      top: 15px;
+      z-index: 9998;
+      border: 0;
+      background: none;
+      font-size: 24px;
+      transition: all 0.4s;
+      outline: none !important;
+      line-height: 1;
+      cursor: pointer;
+      text-align: right;
+    }
+
+    .mobile-nav-toggle i {
+      color: #222222;
+    }
+
+    .mobile-nav {
+      position: fixed;
+      top: 55px;
+      right: 15px;
+      bottom: 15px;
+      left: 15px;
+      z-index: 9999;
+      overflow-y: auto;
+      background: #fff;
+      transition: ease-in-out 0.2s;
+      opacity: 0;
+      visibility: hidden;
+      border-radius: 10px;
+      padding: 10px 0;
+    }
+
+    .mobile-nav * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .mobile-nav a {
+      display: block;
+      position: relative;
+      color: #222222;
+      padding: 10px 20px;
+      font-weight: 500;
+      outline: none;
+    }
+
+    .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
+      color: #106eea;
+      text-decoration: none;
+    }
+
+    .mobile-nav .drop-down > a:after {
+      content: "\ea99";
+      font-family: IcoFont;
+      padding-left: 10px;
+      position: absolute;
+      right: 15px;
+    }
+
+    .mobile-nav .active.drop-down > a:after {
+      content: "\eaa1";
+    }
+
+    .mobile-nav .drop-down > a {
+      padding-right: 35px;
+    }
+
+    .mobile-nav .drop-down ul {
+      display: none;
+      overflow: hidden;
+    }
+
+    .mobile-nav .drop-down li {
+      padding-left: 20px;
+    }
+
+    .mobile-nav-overly {
+      width: 100%;
+      height: 100%;
+      z-index: 9997;
+      top: 0;
+      left: 0;
+      position: fixed;
+      background: rgba(9, 9, 9, 0.6);
+      overflow: hidden;
+      display: none;
+      transition: ease-in-out 0.2s;
+    }
+
+    .mobile-nav-active {
+      overflow: hidden;
+    }
+
+    .mobile-nav-active .mobile-nav {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .mobile-nav-active .mobile-nav-toggle i {
+      color: #fff;
+    }
+
+    /*----------------------------------------------------------- Hero Section --------------------------------------------------------*/
+    #hero {
+      width: 100%;
+      height: 75vh;
+      background: url("../img/hero-bg.jpg") top left;
+      background-size: cover;
+      position: relative;
+    }
+
+    #hero:before {
+      content: "";
+      background: rgba(255, 255, 255, 0.6);
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    #hero .container {
+      position: relative;
+      padding-top: 132px;
+    }
+
+    @media (max-width: 992px) {
+      #hero .container {
+        padding-top: 58px;
+      }
+    }
+
+    #hero h1 {
+      margin: 0;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 56px;
+      color: #222222;
+      font-family: "Poppins", sans-serif;
+    }
+
+    #hero h1 span {
+      color: #106eea;
+    }
+
+    #hero h2 {
+      color: #555555;
+      margin: 5px 0 30px 0;
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    #hero .btn-get-started {
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 10px 28px;
+      border-radius: 4px;
+      transition: 0.5s;
+      color: #fff;
+      background: #106eea;
+    }
+
+    #hero .btn-get-started:hover {
+      background: #247cf0;
+    }
+
+    #hero .btn-watch-video {
+      font-size: 16px;
+      display: inline-block;
+      padding: 10px 25px 8px 40px;
+      transition: 0.5s;
+      margin-left: 25px;
+      color: #222222;
+      position: relative;
+      font-weight: 600;
+    }
+
+    #hero .btn-watch-video i {
+      color: #106eea;
+      font-size: 32px;
+      position: absolute;
+      left: 0;
+      top: 7px;
+      transition: 0.3s;
+    }
+
+    #hero .btn-watch-video:hover {
+      color: #106eea;
+    }
+
+    #hero .btn-watch-video:hover i {
+      color: #3b8af2;
+    }
+
+    @media (min-width: 1024px) {
+      #hero {
+        background-attachment: fixed;
+      }
+    }
+
+    @media (max-width: 768px) {
+      #hero {
+        height: 100vh;
+      }
+      #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+      }
+      #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+      }
+      #hero .btn-get-started, #hero .btn-watch-video {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-height: 500px) {
+      #hero {
+        height: 120vh;
+      }
+    }
+
+
+    @media (min-width: 1024px) {
+      #hero p {
+        width: 60%;
+      }
+      #hero .carousel-control-prev, #hero .carousel-control-next {
+        width: 5%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      #hero .carousel-container {
+        height: 90vh;
+      }
+      #hero h2 {
+        font-size: 28px;
+      }
+    }
+
+    .hero-waves {
+      display: block;
+      width: 100%;
+      height: 60px;
+      position: relative;
+    }
+
+    .wave1 {
+      -webkit-animation: move-forever1 10s linear infinite;
+      animation: move-forever1 10s linear infinite;
+      -webkit-animation-delay: -2s;
+      animation-delay: -2s;
+    }
+
+    .wave2  {
+      -webkit-animation: move-forever2 8s linear infinite;
+      animation: move-forever2 8s linear infinite;
+      -webkit-animation-delay: -2s;
+      animation-delay: -2s;
+    }
+
+    .wave3  {
+      -webkit-animation: move-forever3 6s linear infinite;
+      animation: move-forever3 6s linear infinite;
+      -webkit-animation-delay: -2s;
+      animation-delay: -2s;
+    }
+
+    @-webkit-keyframes move-forever1 {
+      0% {
+        transform: translate(85px, 0%);
+      }
+      100% {
+        transform: translate(-90px, 0%);
+      }
+    }
+
+    @keyframes move-forever1 {
+      0% {
+        transform: translate(85px, 0%);
+      }
+      100% {
+        transform: translate(-90px, 0%);
+      }
+    }
+
+    @-webkit-keyframes move-forever2 {
+      0% {
+        transform: translate(-90px, 0%);
+      }
+      100% {
+        transform: translate(85px, 0%);
+      }
+    }
+
+    @keyframes move-forever2 {
+      0% {
+        transform: translate(-90px, 0%);
+      }
+      100% {
+        transform: translate(85px, 0%);
+      }
+    }
+
+    @-webkit-keyframes move-forever3 {
+      0% {
+        transform: translate(-90px, 0%);
+      }
+      100% {
+        transform: translate(85px, 0%);
+      }
+    }
+
+    @keyframes move-forever3 {
+      0% {
+        transform: translate(-90px, 0%);
+      }
+      100% {
+        transform: translate(85px, 0%);
+      }
+    }
+
+
+    /*--------------------------------------------- Side bar ----------------------------------------------------/*
+    /* Side Slider */
+    /* The side navigation menu */
+    .sidenav {
+      /* margin-top:-300px; */
+      /* top:300; */
+      border-radius:10px;
+      border:darkblue;
+      box-shadow: 3px 3px 4px cyan;
+      height: 100%; /* 100% Full-height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Stay on top */
+      top: 10; /* Stay at the top */
+      left: 0;
+      background-color:  rgba(62, 185, 241, 0.9); /* light blue*/
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 60px; /* Place content 60px from the top */
+      transition: 1s; /* 0.5 second transition effect to slide in the sidenav */
+      
+    }
+
+    /* The navigation menu links */
+    .sidenav a {
+      padding: 8px 8px 8px 32px;  
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      color: darkblue;
+      display: block;
+      transition: 0.3s;
+      margin: 5px auto;
+      margin-left: -23px;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    .openBtn{
+      margin-top:-150px;
+      border:1px solid darkblue;
+      background-color: rgba(62, 185, 241, 0.9);
+      color:#fff;
+      border-radius: 100%;
+      position: fixed;  
+      transition: 1s ease-in-out ;
+    }
+
+    .openBtn:hover {
+      background-color: darkblue;
+      color:#fff;
+      border: 3px solid rgba(62, 185, 241, 0.9);
+      box-shadow: 2px 2px 1px cyan;
+    }
+
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+      transition: margin-left .5s;
+      padding: 20px;
+    }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+
+    /*------------------------------------------------ Sections General ----------------------------------------------*/
+    section {
+      padding: 60px 0;
+      overflow: hidden;
+    }
+
+    .section-bg {
+      background-color: #f6f9fe;
+    }
+
+    .section-title {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    .section-title h2 {
+      font-size: 13px;
+      letter-spacing: 1px;
+      font-weight: 700;
+      padding: 8px 20px;
+      margin: 0;
+      background: #e7f1fd;
+      color: #106eea;
+      display: inline-block;
+      text-transform: uppercase;
+      border-radius: 50px;
+    }
+
+    .section-title h3 {
+      margin: 15px 0 0 0;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .section-title h3 span {
+      /* color: #106eea; */
+      color: darkblue;
+    }
+
+    .section-title p {
+      margin: 15px auto 0 auto;
+      font-weight: 600;
+    }
+
+    @media (min-width: 1024px) {
+      .section-title p {
+        width: 50%;
+      }
+    }
+
+    /*--------------------------------------------------- Breadcrumbs ---------------------------------------------------------*/
+    .breadcrumbs {
+      padding: 20px 0;
+      background-color: #f1f6fe;
+      min-height: 40px;
+      margin-top: 134px;
+    }
+
+    @media (max-width: 992px) {
+      .breadcrumbs {
+        margin-top: 58px;
+      }
+    }
+
+    .breadcrumbs h2 {
+      font-size: 24px;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    @media (max-width: 992px) {
+      .breadcrumbs h2 {
+        margin: 0 0 10px 0;
+      }
+    }
+
+    .breadcrumbs ol {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .breadcrumbs ol li + li {
+      padding-left: 10px;
+    }
+
+    .breadcrumbs ol li + li::before {
+      display: inline-block;
+      padding-right: 10px;
+      color: #6c757d;
+      content: "/";
+    }
+
+    @media (max-width: 768px) {
+      .breadcrumbs .d-flex {
+        display: block !important;
+      }
+      .breadcrumbs ol {
+        display: block;
+      }
+      .breadcrumbs ol li {
+        display: inline-block;
+      }
+    }
+
+    /*-------------------------------------------------- Featured Services -------------------------------------------------------*/
+
+    .featured-services .container .row div {
+      margin-bottom: 20px; 
+      width: 300px;
+    }
+
+    .featured-services .icon-box {
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+      transition: all 0.3s ease-in-out;
+      border-radius: 8px;
+      z-index: 1;
+    }
+
+    .featured-services .icon-box:hover {
+      box-shadow: 0 0 29px 0 gold;
+    }
+
+    .featured-services .icon-box::before {
+      content: '';
+      position: absolute;
+      background: #cbe0fb;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      top: 100%;
+      transition: all 0.3s;
+      z-index: -1;
+    }
+
+    .featured-services .icon-box:hover::before {
+      background: #106eea;
+      top: 0;
+      border-radius: 0px;
+    }
+
+    .featured-services .icon {
+      margin-bottom: 15px;
+    }
+
+    .featured-services .icon i {
+      font-size: 48px;
+      line-height: 1;
+      color: #106eea;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .featured-services .title {
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .featured-services .title a {
+      color: #111;
+    }
+
+    .featured-services .description {
+      font-size: 15px;
+      line-height: 28px;
+      margin-bottom: 0;
+    }
+
+    .featured-services .icon-box:hover .title a, .featured-services .icon-box:hover .description {
+      color: #fff;
+    }
+
+    .featured-services .icon-box:hover .icon i {
+      color: #fff;
+    }
+
+    /*---------------------------------------------------- About ----------------------------------------------------*/
+    .about .content h3 {
+      font-weight: 600;
+      font-size: 26px;
+    }
+
+    .about .content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .about .content ul li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 35px;
+    }
+
+    .about .content ul li:first-child {
+      margin-top: 35px;
+    }
+
+    .about .content ul i {
+      background: #fff;
+      box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
+      font-size: 24px;
+      padding: 20px;
+      margin-right: 15px;
+      color: #106eea;
+      border-radius: 50px;
+    }
+
+    .about .content ul h5 {
+      font-size: 18px;
+      color: #555555;
+    }
+
+    .about .content ul p {
+      font-size: 15px;
+    }
+
+    .about .content p:last-child {
+      margin-bottom: 0;
+    }
+
+    /*------------------------------------------- Skills -----------------------------------------------------*/
+    .skills .progress {
+      height: 50px;
+      display: block;
+      background: none;
+    }
+
+    .skills .progress .skill {
+      padding: 10px 0;
+      margin: 0 0 6px 0;
+      text-transform: uppercase;
+      display: block;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      color: #222222;
+    }
+
+    .skills .progress .skill .val {
+      float: right;
+      font-style: normal;
+    }
+
+    .skills .progress-bar-wrap {
+      background: #e2eefd;
+    }
+
+    .skills .progress-bar {
+      width: 1px;
+      height: 10px;
+      transition: .9s;
+      /* background-color: #106eea; */
+      background-color: gold;
+    }
+
+    /*---------------------------------------------- Counts ---------------------------------------------------*/
+    .counts {
+      padding: 70px 0 60px;
+    }
+
+    .counts .count-box {
+      padding: 30px 30px 25px 30px;
+      width: 100%;
+      position: relative;
+      text-align: center;
+      background: #f1f6fe;
+    }
+
+    .counts .count-box i {
+      position: absolute;
+      top: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      background: #106eea;
+      padding: 12px;
+      color: #fff;
+      border-radius: 50px;
+      border: 5px solid #fff;
+    }
+
+    .counts .count-box span {
+      font-size: 36px;
+      display: block;
+      font-weight: 600;
+      color: #062b5b;
+    }
+
+    .counts .count-box p {
+      padding: 0;
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+    }
+
+    /*---------------------------------------------- Clients -----------------------------------------------------*/
+    .clients {
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    .clients img {
+      max-width: 45%;
+      transition: all 0.4s ease-in-out;
+      display: inline-block;
+      padding: 15px 0;
+    }
+
+    .clients img:hover {
+      transform: scale(1.15);
+    }
+
+    @media (max-width: 768px) {
+      .clients img {
+        max-width: 40%;
+      }
+    }
+
+    /*--------------------------------------------------- Services ---------------------------------------------------*/
+    .services .icon-box {
+      text-align: center;
+      border: 1px solid #e2eefd;
+      padding: 80px 20px;
+      transition: all ease-in-out 0.3s;
+      background: #fff;
+    }
+
+    .services .icon-box .icon {
+      margin: 0 auto;
+      width: 64px;
+      height: 64px;
+      background: #f1f6fe;
+      border-radius: 4px;
+      border: 1px solid #deebfd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      transition: ease-in-out 0.3s;
+    }
+
+    .services .icon-box .icon i {
+      color: #3b8af2;
+      font-size: 28px;
+      transition: ease-in-out 0.3s;
+    }
+
+    .services .icon-box h4 {
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    .services .icon-box h4 a {
+      color: #222222;
+      transition: ease-in-out 0.3s;
+    }
+
+    .services .icon-box p {
+      line-height: 24px;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    .services .icon-box:hover {
+      border-color: #fff;
+      box-shadow: 0px 0 25px 0 rgba(16, 110, 234, 0.1);
+    }
+
+    .services .icon-box:hover h4 a, .services .icon-box:hover .icon i {
+      color: #106eea;
+    }
+
+    .services .icon-box:hover .icon {
+      border-color: #106eea;
+      box-shadow: 2px 2px 30px gold ; 
+    }
+
+    /*-------------------------------------------------- Testimonials ----------------------------------------------------*/
+    .testimonials {
+      padding: 80px 0;
+      background: url("../img/testimonials-bg.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+    }
+
+    .testimonials::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .testimonials .section-header {
+      margin-bottom: 40px;
+    }
+
+    .testimonials .testimonial-item {
+      text-align: center;
+      color: #fff;
+    }
+
+    .testimonials .testimonial-item .testimonial-img {
+      width: 100px;
+      border-radius: 50%;
+      border: 6px solid rgba(255, 255, 255, 0.15);
+      margin: 0 auto;
+    }
+
+    .testimonials .testimonial-item h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0 5px 0;
+      color: #fff;
+    }
+
+    .testimonials .testimonial-item h4 {
+      font-size: 14px;
+      color: #ddd;
+      margin: 0 0 15px 0;
+    }
+
+    .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 26px;
+    }
+
+    .testimonials .testimonial-item .quote-icon-left {
+      display: inline-block;
+      left: -5px;
+      position: relative;
+    }
+
+    .testimonials .testimonial-item .quote-icon-right {
+      display: inline-block;
+      right: -5px;
+      position: relative;
+      top: 10px;
+    }
+
+    .testimonials .testimonial-item p {
+      font-style: italic;
+      margin: 0 auto 15px auto;
+      color: #eee;
+    }
+
+    .testimonials .owl-nav, .testimonials .owl-dots {
+      margin-top: 5px;
+      text-align: center;
+    }
+
+    .testimonials .owl-dot {
+      display: inline-block;
+      margin: 0 5px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.4) !important;
+    }
+
+    .testimonials .owl-dot.active {
+      background-color: #106eea !important;
+    }
+
+    @media (min-width: 1024px) {
+      .testimonials {
+        background-attachment: fixed;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .testimonials .testimonial-item p {
+        width: 80%;
+      }
+    }
+
+    /*--------------------------------------------------------- Portfolio ---------------------------------------------------------*/
+    .portfolio #portfolio-flters {
+      padding: 0;
+      margin: 0 auto 15px auto;
+      list-style: none;
+      text-align: center;
+      border-radius: 50px;
+      padding: 2px 15px;
+    }
+
+    .portfolio #portfolio-flters li {
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px 15px 8px 15px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1;
+      text-transform: uppercase;
+      color: #444444;
+      margin-bottom: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+      /* color: #106eea; */
+      color: gold;
+    }
+
+    .portfolio #portfolio-flters li:last-child {
+      margin-right: 0;
+    }
+
+    .portfolio .portfolio-item {
+      margin-bottom: 30px;
+    }
+
+    .portfolio .portfolio-item .portfolio-info {
+      opacity: 0;
+      position: absolute;
+      left: 30px;
+      right: 30px;
+      bottom: 0;
+      z-index: 3;
+      transition: all ease-in-out 0.3s;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 15px;
+    }
+
+    .portfolio .portfolio-item .portfolio-info h4 {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 600;
+      color: #222222;
+    }
+
+    .portfolio .portfolio-item .portfolio-info p {
+      color: #555555;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    .portfolio .portfolio-item .portfolio-info .preview-link, .portfolio .portfolio-item .portfolio-info .details-link {
+      position: absolute;
+      right: 40px;
+      font-size: 24px;
+      top: calc(50% - 18px);
+      color: #3c3c3c;
+    }
+
+    .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
+      color: #106eea;
+    }
+
+    .portfolio .portfolio-item .portfolio-info .details-link {
+      right: 10px;
+    }
+
+    .portfolio .portfolio-item .portfolio-links {
+      opacity: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 3;
+      position: absolute;
+      transition: all ease-in-out 0.3s;
+    }
+
+    .portfolio .portfolio-item .portfolio-links a {
+      color: #fff;
+      margin: 0 2px;
+      font-size: 28px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .portfolio .portfolio-item .portfolio-links a:hover {
+      color: #6ba7f5;
+    }
+
+    .portfolio .portfolio-item:hover .portfolio-info {
+      opacity: 1;
+      bottom: 20px;
+    }
+
+    /*-------------------------------------------------------------- Portfolio Details -------------------------------------------------*/
+    .portfolio-details {
+      padding-top: 30px;
+    }
+
+    .portfolio-details .portfolio-details-container {
+      position: relative;
+    }
+
+    .portfolio-details .portfolio-details-carousel {
+      position: relative;
+      z-index: 1;
+    }
+
+    .portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+      margin-top: 5px;
+      text-align: left;
+    }
+
+    .portfolio-details .portfolio-details-carousel .owl-dot {
+      display: inline-block;
+      margin: 0 10px 0 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #ddd !important;
+    }
+
+    .portfolio-details .portfolio-details-carousel .owl-dot.active {
+      background-color: #106eea !important;
+    }
+
+    .portfolio-details .portfolio-info {
+      padding: 30px;
+      position: absolute;
+      right: 0;
+      bottom: -70px;
+      background: #fff;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+      z-index: 2;
+    }
+
+    .portfolio-details .portfolio-info h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .portfolio-details .portfolio-info ul {
+      list-style: none;
+      padding: 0;
+      font-size: 15px;
+    }
+
+    .portfolio-details .portfolio-info ul li + li {
+      margin-top: 10px;
+    }
+
+    .portfolio-details .portfolio-description {
+      padding-top: 50px;
+    }
+
+    .portfolio-details .portfolio-description h2 {
+      width: 50%;
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .portfolio-details .portfolio-description p {
+      padding: 0 0 0 0;
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-details .portfolio-description h2 {
+        width: 100%;
+      }
+      .portfolio-details .portfolio-info {
+        position: static;
+        margin-top: 30px;
+      }
+    }
+
+    /*------------------------------------------------------------- Team --------------------------------------------------------*/
+    .team {
+      padding: 60px 0;
+    }
+
+    .team .member {
+      margin-bottom: 20px;
+      overflow: hidden;
+      border-radius: 4px;
+      background: #fff;
+      box-shadow: 0px 2px 15px rgba(16, 110, 234, 0.15);
+    }
+
+    .team .member .member-img {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .team .member .social {
+      position: absolute;
+      left: 0;
+      bottom: 30px;
+      right: 0;
+      opacity: 0;
+      transition: ease-in-out 0.3s;
+      text-align: center;
+    }
+
+    .team .member .social a {
+      transition: color 0.3s;
+      color: #222222;
+      margin: 0 3px;
+      padding-top: 7px;
+      border-radius: 4px;
+      width: 36px;
+      height: 36px;
+      background: rgba(16, 110, 234, 0.8);
+      display: inline-block;
+      transition: ease-in-out 0.3s;
+      color: #fff;
+    }
+
+    .team .member .social a:hover {
+      background: #3b8af2;
+    }
+
+    .team .member .social i {
+      font-size: 18px;
+    }
+
+    .team .member .member-info {
+      padding: 25px 15px;
+    }
+
+    .team .member .member-info h4 {
+      font-weight: 700;
+      margin-bottom: 5px;
+      font-size: 18px;
+      color: #222222;
+    }
+
+    .team .member .member-info span {
+      display: block;
+      font-size: 13px;
+      font-weight: 400;
+      color: #aaaaaa;
+    }
+
+    .team .member .member-info p {
+      font-style: italic;
+      font-size: 14px;
+      line-height: 26px;
+      color: #777777;
+    }
+
+    .team .member:hover .social {
+      opacity: 1;
+      bottom: 15px;
+    }
+
+    /*---------------------------------------------------------- Pricing ---------------------------------------------------------*/
+    .pricing .box {
+      padding: 20px;
+      background: #fff;
+      text-align: center;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pricing .box h3 {
+      font-weight: 400;
+      margin: -20px -20px 20px -20px;
+      padding: 20px 15px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #777777;
+      background: #f8f8f8;
+    }
+
+    .pricing .box h4 {
+      font-size: 36px;
+      color: #106eea;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 20px;
+    }
+
+    .pricing .box h4 sup {
+      font-size: 20px;
+      top: -15px;
+      left: -3px;
+    }
+
+    .pricing .box h4 span {
+      color: #bababa;
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    .pricing .box ul {
+      padding: 0;
+      list-style: none;
+      color: #444444;
+      text-align: center;
+      line-height: 20px;
+      font-size: 14px;
+    }
+
+    .pricing .box ul li {
+      padding-bottom: 16px;
+    }
+
+    .pricing .box ul i {
+      color: #106eea;
+      font-size: 18px;
+      padding-right: 4px;
+    }
+
+    .pricing .box ul .na {
+      color: #ccc;
+      text-decoration: line-through;
+    }
+
+    .pricing .btn-wrap {
+      margin: 20px -20px -20px -20px;
+      padding: 20px 15px;
+      background: #f8f8f8;
+      text-align: center;
+    }
+
+    .pricing .btn-buy {
+      background: #106eea;
+      display: inline-block;
+      padding: 8px 35px 10px 35px;
+      border-radius: 4px;
+      color: #fff;
+      transition: none;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .pricing .btn-buy:hover {
+      background: #3b8af2;
+    }
+
+    .pricing .featured h3 {
+      color: #fff;
+      background: #106eea;
+    }
+
+    .pricing .advanced {
+      width: 200px;
+      position: absolute;
+      top: 18px;
+      right: -68px;
+      transform: rotate(45deg);
+      z-index: 1;
+      font-size: 14px;
+      padding: 1px 0 3px 0;
+      background: #106eea;
+      color: #fff;
+    }
+
+    /*---------------------------------------------- Frequently Asked Questions -------------------------------------------------------*/
+    .faq {
+      padding: 60px 0;
+    }
+
+    .faq .faq-list {
+      padding: 0;
+      list-style: none;
+    }
+
+    .faq .faq-list li {
+      padding: 0 0 20px 25px;
+    }
+
+    .faq .faq-list a {
+      display: block;
+      position: relative;
+      font-family: #106eea;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .faq .faq-list i {
+      font-size: 18px;
+      position: absolute;
+      left: -25px;
+      top: 6px;
+    }
+
+    .faq .faq-list p {
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    .faq .faq-list a.collapse {
+      color: #106eea;
+    }
+
+    .faq .faq-list a.collapsed {
+      color: #343a40;
+    }
+
+    .faq .faq-list a.collapsed:hover {
+      color: #106eea;
+    }
+
+    .faq .faq-list a.collapsed i::before {
+      content: "\eab2" !important;
+    }
+
+    /*--------------------------------------------- Contact ------------------------------------------------------*/
+    .contact .info-box {
+      color: #444444;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
+      padding: 20px 0 30px 0;
+    }
+
+    .contact .info-box i {
+      font-size: 32px;
+      color: #106eea;
+      border-radius: 50%;
+      padding: 8px;
+      border: 2px dotted #b3d1fa;
+    }
+
+    .contact .info-box h3 {
+      font-size: 20px;
+      color: #777777;
+      font-weight: 700;
+      margin: 10px 0;
+    }
+
+    .contact .info-box p {
+      padding: 0;
+      line-height: 24px;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    .contact .php-email-form {
+      box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
+      padding: 30px;
+    }
+
+    .contact .php-email-form .validate {
+      display: none;
+      color: red;
+      margin: 0 0 15px 0;
+      font-weight: 400;
+      font-size: 13px;
+    }
+
+    .contact .php-email-form .error-message {
+      display: none;
+      color: #fff;
+      background: #ed3c0d;
+      text-align: left;
+      padding: 15px;
+      font-weight: 600;
+    }
+
+    .contact .php-email-form .error-message br + br {
+      margin-top: 25px;
+    }
+
+    .contact .php-email-form .sent-message {
+      display: none;
+      color: #fff;
+      background: #18d26e;
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+    }
+
+    .contact .php-email-form .loading {
+      display: none;
+      background: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .contact .php-email-form .loading:before {
+      content: "";
+      display: inline-block;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      margin: 0 10px -6px 0;
+      border: 3px solid #18d26e;
+      border-top-color: #eee;
+      -webkit-animation: animate-loading 1s linear infinite;
+      animation: animate-loading 1s linear infinite;
+    }
+
+    .contact .php-email-form input, .contact .php-email-form textarea {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+    }
+
+    .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+      border-color: #106eea;
+    }
+
+    .contact .php-email-form input {
+      padding: 20px 15px;
+    }
+
+    .contact .php-email-form textarea {
+      padding: 12px 15px;
+    }
+
+    .contact .php-email-form button[type="submit"] {
+      background: #106eea;
+      border: 0;
+      padding: 10px 30px;
+      color: #fff;
+      transition: 0.4s;
+      border-radius: 4px;
+    }
+
+    .contact .php-email-form button[type="submit"]:hover {
+      background: #3b8af2;
+    }
+
+    @-webkit-keyframes animate-loading {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes animate-loading {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /*------------------------------------------- Footer ------------------------------------------------------*/
+    #footer {
+      background: #fff;
+      padding: 0 0 30px 0;
+      color: #444444;
+      font-size: 14px;
+      background: #f1f6fe;
+    }
+
+    #footer .footer-newsletter {
+      padding: 50px 0;
+      background: #f1f6fe;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    #footer .footer-newsletter h4 {
+      font-size: 24px;
+      margin: 0 0 20px 0;
+      padding: 0;
+      line-height: 1;
+      font-weight: 600;
+    }
+
+    #footer .footer-newsletter form {
+      margin-top: 30px;
+      background: #fff;
+      padding: 6px 10px;
+      position: relative;
+      border-radius: 4px;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+      text-align: left;
+    }
+
+    #footer .footer-newsletter form input[type="email"] {
+      border: 0;
+      padding: 4px 8px;
+      width: calc(100% - 100px);
+    }
+
+    #footer .footer-newsletter form input[type="submit"] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border: 0;
+      background: none;
+      font-size: 16px;
+      padding: 0 20px;
+      background: #106eea;
+      color: #fff;
+      transition: 0.3s;
+      border-radius: 0 4px 4px 0;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #footer .footer-newsletter form input[type="submit"]:hover {
+      background: #0d58ba;
+    }
+
+    #footer .footer-top {
+      padding: 60px 0 30px 0;
+      background: #fff;
+    }
+
+    #footer .footer-top .footer-contact {
+      margin-bottom: 30px;
+    }
+
+    #footer .footer-top .footer-contact h3 {
+      font-size: 24px;
+      margin: 0 0 15px 0;
+      padding: 2px 0 2px 0;
+      line-height: 1;
+      font-weight: 700;
+    }
+
+    #footer .footer-top .footer-contact h3 span {
+      color: #106eea;
+    }
+
+    #footer .footer-top .footer-contact p {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 0;
+      font-family: "Roboto", sans-serif;
+      color: #777777;
+    }
+
+    #footer .footer-top h4 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #444444;
+      position: relative;
+      padding-bottom: 12px;
+    }
+
+    #footer .footer-top .footer-links {
+      margin-bottom: 30px;
+    }
+
+    #footer .footer-top .footer-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #footer .footer-top .footer-links ul i {
+      padding-right: 2px;
+      color: #106eea;
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    #footer .footer-top .footer-links ul li {
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    #footer .footer-top .footer-links ul li:first-child {
+      padding-top: 0;
+    }
+
+    #footer .footer-top .footer-links ul a {
+      color: #777777;
+      transition: 0.3s;
+      display: inline-block;
+      line-height: 1;
+      transform: all .8s ease-in-out; 
+    }
+
+    #footer .footer-top .footer-links ul a:hover {
+      text-decoration: none;
+      color: #106eea;
+      transform: translateX(10px);
+    }
+
+    #footer .footer-top .social-links a {
+      font-size: 18px;
+      display: inline-block;
+      background: #106eea;
+      color: #fff;
+      line-height: 1;
+      padding: 8px 0;
+      margin-right: 4px;
+      border-radius: 4px;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      transition: 0.3s;
+    }
+
+    #footer .footer-top .social-links a:hover {
+      background: #3b8af2;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #footer .copyright {
+      text-align: center;
+      float: left;
+    }
+
+    #footer .credits {
+      float: right;
+      text-align: center;
+      font-size: 13px;
+      color: #444444;
+    }
+
+    @media (max-width: 768px) {
+      #footer .copyright, #footer .credits {
+        float: none;
+        text-align: center;
+        padding: 2px 0;
+      }
+    }
+
+
+    .more {
+      margin-top: -500px;
+      margin-right: 50px;
+      overflow:visible;
+    }
+
+
+    .JSMenu li {
+
+      padding: -10px auto;
+      margin: -10px auto;
+    
+    }
+
+    /* --------------------------------------------------------------------------- */
+
+    /* inner page */
+      .list {    
+        display: grid;
+        margin-left: 100px;
+        width:  100%;
+        grid-template-columns: 50% 50%;    
+      }
+
+      .list > ul > li{  
+        list-style: none;
+        transition : .5s all ease-in-out;
+      }
+
+      .list > ul > li:hover{  
+        text-decoration: underline;
+        transform: translateX(20px);    
+      }
+
+  </style>  
+
+  <script src="myFun.js">
+  </script>
+
+  <!-- ======================================================  
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <i class="icofont-web"></i> <a href="http:shadi-pro.epizy.com"> My CV and Portfolio </a>
+        <i class="icofont-envelope"></i> <a href="mailto:shadisayed.68911@gmail.com">shadisayed.68911@gmail.com</a>
+        <i class="icofont-phone"></i> +0201151638804
+      </div>
+      <div class="social-links">
+        <!-- <a href="#" class="twitter"><i class="icofont-twitter"></i></a>         -->
+        <a href="https://www.facebook.com/shadi.ahmed.33671748/" target="_blank" class="facebook"><i class="icofont-facebook"></i></a>
+        <!-- <a href="#" class="instagram"><i class="icofont-instagram"></i></a> -->
+        <!-- <a href="#" class="skype"><i class="icofont-skype"></i></a> -->
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">      
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <!-- First default Nav Bar -->
+      <!-- <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>                                      
+          <li class="drop-down"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Deep Drop Down</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </nav> -->
+      <!-- .nav-menu -->
+      <!-- ======================================================================================================= -->
+
+      <!-- Second default Nav Bar -->
+      <!-- <nav class="nav-menu d-none d-lg-block" style="margin-top:-20px; margin-right:50px; position:relative;"> -->
+
+      <nav class="nav-menu d-none d-lg-block"  >
+        <!-- <ul style="margin-right:400px">           -->
+        <ul>          
+          <!-- A] Programming Languages   -->
+          <li class="drop-down" >                                                              
+            <a href="#" style="color:dodgerblue"> Programming Languages </a> 
+            <ul>                   
+              <!-- 1) [HTML5 Course] - Sub Menu 1 -->                                                 
+              <li style="padding:-10px;" > 
+                <a href="HTML5.html" style="color:dodgerblue"> HTML5 </a> 
+                  <!-- <ul>
+                    <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson2 Deprecated Tags/HTML5 Lesson 2  Deprecated Tags.html">Lesson 2 [Deprecated Tags]</a></li>
+                    <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson3 New Semantics/HTML5 Lesson 3 New Sematics.html">Lesson 3 [New Semantics]</a></li>
+                    <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson4 Syntax/HTML5 Lesson 4 Syntax.html">Lesson 4 [Syntax]</a></li>
+                    <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson5 Migrate from 4 to 5/HTML5 Lesson 5 Migrate from 4 to 5.html">Lesson 5 [Migrate from 4 to 5]</a></li>
+                    <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson6 Supporting html5/HTML5 Lesson 6 Supporting HTML5.html">Lesson 6 [Supporting html5]</a></li>
+                    <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson7 New Tags Part 1/HTML5 Lesson 7 New Tags part 1.html">Lesson 7 [New Tags Part 1] </a></li>
+                    <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson8 New Tags Part 2/HTML5 Lesson 8 New Tags part 2.html">Lesson 8 [New Tags Part 2]</a></li>
+                    <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson9 New Tags Part 3/HTML5 Lesson 9 New Tags part 3.html">Lesson 9 [New Tags Part 3]</a></li>
+                    <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson10 New Tags Part 4/HTML5 Lesson 10 New Tags part 4.html">Lesson 10 [New Tags Part 4]</a></li>
+                    <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson11 New Tags Part 5/HTML5 Lesson 11 New Tags part 5.html">Lesson 11 [New Tags Part 5]</a></li>
+                    <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson12 New Tags Part 6/HTML5 Lesson 12 New Tags part 6.html">Lesson 12 [New Tags Part 6]</a></li>
+                    <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson13 New Form Elements [Datalist]/HTML5 Lesson 13 New Form Elements [Datalist].html">Lesson 13 [New Form Elements [Datalist]</a></li>
+                    
+                    
+                    <li class="drop-down">
+                      <a href="#">More => </a>
+                      <ul class='more' style="margin-top: -500px;" >
+                        <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson14 New Form Elements [Output]/HTML5 Lesson 14 New Form Elements [Output].html">Lesson 14 [New Form Elements [Output]]</a></li>
+                        <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson15 New Tag [Audio]/HTML5 Lesson 15 New Tag [Audio].html">Lesson 15 [New Tag Audio]]</a></li>
+                        <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson16 New Tag [Video]/HTML5 Lesson 16 New Tag [Video].html">Lesson 16 [New Tag [Video]]</a></li>
+                        <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson17 Form Input [Color,Range,Number]/HTML5 Lesson 17 Form Input [Color,Range,Number].html">Lesson 17 [Form Input [Color,Range,Number]]</a></li>
+                        <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson18 Form Input [Email, Search, Url, Tel]/HTML5 Lesson 18 Form Input [Email, Search, Url, Tel].html">Lesson 18 [Form Input [Email, Search, Url, Tel]]</a></li>
+                        <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson19 Form Input [Time, Date, Month, Week]/HTML5 Lesson 19 Form Input [Time, Date, Month, Week].html">Lesson 19 [Form Input [Time, Date, Month, Week]]</a></li>
+                        <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson20 Form Attributes [AutoComplete, AutoFocus, NoValidate]/HTML5 Lesson 20 Form Attributes [AutoComplete, AutoFocus, NoValidate].html">Lesson 20 [Form Attributes [AutoComplete, AutoFocus, NoValidate]]</a></li>
+                        <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson21 Form Attributes [Action, Method, EncType]/HTML5 Lesson 21 Form Attributes [ Action, Method, EncType ].html">Lesson 21 [Form Attributes [Action, Method, EncType]]</a></li>
+                        <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson22 Form Input Attributes [Form, FormNoValidate, FormTarget]/HTML5 Lesson 22 Form Input Attributes [Form, FormNoValidate, FormTarget].html">Lesson 22 [Form Input Attributes [Form, FormNoValidate, FormTarget]]</a></li>
+                        <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson23 Form Attributes [Multiple, Placeholder, Required]/HTML5 Lesson 23 Form Attributes [Multiple, Placeholder, Required].html">Lesson 23 [Form Attributes [Multiple, Placeholder, Required]]</a></li>
+                        <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson24 Form Attributes [Min, Max, Step, Pattern]/HTML5 Lesson 24 Form Attributes [Min, Max, Step, Pattern].html">Lesson 24 [Form Attributes [Min, Max, Step, Pattern]]</a></li>
+                        <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson25 Form Attributes [Readonly vs Disabled]/HTML5 Lesson 25 Form Attributes [Readonly vs Disabled].html">Lesson 25 [Form Attributes [Readonly vs Disabled]]</a></li>
+                        
+                    
+                        <li class="drop-down">
+                          <a href="#">More => </a>
+                          <ul style="margin-top: -500px;">                      
+                            <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson26 [Canvas Intro]/HTML5 Lesson 26 [Canvas Intro].html">Lesson 26 [Canvas Intro]</a></li>
+                            <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson27 [Canvas Create Simple Canvas]/HTML5 Lesson 27 [Create Simple Canvas].html">Lesson 27 [Canvas Create Simple Canvas]</a></li>
+                            <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson28 [Canvas Create Simple Line]/HTML5 Lesson 28 [Canvas Create Simple Line].html">Lesson 28 [Canvas Create Simple Line]</a></li>
+                            <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson29 [Canvas Create Simple Text]/HTML5 Lesson 29 [Canvas Create Simple Text].html">Lesson 29 [Canvas Create Simple Text]</a></li>
+                            <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson30 [Create Canvas pure JS]/HTML5 Lesson 30 [Create Canvas with pure JS].html">Lesson 30 [Create Canvas pure JS]</a></li>
+                            <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson31 [SVG Introduction]/HTML5 Lesson 31 [SVG - Introduction].html">Lesson 31 [SVG Introduction]</a></li>
+                            <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson32 [SVG Rect Circle]/HTML5 Lesson 32 [SVG - Rect Circle].html">Lesson 32 [SVG Rect Circle]</a></li>
+                            <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson33 [SVG Use CSS]/HTML5 Lesson 33 [SVG - Use CSS].html">Lesson 33 [SVG Use CSS]</a></li>
+                            <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson34 [SVG Ellipse Line]/HTML5 Lesson 34 [SVG - Ellipse, Line].html">Lesson 34 [SVG Ellipse Line]</a></li>
+                            <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson35 [SVG Compare]/HTML5 Lesson 35 [SVG Compare].html">Lesson 35 [SVG Compare]</a></li>                                                            
+                          </ul>
+                        </li>             
+                      </ul>
+                    </li>
+                  </ul>                             -->
+              </li>          
+              <!-- --------------------------------------------------------------------------------------------------- -->
+              
+              <!-- 2) [CSS2 Course] - Sub Menu 2 -->                    
+              <li>                                                
+                <a href="CSS2.html" style="color:dodgerblue"> CSS2 </a>                                              
+              </li>          
+              <!-- --------------------------------------------------------------------------------------------------- -->
+              
+              <!-- 3) [CSS3 Course] - Sub Menu 3 -->                                            
+              <li>                                                
+                <a href="CSS3.html" style="color:dodgerblue;"> CSS3 </a>                                  
+              </li>                                                                        
+              <!-- --------------------------------------------------------------------------------------------------- -->
+              
+              <!-- 4) [Javascript Courses] - Sub Menu 4 -->                    
+              <li class="drop-down" style ="direction:ltr">
+                  <a href="#" style="color:dodgerblue"> Javascript </a>                   
+                  <!-- <ul style ="margin-left:360px"> -->
+                  <ul >
+                    <!-- 4 A) [JSOOP Course] - Sub Menu 1 -->                    
+                    <li>                                                
+                      <a href="JS.html" style="color:dodgerblue"> Javascript </a>
+                    </li>          
+                    <!-- --------------------------------------------------------------------------------------------------- -->
+
+                    <!-- 4 B) [JSOOP Course] - Sub Menu 2 -->                    
+                    <li>                                                
+                      <a href="JSOOP.html" style="color:dodgerblue"> JS OOP </a>
+                    </li>          
+                    <!-- --------------------------------------------------------------------------------------------------- -->
+                  </ul>                              
+              </li>
+              <!-- --------------------------------------------------------------------------------------------------- -->                    
+                                        
+              <!-- 5) [PHP] - Sub Menu 5 -->                    
+              <li class="drop-down" >                                                
+                <a href="#" style="color:dodgerblue"> PHP </a>                                                
+                <ul> 
+                <!-- <ul style ="margin-left:360px">  -->
+                  <!-- 5 A) [PHP - Basics] - Sub Menu 1 -->                                      
+                  <li>                                                
+                    <a href="PHP.html" style="color:dodgerblue"> PHP - Basics </a> 
+                  </li>          
+                  
+                  <!-- 5 B) [PHP - Tutorials and Examples ] - Sub Menu 2 -->                    
+                  <li>                                                
+                    <a href="PHP Tuts Exps.html" style="color:dodgerblue"> PHP - Tuts & Exps </a>                              
+                  </li>          
+                  
+                  <!-- 5 C) [PHP - OPP ] - Sub Menu 3 -->                    
+                  <li>                                                            
+                    <a href="PHP OOP.html" style="color:dodgerblue"> PHP - OOP </a>
+                  </li>
+                </ul>                  
+              </li>    
+              <!-- --------------------------------------------------------------------------------------------------- -->                    
+              
+              <!-- 6) [Python] - Sub Menu 6 --> 
+              <li class="drop-down" >                                                
+                <a href="#" style="color:dodgerblue"> Python </a>                                                
+                <!-- <ul style ="margin-left:360px">  -->
+                <ul> 
+                  <!-- 5 A) [Python - Basics] - Sub Menu 1 -->                                      
+                  <li>                                                
+                    <a href="Python.html" style="color:dodgerblue"> Python - Basics </a> 
+                  </li>          
+                  
+                  <!-- 5 B) [Python - Tutorials and Examples ] - Sub Menu 2 -->                    
+                  <li>                                                
+                    <a href="Python Tuts Exps.html" style="color:dodgerblue"> Python - Tuts & Exps </a>                              
+                  </li>          
+                  
+                  <!-- 5 C) [PythonPython - OPP ] - Sub Menu 3 -->                    
+                  <li>                                                            
+                    <a href="Python OOP.html" style="color:dodgerblue"> Python - OOP </a>
+                  </li>
+                </ul>                  
+              </li>    
+
+            </ul>
+          </li>
+          <!-- --------------------------------------------------------------------------------------------------- -->                    
+          <!-- --------------------------------------------------------------------------------------------------- -->                    
+
+          <!-- B] Libraries -->
+          <li class="drop-down" >                                                              
+            <a href="#" style="color:dodgerblue"> Libraries </a> 
+            <ul>                   
+            
+              <!-- 1) [JS HTML DOM] - Sub Menu 1 -->                    
+              <li>                                                            
+                <a href="JSDOM.html" style="color:dodgerblue"> JS DOM </a>                                  
+              </li>          
+              <!-- --------------------------------------------------------------------------------------------------- -->
+              
+              <!-- 2) [JS HTML BOM] - Sub Menu 2 -->                    
+              <li>                                                
+                <a href="JSBOM.html" style="color:dodgerblue"> JS BOM </a>                
+              </li>          
+              <!-- --------------------------------------------------------------------------------------------------- -->
+
+              <!-- 3) [J-Querry] - Sub Menu 3 -->                    
+              <li>                                                
+                <a href="Jquerry.html" style="color:dodgerblue"> J-Querry </a>                
+              </li>          
+              <!-- --------------------------------------------------------------------------------------------------- -->
+              
+              <!-- 4) [JSON] - Sub Menu 4 -->                    
+              <li>                                                            
+                <!-- <a href="JSON.html" style="color:dodgerblue"> JSON </a>                                   -->
+                <a href="#" style="color:dodgerblue"> JSON </a>                                  
+              </li>          
+              <!-- --------------------------------------------------------------------------------------------------- -->
+            </ul>                  
+          </li>       
+          <!-- --------------------------------------------------------------------------------------------------- -->                    
+          <!-- --------------------------------------------------------------------------------------------------- -->                    
+
+          <!-- C] Frame Works -->
+          <li class="drop-down" >                                                              
+            <a href="#" style="color:dodgerblue"> Frame Works </a> 
+            <ul>                                             
+              
+              <!-- 1) [Vue.JS] - Sub Menu 1 -->                    
+              <li>                                               
+                <!-- <a href="VueJs.html" style="color:dodgerblue"> Vue.JS </a>                 -->
+                <a href="#" style="color:dodgerblue"> Vue.JS </a>                
+              </li>          
+              <!-- --------------------------------------------------------------------------------------------------- -->
+
+              <!-- 2) [Angular.JS] - Sub Menu 2 -->                    
+              <li>                                                
+                <a href="#" style="color:dodgerblue"> Angular.JS </a>                
+                <!-- <a href="angular.html" style="color:dodgerblue"> Angular.JS </a>                 -->
+              </li>          
+              <!-- --------------------------------------------------------------------------------------------------- -->
+              
+              <!-- 3) [React.JS] - Sub Menu 3 -->                    
+              <li>                                                
+                <!-- <a href="React.html" style="color:dodgerblue"> React.JS </a>                 -->
+                <a href="#" style="color:dodgerblue"> React.JS </a>                
+              </li>          
+              <!-- --------------------------------------------------------------------------------------------------- -->       
+            </ul>        
+          </li>
+          <!-- --------------------------------------------------------------------------------------------------- -->                    
+          <!-- --------------------------------------------------------------------------------------------------- -->                    
+        
+          <!-- D] Portfolios & Templates -->
+          <li class="drop-down" >                                                              
+            <a href="#" style="color:dodgerblue"> Portfolios & Templates </a> 
+            <ul>                                             
+              <!-- 1) [Basics Templates] - Sub Menu 1 -->                    
+              <li class="drop-down">                                                
+                <a href="basicTemps.html" style="color:dodgerblue"> Basics Templates </a>
+                <!-- <ul style ="margin-left:390px"> -->
+                <ul>
+                  <li> <a href="#" style="color:dodgerblue"> Basic Template Name 1 </a> </li>
+                </ul>
+              </li>          
+              <!-- --------------------------------------------------------------------------------------------------- -->
+              
+              <!-- 2) [Advanced Templates] - Sub Menu 2 -->                    
+              <li class="drop-down">                                                
+                <!-- <a href="advTemps.html" style="color:dodgerblue"> Advanced Templates </a>                 -->
+                <a href="#" style="color:dodgerblue"> Advanced Templates </a>                
+                <!-- <ul style ="margin-left:390px"> -->
+                <ul>
+                  <li> <a href="#" style="color:dodgerblue"> Advanced Template Name 1 </a> </li>
+                </ul>
+              </li>                        
+            </ul>                  
+          </li>
+          <!-- --------------------------------------------------------------------------------------------------- -->                    
+          <!-- --------------------------------------------------------------------------------------------------- -->                    
+          
+          <!-- E] My Web Apps -->
+          <li class="drop-down" >                                                              
+            <a href="#" style="color:dodgerblue"> My Web Apps </a> 
+            <ul>                                             
+              <!-- 1) [Preloader] - Sub Menu 1 -->                    
+              <li class="drop-down">                                                
+                <a href="#" style="color:dodgerblue"> My Preloaders </a>                
+                <!-- <ul style ="margin-left:350px"> -->
+                <ul>
+                  <li> <a href="#" style="color:dodgerblue"> Preloader1 </a> </li>
+                </ul>
+              </li>          
+              <!-- --------------------------------------------------------------------------------------------------- -->
+              
+              <!-- 2) [Applications] - Sub Item 2 -->                    
+              <li class="drop-down">                                                
+                <a href="#" style="color:dodgerblue"> My Applications </a>
+                <!-- <ul style ="margin-left:350px">  -->
+                <ul> 
+                  <li> <a href="#" style="color:dodgerblue"> To-do-list </a> </li>
+                </ul>
+              </li>          
+              <!-- --------------------------------------------------------------------------------------------------- -->
+              
+              <!-- 3) [Applications] - Sub Item 3 -->                    
+              <li class="drop-down">
+                <a href="#" style="color:dodgerblue"> Dancing Show </a>
+                <!-- <ul style ="margin-left:350px">  -->
+                <ul> 
+                  <li> <a href="#" style="color:dodgerblue"> Dancing Show 1 </a> </li>
+                </ul>
+              </li>          
+              
+            </ul>        
+          </li>
+          <!-- --------------------------------------------------------------------------------------------------- -->
+          <!-- --------------------------------------------------------------------------------------------------- -->
+        
+          <!-- F) [Command Line - Windows ] Main Menu Item -->
+          <li class="drop-down" >                                                            
+            <!-- <a href="Cmd.html" style="color:dodgerblue"> CMD - Win </a> -->
+            <a href="#" style="color:dodgerblue"> CMD - Win </a>
+          </li>
+        
+        </ul>
+
+      </nav> 
+
+      <!-- .nav-menu 2 -->
+      
+      <!-- <h1 class="logo mr-auto"><a href="index.html"> My Courses Refereneces <span></span></a></h1> -->
+    </div>  
+        
+
+    <div class="container d-flex align-items-center">            
+      
+      <!-- nav-menu 3 -->
+      <nav class="nav-menu d-none d-lg-block" style="margin-left:500px"  >
+        <!-- <ul style="margin-left: -100px; margin-right:500px">           -->
+        <ul>          
+          <!-- 11) [Command Line - Windows ] Main Menu Item - Sub Menu 11 -->
+          <li class="drop-down" >                                                            
+            <a href="Cmd.html" style="color:dodgerblue"> CMD - Win </a>
+              <!-- <ul>                
+                <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson2 Tags/Testing Tags.html">Lesson 2 [Tags]</a></li>
+                <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson3 Styling Modes/CSS Styling Modes.html">Lesson 3 [Styling Modes]</a></li>
+                <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson4 Background/Css lesson 4 background.html">Lesson 4 [Background]</a></li>
+                <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson5 Text Part1/CSS lesson 5 Text Part1.html">Lesson 5 [Text Part1]</a></li>
+                <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson6 Text Part2/Css Lesson 6 Text Part2.html">Lesson 6 [Text Part2]</a></li>
+                <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson7 Font/Css Lesson 7 Font.html">Lesson 7 [Font] </a></li>
+                <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson8 Links/Css Lesson 8 Links.html">Lesson 8 [Links]</a></li>
+                <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson9 Listing/Css lesson 9 Listing.html">Lesson 9 [Listing]</a></li>
+                <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson10 BoxModel/Css lesson 10 Box Model.html">Lesson 10 [BoxModel]</a></li>
+                <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson11 Border/Css Lesson 11 Border.html">Lesson 11 [Border]</a></li>
+                <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson12 Margin/Css Lesson 12 Margin.html">Lesson 12 [Margin]</a></li>
+                <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson13 Padding/Css Lesson 13 Padding.html">Lesson 13 [Padding]</a></li>
+                
+                <li class="drop-down">
+                  <a href="#">More => </a>
+                  <ul class='more' style="margin-top: -500px;" >
+                    <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson14 Dimensions/Css Lesson 14 Dimensions(width-height).html">Lesson 14 [Dimensions]</a></li>
+                    <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson15 Display/Css Lesson 15 Display.html">Lesson 15 [Display]</a></li>
+                    <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson16 Position/Css Lesson 16 Position.html">Lesson 16 [Position]</a></li>
+                    <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson17 Float/Css Lesson 17 Float.html">Lesson 17 [Float]</a></li>
+                    <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson18 Grouping/Css Lesson 18 Grouping Similar Selectors.html">Lesson 18 [Grouping]</a></li>
+                    <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson19 Nesting/Css Lesson 19 Nesting.html">Lesson 19 [Nesting]</a></li>
+                    <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson20 Overflow/Css Lesson 20 Overflow.html">Lesson 20 [Overflow]</a></li>
+                    <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson21 Visibility/Css Lesson 21 Visibility.html">Lesson 21 [Visibility]</a></li>
+                    <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson22 Z-Index/Css Lesson 22 Z-Index.html">Lesson 22 [Z-Index]</a></li>
+                    <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson23 Content/Css Lesson 23 Content (Before, After).html">Lesson 23 [Content]</a></li>
+                    <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson24 Cursor/Css Lesson 24 Cursor.html">Lesson 24 [Cursor]</a></li>
+                    <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson25 Outline/Css Lesson 25 Outline.html">Lesson 25 [Outline]</a></li>
+                    
+                    <li class="drop-down">
+                      <a href="#">More => </a>
+                      <ul style="margin-top: -500px;">                      
+                        <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson26 Selectors/Css Lesson 26 Selectors.html">Lesson 26 [Selectors]</a></li>
+                        <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson27 Pseudo Classes/Css Lesson 27 Pseudo Classes.html">Lesson 27 [Pseudo Classes]</a></li>
+                        <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson28 Attributes/Css Lesson 28 Attributes.html">Lesson 28 [Attributes]</a></li>
+                        <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson29 Media/Css Lesson 29 Media.html">Lesson 29 [Media]</a></li>                                        
+                      </ul>
+                    </li>             
+                  </ul>
+                </li>
+              </ul>                             -->
+          </li>                    
+        </ul>      
+      </nav>      
+      <!-- .nav-menu 3 -->
+    </div>
+
+  </header> 
+  
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100" style="display: flex; align-items:center; justify-content: center;" >
+      <!-- <h1> Welcome to <span> My Courses Reference </span>
+      </h1> -->    
+  
+      <!-- Waving Effect -->
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: rgba(255, 255, 255,0); display: block; margin-top:20px; margin-left:-120px; z-index: 0; position: relative; shape-rendering: auto;" width="1980" height="300" preserveAspectRatio="xMidYMid" viewBox="0 0 1980 300"> -->
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 200%; height: auto; margin: auto; text-align:center; background: rgba(255, 255, 255,0); display: flex; align-items:center; justify-content: center; top:-30px; left:-500px; right:50; z-index: 0; position: absolute; shape-rendering: auto;" width="1980" height="300" preserveAspectRatio="xMidYMid" viewBox="0 0 1980 300">
+          <g transform=""><linearGradient id="lg-0.8589700868456098" x1="0" x2="1" y1="0" y2="0">
+            <stop stop-color="#e3f1ff" offset="0"></stop>
+            <stop stop-color="#4b00fd" offset="0"></stop>
+            <stop stop-color="#1b75be" offset="1"></stop>
+          </linearGradient><path d="M 0 0 L 0 241.915 Q 165 249.725 330 215.673 T 660 208.18 T 990 199.055 T 1320 208.65 T 1650 230.303 T 1980 211.464 L 1980 0 Z" fill="url(#lg-0.8589700868456098)" opacity="0.4">
+            <animate attributeName="d" dur="14.285714285714285s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcmod="spline" keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1" begin="0s" values="M0 0L 0 243.84212793573954Q 165 244.198481323735  330 214.97043919697492T 660 203.02580743298734T 990 199.82321083516976T 1320 201.96793159645011T 1650 230.24393184683908T 1980 207.67099842439933L 1980 0 Z;M0 0L 0 235.0618328876254Q 165 269.3721943745703  330 218.17211425063454T 660 226.50305342938853T 990 196.3260923575501T 1320 232.4077939064989T 1650 230.51147502836807T 1980 224.94661631212443L 1980 0 Z;M0 0L 0 205.27226479494266Q 165 240.5155728470433  330 212.79915181526675T 660 213.58512293669696T 990 212.32102514981105T 1320 204.89820182351832T 1650 246.2686309045961T 1980 215.49084241837852L 1980 0 Z;M0 0L 0 243.84212793573954Q 165 244.198481323735  330 214.97043919697492T 660 203.02580743298734T 990 199.82321083516976T 1320 201.96793159645011T 1650 230.24393184683908T 1980 207.67099842439933L 1980 0 Z"></animate>
+          </path><path d="M 0 0 L 0 227.032 Q 165 262.125 330 238.153 T 660 207.735 T 990 220.548 T 1320 228.142 T 1650 211.542 T 1980 236.441 L 1980 0 Z" fill="url(#lg-0.8589700868456098)" opacity="0.4">
+            <animate attributeName="d" dur="14.285714285714285s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcmod="spline" keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1" begin="-2.8571428571428568s" values="M0 0L 0 198.91548309391138Q 165 261.3922476818655  330 234.30112068896972T 660 204.3221098374849T 990 197.40719560146192T 1320 210.24404882431836T 1650 221.90110529290098T 1980 229.98865514501918L 1980 0 Z;M0 0L 0 233.19830897370343Q 165 262.28508633762743  330 238.99758623407547T 660 208.4840242477092T 990 225.62292636527536T 1320 232.06758779859936T 1650 209.26990298551567T 1980 237.85581571111973L 1980 0 Z;M0 0L 0 214.6550175761586Q 165 255.77933395353938  330 205.58046331850787T 660 248.3458831575966T 990 222.1831187074748T 1320 230.19035948492177T 1650 228.0683781289646T 1980 201.17251667905413L 1980 0 Z;M0 0L 0 198.91548309391138Q 165 261.3922476818655  330 234.30112068896972T 660 204.3221098374849T 990 197.40719560146192T 1320 210.24404882431836T 1650 221.90110529290098T 1980 229.98865514501918L 1980 0 Z"></animate>
+          </path><path d="M 0 0 L 0 237.421 Q 165 234.24 330 206.641 T 660 208.817 T 990 212.796 T 1320 203.256 T 1650 207.638 T 1980 231.557 L 1980 0 Z" fill="url(#lg-0.8589700868456098)" opacity="0.4">
+            <animate attributeName="d" dur="14.285714285714285s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcmod="spline" keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1" begin="-5.7142857142857135s" values="M0 0L 0 215.16905431144298Q 165 249.14013005538385  330 208.41012606073144T 660 219.40030814888186T 990 211.27085687418423T 1320 192.61204273811109T 1650 197.1885193400654T 1980 194.1286625359876L 1980 0 Z;M0 0L 0 229.8226321403231Q 165 236.19867929760932  330 203.52409441404166T 660 214.7170706299125T 990 198.3572922664371T 1320 205.71937345561807T 1650 212.78814530052776T 1980 239.82308226121222L 1980 0 Z;M0 0L 0 247.9361109368723Q 165 231.5303336771614  330 210.95445598569952T 660 200.65096582892625T 990 232.7786653161789T 1320 199.8474501390285T 1650 200.50986927760832T 1980 220.1168133404018L 1980 0 Z;M0 0L 0 215.16905431144298Q 165 249.14013005538385  330 208.41012606073144T 660 219.40030814888186T 990 211.27085687418423T 1320 192.61204273811109T 1650 197.1885193400654T 1980 194.1286625359876L 1980 0 Z"></animate>
+          </path><path d="M 0 0 L 0 236.55 Q 165 256.696 330 217.771 T 660 229.085 T 990 199.848 T 1320 234.073 T 1650 227.095 T 1980 237.087 L 1980 0 Z" fill="url(#lg-0.8589700868456098)" opacity="0.4">
+            <animate attributeName="d" dur="14.285714285714285s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcmod="spline" keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1" begin="-8.571428571428571s" values="M0 0L 0 224.7037505439761Q 165 272.6930353316019  330 229.55156582258994T 660 236.61065365348014T 990 219.91504503660167T 1320 230.31466475967437T 1650 220.06173038098666T 1980 207.42481352241373L 1980 0 Z;M0 0L 0 208.16910156011605Q 165 259.1249630688156  330 226.47382965111322T 660 228.26470562084018T 990 214.50370306252307T 1320 233.37870660752753T 1650 248.78240193288315T 1980 229.8215346622372L 1980 0 Z;M0 0L 0 236.77128821460013Q 165 256.3974835288876  330 217.5513635828135T 660 228.94425335689596T 990 199.4737517303316T 1320 234.14322206572314T 1650 227.22631676701283T 1980 237.64106680051827L 1980 0 Z;M0 0L 0 224.7037505439761Q 165 272.6930353316019  330 229.55156582258994T 660 236.61065365348014T 990 219.91504503660167T 1320 230.31466475967437T 1650 220.06173038098666T 1980 207.42481352241373L 1980 0 Z"></animate>
+          </path><path d="M 0 0 L 0 208.515 Q 165 252.623 330 209.4 T 660 212.907 T 990 214.014 T 1320 210.712 T 1650 206.499 T 1980 232.652 L 1980 0 Z" fill="url(#lg-0.8589700868456098)" opacity="0.4">
+            <animate attributeName="d" dur="14.285714285714285s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcmod="spline" keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1" begin="-11.428571428571427s" values="M0 0L 0 206.7391959060845Q 165 245.70594371304395  330 203.10592615464478T 660 200.39674383834097T 990 223.5013485428745T 1320 197.11555530025123T 1650 192.20908422829876T 1980 225.460814725169L 1980 0 Z;M0 0L 0 222.47847594882043Q 165 226.43274857890046  330 203.86035526418627T 660 198.8500946506723T 990 246.60167473644773T 1320 194.98517556687025T 1650 247.29227858709245T 1980 200.39555084376045L 1980 0 Z;M0 0L 0 211.39873916492658Q 165 263.85646813786497  330 219.62354308390505T 660 233.22692097790812T 990 198.60435835485188T 1320 232.7961046393257T 1650 229.7087015967473T 1980 244.3330217931673L 1980 0 Z;M0 0L 0 206.7391959060845Q 165 245.70594371304395  330 203.10592615464478T 660 200.39674383834097T 990 223.5013485428745T 1320 197.11555530025123T 1650 192.20908422829876T 1980 225.460814725169L 1980 0 Z"></animate>
+          </path></g>
+          </svg>    
+      
+      <!-- Type writing section -->
+      <section id="Typewriting" class="Typewriting" style="z-index: 999; left:50px; top:10px; position: absolute; width: auto">  
+                        
+        <!-- Method 1 -->
+        <!-- <h1 class='mytext' style="text-shadow:5px 2px rgba(62, 185, 241, 0.9); font-family:Baskerville Old Face; display:block; color:#fff"> RCG... &nbsp;&nbsp;&nbsp; </h1> -->
+        <h4 class="mytext" style="font-size:25px; color:#fff; margin: 0 0 10px 0; font-weight: 700; line-height: 56px; font-family:monospace"></h4>
+        <script>
+            document.addEventListener('DOMContentLoaded',function(event){
+            // array with texts to type in typewriter
+            // var dataText = [ "We Think Globally...", "We act Locally...", "We have clients in over 40 countries ..."];
+            var dataText = [ "Welcome to My [Technical References] " + "<br>" + "My name is " + "<span style='color: gold; font-size:30px; font-family:monospace'>" + "SHADI" + "</span>" +  "<br>" + "I'm a Web Developer ... "];
+            
+            // type one text in the typwriter
+            // keeps calling itself until the text is finished
+            function typeWriter(text, i, fnCallback) {
+              // check if text isn't finished yet
+              if (i < (text.length)) {
+                // add next character to h1
+                document.querySelector("h4").innerHTML = text.substring(0, i+1) +'<span class="txtCursor" aria-hidden="true"></span>';
+    
+                // wait for a while and call this function again for next character
+                setTimeout(function() {
+                  typeWriter(text, i+2, fnCallback)
+                }, 100);
+              }
+              // text finished, call callback if there is a callback function
+              else if (typeof fnCallback == 'function') {
+                // call callback after timeout
+                setTimeout(fnCallback, 3000);
+              }
+            }
+            // start a typewriter animation for a text in the dataText array
+            function StartTextAnimation(i) {
+              if (typeof dataText[i] == 'undefined'){
+                  setTimeout(function() {
+                    StartTextAnimation(0);
+                  }, 2000);
+              }
+              // check if dataText[i] exists
+              if (i < dataText[i].length) {
+                // text exists! start typewriter animation
+              typeWriter(dataText[i], 0, function(){
+                // after callback (and whole text has been animated), start next text
+                StartTextAnimation(i + 1);
+              });
+              }
+            }
+            // start the text animation
+            StartTextAnimation(0);
+          });      
+        </script>    
+      </section>
+
+      <!-- <h2>We are team of talented designers making websites with Bootstrap</h2> -->
+      <!-- <div class="d-flex">
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a>
+      </div>
+    </div> -->
+    
+    
+    <script src="myFun.js"></script>
+  </section>
+
+    <!-- Wave Animation => (Need Revsion)  -->
+    <!-- <div class='waveContainer' style="z-index:0; margin-top:-130px; height:50px; margin-left:-60px; margin-right:0px">
+      <div class="ocean" style="z-index:0; margin-top:100px">
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>  
+    </div> -->
+    <!-- End Hero -->
+  
+  <!-- <script src="myFun.js"></script>
+  </section> -->
+  
+  <main id="main">
+    <!-- ======= Featured Services Section ======= -->
+    
+    <!-- Slider Side Menu -->
+    <!-- <div id="mySidenav" class="sidenav" style="top:170px; z-index:9999;">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">My Resume</a>
+      <a href="#">My Services</a>
+      <a href="#">My Freelancer Clients</a>                
+    </div> -->
+    
+    <!-- Use any element to open the sidenav -->
+    <!-- <a class='openBtn' style="top:830px; z-index: 9999;"> 
+      <span class='openBtn' onclick="openNav()">
+        <i style='font-size: xx-large;' class="ri-arrow-right-line"></i>
+      </span>
+    </a> -->
+    <!-- ---------------------------------------------------- -->
+   
+    <!-- ======= About1 Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <h3>Find Out More <span>About Us</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="font-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li>
+                <i class="bx bx-store-alt"></i>
+                <div>
+                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
+                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-images"></i>
+                <div>
+                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
+                  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+                </div>
+              </li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    
+    <!-- AboutUs2 / services Section  -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>My Services</h2>
+          <h3>Find Out More <span> my services</span></h3>
+          <!-- <h2>About</h2>
+          <h3>Find Out More <span>About Us</span></h3> -->
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+ 
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="Sliding Galleries.html">  Sliding Galleries </a></h4>
+              <p class="description"> Sliding Galleries Templates</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Featured Services Section -->
+
+    
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>My Skills</h2>
+          <!-- <h3>Find Out More <span>About Us</span></h3> -->
+          <!-- <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> -->
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span> 
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            
+            <div class="progress">
+              <span class="skill"> Java <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- ======= Counts Section ======= -->
+     <!-- <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="icofont-simple-smile"></i>
+              <span data-toggle="counter-up">232</span>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="icofont-document-folder"></i>
+              <span data-toggle="counter-up">521</span>
+              <p>Projects</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="icofont-live-support"></i>
+              <span data-toggle="counter-up">1,463</span>
+              <p>Hours Of Support</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="icofont-users-alt-5"></i>
+              <span data-toggle="counter-up">15</span>
+              <p>Hard Workers</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>  -->
+    <!-- End Counts Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Clients Section -->
+
+    <!-- ======= Services / Featured Projects Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Featured Projects</h2>
+          <h3>Check my <span> Featured Projects</span></h3>
+          <!-- <h2>Services</h2> -->
+          <!-- <h3>Check my <span>Featured Services</span></h3> -->
+          <!-- <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> -->
+        </div>
+
+        <!-- Im here >>>>>>>>>>>>>>>> -->
+        <div class="row">
+
+          <!-- This next code is gonna be copied below by given classes of positioning  -->
+          <div  class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <!-- <div style="background-image: url('assets/img/portfolio/portfolio-9.jpg'); width: fit-content; " class="icon-box"> -->
+            <div style="background-image: url('assets/img/portfolio/portfolio-9.jpg'); background-position:center; background-size: cover;  " class="icon-box">
+              <!-- <img src="assets/img/portfolio/portfolio-9.jpg" > -->
+              <!-- <div class="icon">
+                <i class="bx bxl-dribbble"></i>
+              </div> -->
+              <h4><a href="">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Sed ut perspiciatis</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4><a href="">Dele cardo</a></h4>
+              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">Divera don</a></h4>
+              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+            <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Founder</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <h3>Check my <span>Classified Portfolio</span></h3>
+          <!-- <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> -->
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <!-- <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li> -->
+              <li data-filter=".filter-BTemps">Basic Web Templates </li>
+              <li data-filter=".filter-ATemps">Advanced Web Templates</li>
+              <li data-filter=".filter-webA">Web Applications</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          <!-- My new classification  -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-BTemps">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4> Basic Template 1</h4>
+              <p> Basic Template 1 </p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Basic Template 1">
+                <i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ATemps">
+            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4> Advanced Template 1</h4>
+              <p> Advanced Template 1 </p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Advanced Template 1">
+                <i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-webA">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4> Web Application 1</h4>
+              <p> Web Application 1 </p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web Application 1">
+                <i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <!-- -------------------------------- -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-BTemps">
+            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4> Basic Template 2</h4>
+              <p> Basic Template 2 </p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Basic Template 2">
+                <i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ATemps">
+            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4> Advanced Template 2</h4>
+              <p> Advanced Template 2 </p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Advanced Template 2">
+                <i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-webA">
+            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4> Web Application 2</h4>
+              <p> Web Application 2 </p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web Application 2">
+                <i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          
+          <!-- ----------------------------- -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-BTemps">
+            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4> Basic Template 3</h4>
+              <p> Basic Template 3 </p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Basic Template 3">
+                <i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ATemps">
+            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4> Advanced Template 3</h4>
+              <p> Advanced Template 3 </p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Advanced Template 3">
+                <i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-webA">
+            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4> Web Application 3</h4>
+              <p> Web Application 3 </p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web Application 3">
+                <i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          
+          <!-- ----------------------------- -->
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1">
+                <i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3">
+                <i class="bx bx-plus"></i>
+              </a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 2">
+                <i class="bx bx-plus"></i>
+              </a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2">
+                <i class="bx bx-plus"></i>
+              </a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+     <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <h3>Our Hardworking <span>Team</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>                  
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> 
+    <!-- End Team Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <!-- <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <h3>Check our <span>Pricing</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Business</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Developer</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <span class="advanced">Advanced</span>
+              <h3>Ultimate</h3>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>F.A.Q</h2>
+          <h3>Frequently Asked <span>Questions</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
+
+          <li>
+            <a data-toggle="collapse" class="" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="icofont-simple-up"></i></a>
+            <div id="faq1" class="collapse show" data-parent=".faq-list">
+              <p>
+                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="icofont-simple-up"></i></a>
+            <div id="faq2" class="collapse" data-parent=".faq-list">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="icofont-simple-up"></i></a>
+            <div id="faq3" class="collapse" data-parent=".faq-list">
+              <p>
+                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="icofont-simple-up"></i></a>
+            <div id="faq4" class="collapse" data-parent=".faq-list">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="icofont-simple-up"></i></a>
+            <div id="faq5" class="collapse" data-parent=".faq-list">
+              <p>
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="icofont-simple-up"></i></a>
+            <div id="faq6" class="collapse" data-parent=".faq-list">
+              <p>
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+    <!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <h3><span>Contact Me</span></h3>
+          <!-- <p>+20 01151638804</p> -->
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>My Address</h3>
+              <p>Cairo Egypt</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Me</h3>
+              <p>shadisayed.68911@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Me</h3>
+              <p> +202/01151638804 </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0" 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" 
+            frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p> ...</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3> My Page <span>.</span></h3>
+            <p>
+              My st. <br>
+              My Town,Cairo<br>
+              Egypt <br><br>
+              <strong>Phone:</strong> +202 01151638804  <br>
+              <strong>Email:</strong> shadisayed.68911@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4> Hot Links </h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4> My Services </h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"> Web Design </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"> Web Development </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"> Web Administration </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"> Digital Marketing </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"> Graphic Design </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"> Video Design </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"> Animation Design </a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4> My Social Networks</h4>
+            <p> Join my Social Networks </p>
+            <div class="social-links mt-3">
+              <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+              <a href="https://www.facebook.com/shadi.ahmed.33671748/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
+              <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span> ShidowPro </span></strong>. All Rights Reserved
+      </div>      
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

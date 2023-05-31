@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title> My Programing References - PHP OOP </title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="" rel="icon">
+    <link href="" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+      /* #hidden {
+        display: none;
+      }
+  
+      .hidden {
+        display: none;
+      }
+  
+      
+      .slider {
+        position: relative;
+        margin-top: 3rem;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+         width: 40.625rem; 
+        width: 20rem;
+        height: 26.25rem;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+      }
+  
+      .slider__list {
+        position: absolute;
+        left: 0;
+        width: 162.5rem;
+      }
+  
+      .slider__slide {
+        float: left;
+      }
+      
+      .slider__control {
+        margin-right: auto;
+        margin-left: auto;
+        width: 4.5rem;
+        font-family: sans-serif;
+      }
+      .slider__control label {
+        position: relative;
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        width: 4.5rem;
+        height: 2rem;
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 1.5;
+        color: transparent;
+        background: #ddd;
+        border-radius: 2rem;
+        cursor: pointer;
+        -webkit-transition: left 0.15s ease-out;
+        transition: left 0.15s ease-out;
+      }
+      .slider__control label:before {
+        content: "autoplay";
+        position: absolute;
+        top: 2.5rem;
+        left: 0;
+        color: #333;
+        font-size: .95rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .slider__control label:after {
+        content: "";
+        position: absolute;
+        top: .25rem;
+        left: .25rem;
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 2rem;
+        background: #fff;
+        -webkit-transition: left 0.001s ease-out;
+        transition: left 0.001s ease-out;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      .slider__switch:checked + .slider > .slider__list {
+        -webkit-animation-name: autoplay;
+        animation-name: autoplay;
+      
+       This will change the time it takes to move to next slide 
+        -webkit-animation-duration: 40s;
+        animation-duration: 40s;
+        animation-delay: 2s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+      }
+      .slider__switch:checked + .slider + .slider__control > label { background: #455a64; }
+      .slider__switch:checked + .slider + .slider__control > label:after { left: 2.75rem; }
+  
+      @-webkit-keyframes 
+      autoplay {    position of the first slide 
+        0% {
+          left: 0;
+        }
+         position of the second slide 
+        25% {
+          left: -40.625rem;
+        }
+         position of the third slide
+        50% {
+          left: -81.25rem;
+        }
+         position of the fourth slide 
+        100% {
+          left: -121.875rem;
+        }
+      }
+      
+      @keyframes 
+      autoplay {    position of the first slide
+        0% {
+          left: 0;
+        }
+         position of the second slide 
+        25% {
+          left: -40.625rem;
+        }
+         position of the third slide 
+        50% {
+          left: -81.25rem;
+        }
+         position of the fourth slide 
+        100% {
+          left: -121.875rem;
+        }
+      }
+  
+      .Simg {
+        width:650px;
+        height:420px;
+        margin:0;
+        left:0; 
+        right:0;
+        margin-left:-25px;
+      } */
+    </style>  
+  
+    <script src="myFun.js">
+    </script>
+  
+    <!-- ======================================================  
+    ======================================================== -->
+  </head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <i class="icofont-envelope"></i> <a href="mailto:shadisayed.68911@gmail.com">shadisayed.68911@gmail.com</a>
+        <i class="icofont-phone"></i> +0201151638804
+      </div>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="skype"><i class="icofont-skype"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">      
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <!-- First default Nav Bar -->
+      <!-- <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>                                      
+          <li class="drop-down"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Deep Drop Down</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </nav> -->
+      <!-- .nav-menu -->
+      <!-- ======================================================================================================= -->
+      <!-- Second default Nav Bar -->
+      <!-- <nav class="nav-menu d-none d-lg-block" style="margin-top:-20px; margin-right:50px; position:relative;"> -->
+        <nav class="nav-menu d-none d-lg-block"  >
+          <ul style="margin-left: -100px; margin-right:500px">          
+            
+            <!-- 1) [HTML5 Course] Main Menu Item -->                    
+              <!-- [HTML5 Course] Sub Menu 1 -->                    
+              <li class="drop-down" >                                                              
+  
+              <a href="HTML5.html" style="color:dodgerblue"> HTML5 </a>                
+                <!-- <ul>
+                  <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson2 Deprecated Tags/HTML5 Lesson 2  Deprecated Tags.html">Lesson 2 [Deprecated Tags]</a></li>
+                  <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson3 New Semantics/HTML5 Lesson 3 New Sematics.html">Lesson 3 [New Semantics]</a></li>
+                  <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson4 Syntax/HTML5 Lesson 4 Syntax.html">Lesson 4 [Syntax]</a></li>
+                  <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson5 Migrate from 4 to 5/HTML5 Lesson 5 Migrate from 4 to 5.html">Lesson 5 [Migrate from 4 to 5]</a></li>
+                  <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson6 Supporting html5/HTML5 Lesson 6 Supporting HTML5.html">Lesson 6 [Supporting html5]</a></li>
+                  <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson7 New Tags Part 1/HTML5 Lesson 7 New Tags part 1.html">Lesson 7 [New Tags Part 1] </a></li>
+                  <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson8 New Tags Part 2/HTML5 Lesson 8 New Tags part 2.html">Lesson 8 [New Tags Part 2]</a></li>
+                  <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson9 New Tags Part 3/HTML5 Lesson 9 New Tags part 3.html">Lesson 9 [New Tags Part 3]</a></li>
+                  <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson10 New Tags Part 4/HTML5 Lesson 10 New Tags part 4.html">Lesson 10 [New Tags Part 4]</a></li>
+                  <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson11 New Tags Part 5/HTML5 Lesson 11 New Tags part 5.html">Lesson 11 [New Tags Part 5]</a></li>
+                  <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson12 New Tags Part 6/HTML5 Lesson 12 New Tags part 6.html">Lesson 12 [New Tags Part 6]</a></li>
+                  <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson13 New Form Elements [Datalist]/HTML5 Lesson 13 New Form Elements [Datalist].html">Lesson 13 [New Form Elements [Datalist]</a></li>
+                  
+                  
+                  <li class="drop-down">
+                    <a href="#">More => </a>
+                    <ul class='more' style="margin-top: -500px;" >
+                      <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson14 New Form Elements [Output]/HTML5 Lesson 14 New Form Elements [Output].html">Lesson 14 [New Form Elements [Output]]</a></li>
+                      <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson15 New Tag [Audio]/HTML5 Lesson 15 New Tag [Audio].html">Lesson 15 [New Tag Audio]]</a></li>
+                      <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson16 New Tag [Video]/HTML5 Lesson 16 New Tag [Video].html">Lesson 16 [New Tag [Video]]</a></li>
+                      <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson17 Form Input [Color,Range,Number]/HTML5 Lesson 17 Form Input [Color,Range,Number].html">Lesson 17 [Form Input [Color,Range,Number]]</a></li>
+                      <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson18 Form Input [Email, Search, Url, Tel]/HTML5 Lesson 18 Form Input [Email, Search, Url, Tel].html">Lesson 18 [Form Input [Email, Search, Url, Tel]]</a></li>
+                      <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson19 Form Input [Time, Date, Month, Week]/HTML5 Lesson 19 Form Input [Time, Date, Month, Week].html">Lesson 19 [Form Input [Time, Date, Month, Week]]</a></li>
+                      <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson20 Form Attributes [AutoComplete, AutoFocus, NoValidate]/HTML5 Lesson 20 Form Attributes [AutoComplete, AutoFocus, NoValidate].html">Lesson 20 [Form Attributes [AutoComplete, AutoFocus, NoValidate]]</a></li>
+                      <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson21 Form Attributes [Action, Method, EncType]/HTML5 Lesson 21 Form Attributes [ Action, Method, EncType ].html">Lesson 21 [Form Attributes [Action, Method, EncType]]</a></li>
+                      <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson22 Form Input Attributes [Form, FormNoValidate, FormTarget]/HTML5 Lesson 22 Form Input Attributes [Form, FormNoValidate, FormTarget].html">Lesson 22 [Form Input Attributes [Form, FormNoValidate, FormTarget]]</a></li>
+                      <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson23 Form Attributes [Multiple, Placeholder, Required]/HTML5 Lesson 23 Form Attributes [Multiple, Placeholder, Required].html">Lesson 23 [Form Attributes [Multiple, Placeholder, Required]]</a></li>
+                      <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson24 Form Attributes [Min, Max, Step, Pattern]/HTML5 Lesson 24 Form Attributes [Min, Max, Step, Pattern].html">Lesson 24 [Form Attributes [Min, Max, Step, Pattern]]</a></li>
+                      <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson25 Form Attributes [Readonly vs Disabled]/HTML5 Lesson 25 Form Attributes [Readonly vs Disabled].html">Lesson 25 [Form Attributes [Readonly vs Disabled]]</a></li>
+                      
+                  
+                      <li class="drop-down">
+                        <a href="#">More => </a>
+                        <ul style="margin-top: -500px;">                      
+                          <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson26 [Canvas Intro]/HTML5 Lesson 26 [Canvas Intro].html">Lesson 26 [Canvas Intro]</a></li>
+                          <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson27 [Canvas Create Simple Canvas]/HTML5 Lesson 27 [Create Simple Canvas].html">Lesson 27 [Canvas Create Simple Canvas]</a></li>
+                          <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson28 [Canvas Create Simple Line]/HTML5 Lesson 28 [Canvas Create Simple Line].html">Lesson 28 [Canvas Create Simple Line]</a></li>
+                          <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson29 [Canvas Create Simple Text]/HTML5 Lesson 29 [Canvas Create Simple Text].html">Lesson 29 [Canvas Create Simple Text]</a></li>
+                          <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson30 [Create Canvas pure JS]/HTML5 Lesson 30 [Create Canvas with pure JS].html">Lesson 30 [Create Canvas pure JS]</a></li>
+                          <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson31 [SVG Introduction]/HTML5 Lesson 31 [SVG - Introduction].html">Lesson 31 [SVG Introduction]</a></li>
+                          <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson32 [SVG Rect Circle]/HTML5 Lesson 32 [SVG - Rect Circle].html">Lesson 32 [SVG Rect Circle]</a></li>
+                          <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson33 [SVG Use CSS]/HTML5 Lesson 33 [SVG - Use CSS].html">Lesson 33 [SVG Use CSS]</a></li>
+                          <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson34 [SVG Ellipse Line]/HTML5 Lesson 34 [SVG - Ellipse, Line].html">Lesson 34 [SVG Ellipse Line]</a></li>
+                          <li><a target='_blank' href="My Web Pages/1 HTML5 Course/HTML5 Lesson35 [SVG Compare]/HTML5 Lesson 35 [SVG Compare].html">Lesson 35 [SVG Compare]</a></li>                                                            
+                        </ul>
+                      </li>             
+                    </ul>
+                  </li>
+                </ul>                             -->
+            </li>          
+            <!-- --------------------------------------------------------------------------------------------------- -->
+            
+            <!-- 2) [CSS2 Course] Main Menu Item -->                    
+              <li class="drop-down" >                                                
+  
+              <a href="CSS2.html" style="color:dodgerblue"> CSS2 </a>                            
+                <!-- <ul>
+                  
+                  <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson2 Tags/Testing Tags.html">Lesson 2 [Tags]</a></li>
+                  <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson3 Styling Modes/CSS Styling Modes.html">Lesson 3 [Styling Modes]</a></li>
+                  <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson4 Background/Css lesson 4 background.html">Lesson 4 [Background]</a></li>
+                  <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson5 Text Part1/CSS lesson 5 Text Part1.html">Lesson 5 [Text Part1]</a></li>
+                  <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson6 Text Part2/Css Lesson 6 Text Part2.html">Lesson 6 [Text Part2]</a></li>
+                  <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson7 Font/Css Lesson 7 Font.html">Lesson 7 [Font] </a></li>
+                  <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson8 Links/Css Lesson 8 Links.html">Lesson 8 [Links]</a></li>
+                  <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson9 Listing/Css lesson 9 Listing.html">Lesson 9 [Listing]</a></li>
+                  <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson10 BoxModel/Css lesson 10 Box Model.html">Lesson 10 [BoxModel]</a></li>
+                  <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson11 Border/Css Lesson 11 Border.html">Lesson 11 [Border]</a></li>
+                  <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson12 Margin/Css Lesson 12 Margin.html">Lesson 12 [Margin]</a></li>
+                  <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson13 Padding/Css Lesson 13 Padding.html">Lesson 13 [Padding]</a></li>
+                  
+                  <li class="drop-down">
+                    <a href="#">More => </a>
+                    <ul class='more' style="margin-top: -500px;" >
+                      <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson14 Dimensions/Css Lesson 14 Dimensions(width-height).html">Lesson 14 [Dimensions]</a></li>
+                      <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson15 Display/Css Lesson 15 Display.html">Lesson 15 [Display]</a></li>
+                      <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson16 Position/Css Lesson 16 Position.html">Lesson 16 [Position]</a></li>
+                      <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson17 Float/Css Lesson 17 Float.html">Lesson 17 [Float]</a></li>
+                      <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson18 Grouping/Css Lesson 18 Grouping Similar Selectors.html">Lesson 18 [Grouping]</a></li>
+                      <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson19 Nesting/Css Lesson 19 Nesting.html">Lesson 19 [Nesting]</a></li>
+                      <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson20 Overflow/Css Lesson 20 Overflow.html">Lesson 20 [Overflow]</a></li>
+                      <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson21 Visibility/Css Lesson 21 Visibility.html">Lesson 21 [Visibility]</a></li>
+                      <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson22 Z-Index/Css Lesson 22 Z-Index.html">Lesson 22 [Z-Index]</a></li>
+                      <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson23 Content/Css Lesson 23 Content (Before, After).html">Lesson 23 [Content]</a></li>
+                      <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson24 Cursor/Css Lesson 24 Cursor.html">Lesson 24 [Cursor]</a></li>
+                      <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson25 Outline/Css Lesson 25 Outline.html">Lesson 25 [Outline]</a></li>
+                      
+                      <li class="drop-down">
+                        <a href="#">More => </a>
+                        <ul style="margin-top: -500px;">                      
+                          <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson26 Selectors/Css Lesson 26 Selectors.html">Lesson 26 [Selectors]</a></li>
+                          <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson27 Pseudo Classes/Css Lesson 27 Pseudo Classes.html">Lesson 27 [Pseudo Classes]</a></li>
+                          <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson28 Attributes/Css Lesson 28 Attributes.html">Lesson 28 [Attributes]</a></li>
+                          <li><a target='_blank' href="My Web Pages/2 CSS 2 Course/CSS Lesson29 Media/Css Lesson 29 Media.html">Lesson 29 [Media]</a></li>                                        
+                        </ul>
+                      </li>             
+                    </ul>
+                  </li>
+                </ul>                             -->
+            </li>          
+            <!-- --------------------------------------------------------------------------------------------------- -->
+            
+            <!-- 3) [CSS3 Course] Main Menu Item -->                                
+              
+              <li class="drop-down" >                                                
+  
+              <a href="CSS3.html" style="color:dodgerblue;"> CSS3 </a>                
+                <!-- <ul class='JSMenu' style="padding:-10px; margin-left:-200px">
+                  
+                  <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson1 Introduction and What`s New in Css 3/CSS3 Lesson1 [Introduction and What`s New in Css 3].html"> Lesson1 [Introduction and What`s New in Css 3]</a></li>
+                  <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson2 What`s Vendor Prefixes/CSS3 Lesson2 [What`s Vendor Prefixes].html"> Lesson2 [What`s Vendor Prefixes] </a></li>
+                  <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson3 Border Radius/CSS3 Lesson3 [Border Radius].html"> Lesson3 [Border Radius]</a></li>
+                  <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson4 Box Shadow/CSS3 Lesson4 [Box Shadow].html"> Lesson4 [Box Shadow] </a></li>                
+                  <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson5 Box Sizing/CSS3 Lesson5 [Box Sizing].html"> Lesson5 [Box Sizing] </a></li>
+                  <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson6 Examples  Box Shadow, Border Radius/CSS3 Lesson6 [Examples on Box Shadow and border Radius].html"> Lesson6 [Examples on Box Shadow and border Radius] </a></li>
+                  <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson7 Text Shadows/CSS3 Lesson7 [Text Shadows].html"> Lesson7 [Text Shadows] </a></li>
+                  <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson8 Text Ovrflow/CSS3 Lesson8 [Text Overflow].html"> Lesson8 Text Overflow</a></li>
+                  <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson9 Word Wrap, White Space/CSS3 Lesson9 [Word Wrap, White Space].html"> Lesson9 Word Wrap, White Space </a></li>                
+                  <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson10 2D Transform - Rotate/CSS3 Lesson10 [2D Transform - Rotate].html"> Lesson10 2D Transform - Rotate </a></li>
+                  <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson11 2D Transform - Scale/CSS3 Lesson11 [2D Transform - Scale].html"> Lesson11 2D Transform - Scale </a></li>
+                  <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson12 2D Transform - Translate/CSS3 Lesson12 [2D Transform - Translate].html"> Lesson12 2D Transform - Translate </a></li>                    
+                  <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson13 2D Transform - Skew/CSS3 Lesson13 [2D Transform - Skew].html"> Lesson13 2D Transform - Skew </a></li>
+                  <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson14 2D Transform - Matrix/CSS3 Lesson14 [2D Transform - Matrix].html"> Lesson14 2D Transform - Matrix </a></li>
+                  <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson15 3D Transform - Rotate X, Y, Z()/CSS3 Lesson15 [3D Transform - Rotate X, Y, Z()].html"> Lesson15 3D Transform - Rotate X, Y, Z() </a></li>                    
+                  <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson16 3D Transform - Translate 3D/CSS3 Lesson16 [3D Transform - Translate()].html"> Lesson16 3D Transform - Translate 3D</a></li>                    
+                  
+                  
+                  <li class="drop-down">
+                    <a href="#">More => </a>
+                    <ul class='more' style="margin-top: -490px;" >
+                      <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson17 3D Transform - Scale 3D/CSS3 Lesson17 [3D Transform - Scale 3D].html"> Lesson17 3D Transform - Scale 3D</a></li>                    
+                      <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson18 3D Transform - Matrix 3D/CSS3 Lesson18 [3D Transform - Matrix 3D].html"> Lesson18 3D Transform - Matrix 3D </a></li>                    
+                      <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson19 3D Transform - Perspective/CSS3 Lesson19 3D Transform - Perspective].html"> Lesson19 3D Transform - Perspective </a></li>                    
+                      <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson20 3D Transform - Transform Origin, Style/CSS3 Lesson20 3D Transform - Transform Origin, Style.html"> Lesson20 3D Transform - Transform Origin, Style </a></li>                    
+                      <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson21 3D Transform - Backface Visibility/CSS3 Lesson21 3D Transform - Backface Visibility.html"> Lesson21 3D Transform - Backface Visibility </a></li>                    
+                      <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson22 3D Transform - Create Flip Card/CSS3 Lesson22 3D Transform - Create Flip Card.html"> Lesson22 3D Transform - Create Flip Card </a></li>                    
+                      <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson23 Background New Features/CSS3 Lesson23 Background New Features.html"> Lesson23 Background New Features </a></li>                    
+                      <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson24 Overflow New Features/CSS3 Lesson24 Overflow New Features.html"> Lesson24 Overflow New Features </a></li>
+                      <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson25 Resize/CSS3 Lesson25 Resize.html"> Lesson25 Resize </a></li>                        
+                      <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson27 Flex Direction ¦ Flex Wrap/CSS3 Lesson27 Flex Direction ¦ Flex Wrap.html"> Lesson27 Flex Direction ¦ Flex Wrap </a></li>                                                                        
+                      <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson28 FlexFlow - Justify Content/CSS3 Lesson28 FlexFlow - Justify Content.html"> Lesson28 FlexFlow - Justify Content </a></li>                        
+                      <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson29 Align Items ¦ Align Content/CSS3 Lesson29 Align Items ¦ Align Content.html"> Lesson29 Align Items ¦ Align Content </a></li>                        
+                      <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson30 Order ¦ Flex Grow ¦ Flex Shrink/CSS3 Lesson30 Order ¦ Flex Grow ¦ Flex Shrink.html"> Lesson30 Order ¦ Flex Grow ¦ Flex Shrink </a></li>                        
+                      <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson31 Flex Basis ¦ Shorthand/CSS3 Lesson31 Flex Basis ¦ Shorthand.html"> Lesson31 Flex Basis ¦ Shorthand </a></li>                                                
+                      <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson32 Transition - Intro/CSS3 Lesson32 Transition - Intro.html"> Lesson32 Transition - Intro </a></li>                                                
+                      <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson33 Transition - Property ¦ Duration/CSS3 Lesson33 Transition - Property ¦ Duration.html"> Lesson33 Transition - Property ¦ Duration </a></li>                                                
+                      <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson34 Transition - Timing Function ¦ Delay/CSS3 Lesson34 Transition - Timing Function ¦ Delay.html"> Lesson34 Transition - Timing Function ¦ Delay </a></li>                                                
+                      
+                  
+                  
+                      <li class="drop-down">
+                        <a href="#">More => </a>
+                        <ul style="margin-top: -490px;">                      
+                          <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson35 Transition - Examples/CSS3 Lesson35 Transition - Examples.html"> Lesson35 Transition - Examples </a></li>                                                                        
+                          <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson36 Multi Columns/CSS3 Lesson36 Multi Columns [Column-count Column-gap].html"> Lesson36 Multi Columns </a></li>                        
+                          <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson37 Multi Columns - Column Rule, Column Width/CSS3 Lesson37 Multi Columns - Column Rule, Column Width.html"> Lesson37 Multi Columns - Column Rule, Column Width </a></li>
+                          <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson25 Resize/CSS3 Lesson25 Resize.html"> Lesson25 Resize </a></li>                        
+                          <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson27 Flex Direction ¦ Flex Wrap/CSS3 Lesson27 Flex Direction ¦ Flex Wrap.html"> Lesson27 Flex Direction ¦ Flex Wrap </a></li>                                                                        
+                          <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson28 FlexFlow - Justify Content/CSS3 Lesson28 FlexFlow - Justify Content.html"> Lesson28 FlexFlow - Justify Content </a></li>                        
+                          <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson29 Align Items ¦ Align Content/CSS3 Lesson29 Align Items ¦ Align Content.html"> Lesson29 Align Items ¦ Align Content </a></li>                        
+                          <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson30 Order ¦ Flex Grow ¦ Flex Shrink/CSS3 Lesson30 Order ¦ Flex Grow ¦ Flex Shrink.html"> Lesson30 Order ¦ Flex Grow ¦ Flex Shrink </a></li>                        
+                          <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson31 Flex Basis ¦ Shorthand/CSS3 Lesson31 Flex Basis ¦ Shorthand.html"> Lesson31 Flex Basis ¦ Shorthand </a></li>
+                          <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson32 Transition - Intro/CSS3 Lesson32 Transition - Intro.html"> Lesson32 Transition - Intro </a></li>
+                          <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson33 Transition - Property ¦ Duration/CSS3 Lesson33 Transition - Property ¦ Duration.html"> Lesson33 Transition - Property ¦ Duration </a></li>
+                          <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson34 Transition - Timing Function ¦ Delay/CSS3 Lesson34 Transition - Timing Function ¦ Delay.html"> Lesson34 Transition - Timing Function ¦ Delay </a></li>
+                          <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson35 Transition - Examples/CSS3 Lesson35 Transition - Examples.html"> Lesson35 Transition - Examples </a></li>                           
+                          <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson36 Multi Columns/CSS3 Lesson36 Multi Columns [Column-count Column-gap].html"> Lesson36 Multi Columns </a></li>
+                          <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson37 Multi Columns - Column Rule, Column Width/CSS3 Lesson37 Multi Columns - Column Rule, Column Width.html"> Lesson37 Multi Columns - Column Rule, Column Width </a></li>
+                          <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson38 Multi Columns - Column Span, Shorthand/CSS3 Lesson38 Multi Columns - Column Span, Shorthand.html"> Lesson38 Multi Columns - Column Span, Shorthand </a></li>                            
+                          <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson39 Animation - Intro Keyframes/CSS3 Lesson39 Animation - Intro and Keyframes.html"> Lesson39 Animation - Intro Keyframes </a></li>                            
+                                                
+                                  
+                          <li class="drop-down">
+                            <a href="#">More => </a>
+                            <ul style="margin-top: -490px;">                      
+                              <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson40 Animation - Name, Duration/CSS3 Lesson40 Animation - Name, Duration.html"> Lesson40 Animation - Name, Duration </a></li>                            
+                              <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson41 Animation - Iteration Count, Direction/CSS3 Lesson41 Animation - Iteration Count, Direction.html"> Lesson41 Animation - Iteration Count, Direction </a></li>                            
+                              <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson42 Animation - Delay, Fill Mode/CSS3 Lesson42 Animation - Delay, Fill Mode.html"> Lesson42 Animation - Delay, Fill Mode </a></li>                                                        
+                              <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson43 Animation - Play State, Timing Function/CSS3 Lesson43 Animation - Play State, Timing Function.html"> Lesson43 Animation - Play State, Timing Function </a></li>                            
+                              <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson44 Animation - Shorthand/CSS3 Lesson44 Animation - Shorthand.html"> Lesson44 Animation - Shorthand </a></li>                            
+                              <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson45 Animation - Create Swing Dropdown/CSS3 Lesson45 Animation - Create Swing Dropdown.html">  Lesson45 Animation - Create Swing Dropdown  </a></li>                            
+                              <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson46 Animation - Create Wave Audio Loading/CSS3 Lesson46 Animation - Create Wave Audio Loading.html"> Lesson46 Animation - Create Wave Audio Loading  </a></li>                                                                                                              
+                              <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson47 Animation - Create Snake Loading/CSS3 Lesson47 Animation - Create Snake Loading.html"> Lesson47 Animation - Create Snake Loading  </a></li>                            
+                              <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson48 Animation - Animation Outro/CSS3 Lesson48 Animation - Animation Outro.html"> Lesson48 Animation - Animation Outro  </a></li>                            
+                              <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson49 Selectors - Next, Start With, End With, Contains/CSS3 Lesson49 Selectors - Next, Start With, End With, Contains.html"> Lesson49 Selectors - Next, Start With, End With, Contains </a></li>                                                      
+                              <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson50 Selectors - Checked, Enabled, Disabled, Empty/CSS3 Lesson50 Selectors - Checked, Enabled, Disabled, Empty.html"> Lesson50 Selectors - Checked, Enabled, Disabled, Empty </a></li>                            
+                              <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson51 Selectors - Not, Last-Child, First-Of-Type/CSS3 Lesson51 Selectors - Not, Last-Child, First-Of-Type.html"> Lesson51 Selectors - Not, Last-Child, First-Of-Type </a></li>                                                                                                              
+                              <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson52 Selectors - Only-Child, Only-Of-Type, Selection/CSS3 Lesson52 Selectors - Only-Child, Only-Of-Type, Selection.html"> Lesson52 Selectors - Only-Child, Only-Of-Type, Selection </a></li>                                                                                  
+                              <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson53 Selectors - Nth-Child, Nth-Of-Type Part 1/CSS3 Lesson53 Selectors - Nth-Child, Nth-Of-Type Part 1.html"> Lesson53 Selectors - Nth-Child, Nth-Of-Type Part 1 </a></li>                                                                                                              
+                              <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson54 Selectors - Nth-Child, Nth-Of-Type Part 2/CSS3 Lesson54 Selectors - Nth-Child, Nth-Of-Type Part 2.html"> Lesson54 Selectors - Nth-Child, Nth-Of-Type Part 2 </a></li>                                                                                  
+                              <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson55  Font Face/CSS3 Lesson55  Font Face.html"> Lesson55 Font Face </a></li>                                                                                                              
+                              <li><a target='_blank' href="My web pages\3 CSS3 Course\CSS3 Lesson56 Media Queries/CSS3 Lesson56 Media Queries.html"> Lesson56 Media Queries </a></li>                                                                                                                                                                      
+                            </ul>
+                          </li>                                                                   
+                        </ul>
+                      </li>
+                    </ul>                   
+                    
+                  </li>
+                </ul>               -->
+            </li>                                                                        
+            <!-- --------------------------------------------------------------------------------------------------- -->
+            
+            <!-- 4) [Javascript Course] Main Menu Item -->                    
+              <li class="drop-down" >                                                
+                
+                <a href="JS.html" style="color:dodgerblue"> Javascript </a>                                            
+                  <!-- <ul class='JSMenu' style="padding:-10px; margin-left:-200px"> 
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson1 [Introduction]/JavaScript Lesson 1 [Introduction].html">Lesson 1 [Introduction]</a></li>
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson2 [Requirements]/JavaScript Lesson 2 [Requirements].html">Lesson 2 [[Requirements]</a></li>
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson3 [Chrome Console]/JavaScript Lesson 3 [Chrome Console].html">Lesson 3 [Chrome Console]</a></li>
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson4 [Where to put Javascript code]/JavaScript Lesson 4 [Where to put Javascript Code].html">Lesson 4 [Where to put Javascript code]</a></li>
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson5 [Javascript Syntax]/JavaScript Lesson 5 [Javascript Syntax].html">Lesson 5 [Javascript Syntax]</a></li>
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson6 [Javascript Comments]/JavaScript Lesson 6 [Javascript Comments].html">Lesson 6 [Javascript Comments]</a></li>
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson7 [Javascript Variables]/JavaScript Lesson 7 [Javascript Variables].html">Lesson 7 [Javascript Variables] </a></li>
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson8 [Javascript DataTypes]/JavaScript Lesson 8 [Javascript DataTypes].html">Lesson 8 [Javascript DataTypes]</a></li>
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson9 [Javascript Concatenation]/JavaScript Lesson 9 [Javascript  Concatenation].html">Lesson 9 [Javascript Concatenation]</a></li>
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson10 [Javascript Output]/JavaScript Lesson 10 [Javascript  Output].html">Lesson 10 [Javascript Output]</a></li>
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson11 [Javascript Operators]/JavaScript Lesson 11 [Javascript  Operators].html">Lesson 11 [Javascript Operators]</a></li>
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson12 [Javascript If Statement]/JavaScript Lesson 12 [Javascript  If Statement].html">Lesson 12 [Javascript If Statement]</a></li>
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson13 [Javascript Conditional Operators]/JavaScript Lesson 13 [Javascript  Conditional Operators].html">Lesson 13 [Javascript Conditional Operators]</a></li>
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson14 [Javascript Logical Operators]/JavaScript Lesson 14 [Javascript  Logical  Operators].html">Lesson 14 [Javascript Logical Operators]</a></li>
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson15 [Javascript Functions]/JavaScript Lesson 15 [Javascript  Functions].html">Lesson 15 [Javascript Functions]</a></li>
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson16 [Javascript Functions Return]/JavaScript Lesson 16 [Javascript  Functions Return].html">Lesson 16 [Javascript Functions Return]</a></li>
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson17 [Javascript Functions with Parameters]/JavaScript Lesson 17 [Javascript  Functions with Parameter].html">Lesson 17 [Javascript Functions with Parameters]</a></li>
+                    <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson18 [Javascript Functions Advanced Self Invoke]/JavaScript Lesson 18 [Javascript  Functions Advanced Self Invoke].html">Lesson 18 [Javascript Functions Advanced Self Invoke]</a></li>
+                
+                    
+                    <li class="drop-down">
+                      <a href="#">More => </a>
+                      <ul class='more' style="margin-top: -600px;" >                    
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson19 [Javascript Switch Case Break]/JavaScript Lesson 19 [Javascript Switch, Case, Break].html">Lesson 19 [Javascript Switch Case Break]</a></li>
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson20 [Javascript Scope Part 1]/JavaScript Lesson 20 [Javascript Scope part 1].html">Lesson 20 [Javascript Scope Part 1]</a></li>
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson21 [Javascript Scope Part 2]/JavaScript Lesson 21 [Javascript Scope part 2].html">Lesson 21 [[Javascript Scope Part 2]</a></li>
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson22 [Javascript onload, onclick, ondblclick]/JavaScript Lesson 22 [Javascript onload, onclick, ondblclick].html">Lesson 22 [Javascript onload, onclick, ondblclick]</a></li>
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson23 [Javascript onkeydown, onkeypress, onkeyup]/JavaScript Lesson 23 [onkeydown, onkeypress, onkeyup].html">Lesson 23 [Javascript onkeydown, onkeypress, onkeyup]</a></li>
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson24 [onmouseover, onmouseout , onchange]/JavaScript Lesson 24 [onmouseover, onmouseout, onchange].html">Lesson 24 [onmouseover, onmouseout , onchange]</a></li>
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson25 [Array Intro]/JavaScript Lesson 25 [Array Intro].html">Lesson 25 [Array Intro]</a></li>
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson26 [Array Check]/JavaScript Lesson 26 [Array Check].html">Lesson 26 [Array Check]</a></li>
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson27 [Javascript Array (set - get) Length]/JavaScript Lesson 27 [Array (Set - Get) Length].html">Lesson 27 [Javascript Array (set - get) Length]</a></li>
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson28 [Javascript Array Convert To String]/JavaScript Lesson 28 [Array Convert To String].html">Lesson 28 [Javascript Array Convert To String]</a></li>
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson29 [Javascript Array Add Items]/JavaScript Lesson 29 [Array Add Items].html">Lesson 29 [Javascript Array Add Items]</a></li>                                        
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson30 [Javascript Array Remove Items]/JavaScript Lesson 30 [Array Remove Items].html">Lesson 30 [Javascript Array Remove Items]</a></li>                                        
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson31 [Javascript Array Sort Items]/JavaScript Lesson 31 [Array Sort Items].html">Lesson 31 [Javascript Array Sort Items]</a></li>                                        
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson32 [Javascript Array Combine and Slice ]/JavaScript Lesson 32 [Array Combine - Slice].html">Lesson 32 [[Javascript Array Combine and Slice ]</a></li>                                        
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson33 [Javascript Array Search]/JavaScript Lesson 33 [Array Search].html">Lesson 33 [Javascript Array Search]</a></li>                                        
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson34 [Javascript Array Practise]/JavaScript Lesson 34 [Array Practise].html">Lesson 34 [Javascript Array Practise]</a></li>                                        
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson35 [ String Methods - Convert to String]/JavaScript Lesson 35 [String Methods - Convert to String].html">Lesson 35 [String Methods - Convert to String]</a></li>                                        
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson36 [ String Methods - Locate A String]/JavaScript Lesson 36 [String Methods - Locate A String].html">Lesson 36 [String Methods - Locate A String]</a></li>                                        
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson37 [ String Methods - Split A String]/JavaScript Lesson 37 [String Methods - Split A String].html">Lesson 37 [String Methods - Split A String]</a></li>                                        
+                        <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson38 [ String Methods - Find And Replace]/JavaScript Lesson 38 [String Methods - Find And Replace].html">Lesson 38 [String Methods - Find And Replace]</a></li>
+                
+                    
+                        <li class="drop-down">
+                          <a href="#">More => </a>
+                          <ul style="margin-top: -600px;">                                                                                              
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson39 [ String Methods - Concate And CharCodeConv]/JavaScript Lesson 39 [String Methods - Concat - CharCodeConv].html">Lesson 39 [String Methods - Concate And CharCodeConv]</a></li>
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson40 [ String Methods - Convert Letters]/JavaScript Lesson 40 [String Methods - Convert Letters].html">Lesson 40 [String Methods - Convert Letters]</a></li>
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson41 [ String Methods - All Reference]/JavaScript Lesson 41 [String Methods - All Reference].html">Lesson 41 [String Methods - All Reference]</a></li>                                        
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson42 [ String Methods - Chain]/JavaScript Lesson 42 [String Methods - Chain].html">Lesson 42 [String Methods - Chain]</a></li>                                        
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson43 [ String Methods - General Practise]/JavaScript Lesson 43 [String Methods - Practise].html">Lesson 43 [String Methods - General Practise]</a></li>                                        
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson44 [ Loop - For ]/JavaScript Lesson 44 [Loop - For].html">Lesson 44 [Loop - For ]</a></li>                                        
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson45 [ Loop - For - In ]/JavaScript Lesson 45 [Loop - For - In ].html">Lesson 45 [Loop - For - In]</a></li>                                        
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson46 [ Loop - For  Advanced]/JavaScript Lesson 46 [Loop - For - Advanced ].html">Lesson 46 [Loop - For  Advanced]</a></li>                                        
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson47 [ Loop - While - Do While ]/JavaScript Lesson 47 [Loop - While - Do While ].html">Lesson 47 [Loop - While - Do While ]</a></li>                                        
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson48 [ Loop - Control ]/JavaScript Lesson 48 [Loop -  Control ].html">Lesson 48 [Loop - Control ]</a></li>                                        
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson49 [ Loop - Practise]/JavaScript Lesson 49 [Loop -  Practise].html">Lesson 49 [Loop - Practise]</a></li>                                        
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson50 [ Math - Ceil - Part1 ]/JavaScript Lesson 50 [ Math - Ceil ].html">Lesson 50 [Math - Ceil - Part1 ]</a></li>
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson51 [ Math - Floor - Part2 ]/JavaScript Lesson 51 [ Math - Floor ].html">Lesson 51 [Math - Floor - Part2 ]</a></li>
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson52 [ Math - Round- Part3 ]/JavaScript Lesson 52 [ Math - Round ].html">Lesson 52 [Math - Round- Part3 ]</a></li>
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson53 [ Math - Min - Max - Part4 ]/JavaScript Lesson 53 [ Math - Min - Max ].html">Lesson 53 [Math - Min - Max - Part4 ]</a></li>                                        
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson54 [ Math - Random - Part5 ]/JavaScript Lesson 54 [ Math - Random ].html">Lesson 54 [Math - Random - Part5 ]</a></li>                                        
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson55 [ REG - Intro  ]/JavaScript Lesson 55 [ REG - Intro ].html">Lesson 55 [REG - Intro]</a></li>                                        
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson56 [ REG - Brackets  ]/JavaScript Lesson 56 [ REG - Brackets ].html">Lesson 56 [REG - Brackets ]</a></li>                                        
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson57 [ REG - Quantifires ]/JavaScript Lesson 57 [ REG - Quantifires ].html">Lesson 57 [REG - Quantifires ]</a></li>                                        
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson58 [ Date - Intro ]/JavaScript Lesson 58 [ Date - Intro ].html">Lesson 58 [Date - Intro ]</a></li>                                        
+                            <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson59 [ Date - Format ]/JavaScript Lesson 59 [ Date - Format ].html">Lesson 59 [Date - Format]</a></li>                                        
+                            
+                    
+                            <li class="drop-down">
+                              <a href="#">More => </a>
+                              <ul style="margin-top: -500px; margin-left:-50px">                                                  
+                                <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson60 [ Date - Function part 1 ]/JavaScript Lesson 60 [ Date Functions Part 1].html">Lesson 60 [Date - Function part 1 ]</a></li> 
+                                <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson61 [ Date - Function part 2 ]/JavaScript Lesson 61 [ Date Functions Part 2].html">Lesson 61 [Date - Function part 2 ]</a></li>
+                                <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson62 [ Date - Function part 3 ]/JavaScript Lesson 62 [ Date Functions Part 3].html">Lesson 62 [Date - Function part 3 ]</a></li>
+                                <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson63 [ Date - Function part 3 ]/JavaScript Lesson 63 [ Numbers Intro].html">Lesson 63 [Date - Function part 3 ]</a></li>
+                                <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson64 [ Numbers - Methods ]/JavaScript Lesson 64 [ Numbers Methods].html">Lesson 64 [Numbers - Methods ]</a></li>
+                                <li><a target='_blank' href="My Web Pages/4 JavaScript Course/JS Lesson65 [ Outro and Where to Continue]/JavaScript Lesson 65 [ Outro and Where to Continue].html">Lesson 65 [Outro and Where to Continue]</a></li>
+                              </ul>                          
+                            </li>                                   
+                          </ul>           
+                        </li>                               
+                      </ul>
+                    </li>
+                  </ul>                             -->
+            </li>
+            <!-- --------------------------------------------------------------------------------------------------- -->                    
+            <!-- 5) [JSOOP Course] Main Menu Item -->                    
+            <li class="drop-down" >                                                
+  
+              <a href="JSOOP.html" style="color:dodgerblue"> JS OOP </a>                
+                <!-- <ul>
+                  <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 1 Introduction And What's OOP/JS OOP Lesson 1 [Introduction And What's OOP].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                  <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 2 Playing With Window Object/JS OOP Lesson 2 [Playing With Window Object].html">Lesson 2 [Playing With Window Object]</a></li>
+                  <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 3 Defining Object With Object Literals Part 1/JS OOP Lesson3 [Defining Object With Object Literals Part 1].html">Lesson 3 [Defining Object With Object Literals Part 1]</a></li>
+                  <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 4 Defining Object by Literals Part 2/JS OOP Lesson4 [Defining Object With Object Literals Part 2].html">Lesson 4 [Defining Object by Literals Part 2]</a></li>
+                  <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 4 Defining Object by Literals Part 2/Addiotional Application on Lesson 4 [Defining Object by Literals Part 2].html">Lesson 4 [Defining Object by Literals Part 2]</a></li>
+                  <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 5 Dot Notation vs Bracket Notation/JS OOP Lesson5 [Dot Notation vs Bracket Notation].html">Lesson 5 [Dot Notation vs Bracket Notation]</a></li>
+                  <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 6 Defining Object With New Keyword/JS OOP Lesson6 [Defining Object With New Keyword].html">Lesson 6 [Defining Object With New Keyword]</a></li>
+                  <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 7 Defining Object with Object.create()/JS OOP Lesson7 [Defining Object with Object.create()].html">Lesson 7 [Defining Object with Object.create()] </a></li>
+                  <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 8 Defining Object With Object.assign/JS OOP Lesson8 [Defining Object With Object.assign].html">Lesson 8 [Defining Object With Object.assign]</a></li>
+                  <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 9 Delete Operator/JS OOP Lesson9 [Delete Operator].html">Lesson 9 [Delete Operator]</a></li>
+                  <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 10 For In Loop with Object properties/JS OOP Lesson10 [For In Loop with Object properties].html">Lesson 10 [For In Loop with Object properties]</a></li>
+                  <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 11 Constructor Function Introduction/JS OOP Lesson11 [Constructor Function Introduction].html">Lesson 11 [Constructor Function Introduction]</a></li>
+                  <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 12 Constructor Function Advanced & new keyword/JS OOP Lesson12 [Constructor Function Advanced & new keyword].html">Lesson 12 [Constructor Function Advanced & new keyword]</a></li>
+                  <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 13 Constructor Function Dealing With Properties/JS OOP Lesson13 [Constructor Function Dealing With Properties].html">Lesson 13 [Constructor Function Dealing With Properties]</a></li>
+                  
+                  <li class="drop-down">
+                    <a href="#">More => </a>
+                    <ul class='more' style="margin-top: -500px;" >
+                      <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 14 Constructor Function Training/JS OOP Lesson14 [Constructor Function Training].html">Lesson 14 [Constructor Function Training]</a></li>
+                      <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 15 Constructor Function Built In Constructorsp/JS OOP Lesson15 [Constructor Function Built In Constructorsp].html">Lesson 15 [Constructor Function Built In Constructorsp]</a></li>
+                      <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 16 Prototype Part 1 Intro/JS OOP Lesson16 [Prototype Part 1 Intro].html">Lesson 16 [Prototype Part 1 Intro]</a></li>
+                      <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 17 Prototype Part 2 Add To Prototype Chain/JS OOP Lesson17 [Prototype Part 2 Add To Prototype Chain].html">Lesson 17 [Prototype Part 2 Add To Prototype Chain]</a></li>
+                      <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 18 Prototype Part 3 Extend Constructors Features/JS OOP Lesson18 [Prototype Part 3 Extend Constructors Features].html">Lesson 18 [Prototype Part 3 Extend Constructors Features]</a></li>
+                      <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 19 Prototype Part 4 Prototype Chain/JS OOP Lesson19 [Prototype Part 4 Prototype Chain].html">Lesson 19 [Prototype Part 4 Prototype Chain]</a></li>
+                      <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 20  Class Syntax and Introduction/JS OOP Lesson20 [Class Syntax and Introduction].html">Lesson 20 [Class Syntax and Introduction]</a></li>
+                      <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 21 Class Static Properties And Methods/JS OOP Lesson21 [Class Static Properties And Methods].html">Lesson 21 [Class Static Properties And Methods]</a></li>
+                      <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 22 Class Inheritance/JS OOP Lesson22 [Class Inheritance].html">Lesson 22 [Class Inheritance]</a></li>
+                      <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 23 JavaScript Accessors Getters & Setters/JS OOP Lesson23 [JavaScript Accessors Getters & Setters].html">Lesson 23 [JavaScript Accessors Getters & Setters]</a></li>
+                      <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 24 Object Meta Data And Descriptor/JS OOP Lesson24 [Object Meta Data And Descriptor].html">Lesson 24 [Object Meta Data And Descriptor]</a></li>
+                      <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 25 Object Define Properties And Training's/JS OOP Lesson25 [Object Define Properties And Training's].html">Lesson 25 [Object Define Properties And Training's]</a></li>
+                      <li><a target='_blank' href="My Web Pages/5 JavaScript OOP Course/Lesson 26 Important Info And The End/JS OOP Lesson26 [Important Info And The End].html">Lesson 26 [Important Info And The End]</a></li>
+                                         
+                    </ul>
+                  </li>
+                </ul>                             -->
+            </li>          
+            <!-- --------------------------------------------------------------------------------------------------- -->
+  
+            <!-- 6) [JS HTML DOM Course] Main Menu Item -->                    
+            <li class="drop-down" >                                                
+  
+              <a href="JSDOM.html" style="color:dodgerblue"> JS DOM </a>                
+                <!-- <ul style="margin-left: -200px;">
+                  <li><a target='_blank' href="My Web Pages/7 JS DOM Course/Lesson 1/JS DOM Lesson1 [Intro & What is DOM].html">Lesson 1 [[Intro & What is DOM]</a></li>
+                  <li><a target='_blank' href="My Web Pages/7 JS DOM Course/Lesson 2/JS DOM Lesson2 [Find Elements By  ID Class Tag].html">Lesson 2 [Find Elements By  ID Class Tag]</a></li>
+                  <li><a target='_blank' href="My Web Pages/7 JS DOM Course/Lesson 3/JS DOM Lesson3 [Find Elements By Objects Part 1].html">Lesson 3 [Find Elements By Objects Part 1]</a></li>
+                  <li><a target='_blank' href="My Web Pages/7 JS DOM Course/Lesson 4/JS DOM Lesson4 [Find Elements By Objects Part 2].html">Lesson 4 [Find Elements By Objects Part 2]</a></li>
+                  <li><a target='_blank' href="My Web Pages/7 JS DOM Course/Lesson 5/JS DOM Lesson5 [Get Set Element Content].html">Lesson 5 [Get Set Element Content]</a></li>
+                  <li><a target='_blank' href="My Web Pages/7 JS DOM Course/Lesson 6/JS DOM Lesson6 [Elements  Get Set Attribute Value].html">Lesson 6 [Elements  Get Set Attribute Value]</a></li>
+                  <li><a target='_blank' href="My Web Pages/7 JS DOM Course/Lesson 7/JS DOM Lesson7 [GetAttribute SetAttribute].html">Lesson 7 [GetAttribute SetAttribute] </a></li>
+                  <li><a target='_blank' href="My Web Pages/7 JS DOM Course/Lesson 8/JS DOM Lesson8 [HasAttribute RemoveAttribute].html">Lesson 8 [HasAttribute RemoveAttribute]</a></li>
+                  <li><a target='_blank' href="My Web Pages/7 JS DOM Course/Lesson 9/JS DOM Lesson9 [ClassList  Item Contains Length].html">Lesson 9 [ClassList  Item Contains Length]</a></li>
+                  <li><a target='_blank' href="My Web Pages/7 JS DOM Course/Lesson 10/JS DOM Lesson10 ClassList  Add Remove Toggle].html">Lesson 10 [ClassList  Add Remove Toggle]</a></li>
+                  <li><a target='_blank' href="My Web Pages/7 JS DOM Course/Lesson 11/JS DOM Lesson11 [Element Children  ChildNodes].html">Lesson 11 [Element Children  ChildNodes]</a></li>
+                  <li><a target='_blank' href="My Web Pages/7 JS DOM Course/Lesson 12/JS DOM Lesson12 [Elements  Children  First  Last Child  Element].html">Lesson 12 [Elements  Children  First  Last Child  Element]</a></li>
+                  <li><a target='_blank' href="My Web Pages/7 JS DOM Course/Lesson 13/JS DOM Lesson13 [Elements  Children  Append Child].html">Lesson 13 [Elements  Children  Append Child]</a></li>
+                  
+                  <li class="drop-down">
+                    <a href="#">More => </a>
+                    <ul class='more' style="margin-top: -500px;" >
+                      <li><a target='_blank' href="My Web Pages/7 JS DOM Course/Lesson 14/JS DOM Lesson14 [Elements  Children  Insert Before].html">Lesson 14 [Elements  Children  Insert Before]</a></li>
+                      <li><a target='_blank' href="My Web Pages/7 JS DOM Course/Lesson 15/JS DOM Lesson15 [Elements  Children  Remove Child].html">Lesson 15 [Elements  Children  Remove Child]</a></li>
+                      <li><a target='_blank' href="My Web Pages/7 JS DOM Course/Lesson 16/JS DOM Lesson16 [Elements  Node  Name Value Type].html">Lesson 16 [Elements  Node  Name Value Type]</a></li>
+                      <li><a target='_blank' href="My Web Pages/7 JS DOM Course/Lesson 17/JS DOM Lesson17 [Elements  Clone Node].html">Lesson 17 [Elements  Clone Node]</a></li>
+                      <li><a target='_blank' href="#">Lesson 18 []</a></li>
+                      <li><a target='_blank' href="#">Lesson 19 []</a></li>
+                      <li><a target='_blank' href="#">Lesson 20 []</a></li>
+                      <li><a target='_blank' href="#">Lesson 21 []</a></li>
+                      <li><a target='_blank' href="#">Lesson 22 []</a></li>
+                      <li><a target='_blank' href="#">Lesson 23 []</a></li>
+                      <li><a target='_blank' href="#">Lesson 24 []</a></li>
+                      <li><a target='_blank' href="#">Lesson 25 []</a></li>
+                      <li><a target='_blank' href="#">Lesson 26 []</a></li>
+                      
+                     <li class="drop-down">
+                        <a href="#">More => </a>
+                        <ul style="margin-top: -500px;">                      
+                          <li><a target='_blank' href="#">Lesson 27 []</a></li>
+                          <li><a target='_blank' href="#">Lesson 28 []</a></li>
+                          <li><a target='_blank' href="#">Lesson 29 []</a></li>
+                          <li><a target='_blank' href="#">Lesson 30 []</a></li>
+                          <li><a target='_blank' href="#">Lesson 31 []</a></li>
+                          <li><a target='_blank' href="#">Lesson 32 []</a></li>
+                          <li><a target='_blank' href="#">Lesson 33 []</a></li>
+                          <li><a target='_blank' href="#">Lesson 34 []</a></li>
+                          <li><a target='_blank' href="#">Lesson 35 []</a></li>                
+                          <li><a target='_blank' href="#">Lesson 36 []</a></li>                
+                          <li><a target='_blank' href="#">Lesson 37 []</a></li>                
+                          <li><a target='_blank' href="#">Lesson 38 []</a></li>                                      
+                        </ul>
+                      </li>              
+                    
+                    </ul>
+                  </li>
+                </ul>                             -->
+            </li>          
+             <!-- --------------------------------------------------------------------------------------------------- -->
+             
+             <!-- 7) [JS HTML BOM] Main Menu Item -->                    
+             <li class="drop-down" >                                                
+  
+              <a href="JSBOM.html" style="color:dodgerblue"> JS BOM </a>                
+                <!-- <ul>
+                  <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                  <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                  <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                  <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                  <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                  <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                  <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                  <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                  <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                  <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                  <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                  <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                  <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                  
+                  <li class="drop-down">
+                    <a href="#">More => </a>
+                    <ul class='more' style="margin-top: -500px;" >
+                      <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                      <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                      <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                      <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                      <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                      <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                      <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                      <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                      <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                      <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                      <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                      <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                      <li><a target='_blank' href="My Web Pages/6 JS BOM Course/JS BOM Lesson1 [Intro & What is BOM]/JS BOM Lesson1 [Intro & What is BOM].html">Lesson 1 [Introduction And What's OOP]</a></li>
+                                         
+                    </ul>
+                  </li>
+                </ul>                             -->
+            </li>          
+            <!-- --------------------------------------------------------------------------------------------------- -->
+                       
+            <!-- 8) [PHP] Main Menu Item -->                    
+            <li class="drop-down" >                                                
+  
+              <a href="PHP.html" style="color:dodgerblue"> PHP </a>                
+                
+                <!-- <ul class='JSMenu' style="padding:-10px; margin-left:-800px">
+                  <li><a target='_blank' href="My Web Pages\8 PHP Course\1 PHP 5 In Arabic  Introduction And What's PHP\1 PHP 5 In Arabic  Introduction And What's PHP.html">Lesson 1 [Introduction And What's PHP]</a></li>
+                  <li><a target='_blank' href="My Web Pages\8 PHP Course\2 PHP 5 In Arabic  - What I Need\2 PHP 5 In Arabic  - What I Need.html">Lesson 2 [What I Need]</a></li>
+                  <li><a target='_blank' href="My Web Pages\8 PHP Course\3 PHP 5 In Arabic- Setup & Configure XAMPP\3 PHP 5 In Arabic- Setup & Configure XAMPP.html">Lesson 3 [Setup & Configure XAMPP]</a></li>
+                  <li><a target='_blank' href="My Web Pages\8 PHP Course\4 PHP 5 In Arabic - Syntax\4 PHP 5 In Arabic - Syntax.html">Lesson 4 [Syntax]</a></li>
+                  <li><a target='_blank' href="My Web Pages\8 PHP Course\5 PHP 5 In Arabic  - Output [ Echo _ Print ]\5 PHP 5 In Arabic  - Output [ Echo _ Print ].html">Lesson 5 [Output [ Echo _ Print ]]</a></li>                
+                  <li><a target='_blank' href="My Web Pages\8 PHP Course\6 PHP 5 In Arabic - Variables\6 PHP 5 In Arabic - Variables.html">Lesson 6 [Variables]</a></li>
+                  <li><a target='_blank' href="My Web Pages\8 PHP Course\7 PHP 5 In Arabic - Concatenation\7 PHP 5 In Arabic - Concatenation.html">Lesson 7 [Concatenation]</a></li>                
+                  <li><a target='_blank' href="My Web Pages\8 PHP Course\8 PHP 5 In Arabic - Comments\8 PHP 5 In Arabic - Comments.html">Lesson 8 [Comments]</a></li>                
+                  <li><a target='_blank' href="My Web Pages\8 PHP Course\9 PHP 5 In Arabic - Data Type Overview\9 PHP 5 In Arabic - Data Type Overview.html">Lesson 9 [Data Type Overview]</a></li>
+                  <li><a target='_blank' href="My Web Pages\8 PHP Course\10 PHP 5 In Arabic - Constants\10 PHP 5 In Arabic - Constants.html">Lesson 10 [Constants]</a></li>
+                  <li><a target='_blank' href="My Web Pages\8 PHP Course\11 PHP 5 In Arabic - If, Elseif, Else\11 PHP 5 In Arabic - If, Elseif, Else.html">Lesson 11 [If, Elseif, Else]</a></li>
+                  <li><a target='_blank' href="My Web Pages\8 PHP Course\12 PHP 5 In Arabic - Arithmetic Operators\12 PHP 5 In Arabic - Arithmetic Operators.html">Lesson 12 [Arithmetic Operators]</a></li>
+                  <li><a target='_blank' href="My Web Pages\8 PHP Course\13 PHP 5 In Arabic - Assignment Operators\13 PHP 5 In Arabic - Assignment Operators.html">Lesson 13 [Assignment Operators]</a></li>                
+                  <li><a target='_blank' href="My Web Pages\8 PHP Course\14 PHP 5 In Arabic - Comparison Operators\14 PHP 5 In Arabic - Comparison Operators.html">Lesson 14 [Comparison Operators]</a></li>
+                  <li><a target='_blank' href="My Web Pages\8 PHP Course\15 PHP 5 In Arabic - Increment _ Decrement Operators\15 PHP 5 In Arabic - Increment _ Decrement Operators.html">Lesson 15 [Increment _ Decrement Operators]</a></li>
+                  <li><a target='_blank' href="My Web Pages\8 PHP Course\16 PHP 5 In Arabic - Logical Operators\16 PHP 5 In Arabic - Logical Operators.html">Lesson 16 [Logical Operators]</a></li>                    
+                  <li><a target='_blank' href="My Web Pages\8 PHP Course\17 PHP 5 In Arabic - Error Control Operator\17 PHP 5 In Arabic - Error Control Operator.html">Lesson 17 [Error Control Operator]</a></li>
+                                        
+                  
+                  <li class="drop-down">
+                    <a href="#">More => </a>
+                    <ul class='more' style="margin-top: -510px;" >
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\18 PHP 5 In Arabic - String Operators\18 PHP 5 In Arabic - String Operators.html">Lesson 18 [String Operators]</a></li>
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\19 PHP 5 In Arabic - All Operators\19 PHP 5 In Arabic - All Operators.html">Lesson 19 [All Operators]</a></li>                
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\20 PHP 5 In Arabic - For Loop\20 PHP 5 In Arabic - For Loop.html">Lesson 20 [For Loop]</a></li>
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\21 PHP 5 In Arabic - For Loop Advanced\21 PHP 5 In Arabic - For Loop Advanced.html">Lesson 21 [For Loop Advanced]</a></li>                
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\22 PHP 5 In Arabic - While Loop\22 PHP 5 In Arabic - While Loop.html">Lesson 22 [While Loop]</a></li>                                    
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\23 PHP 5 In Arabic - Do, While Loop\23 PHP 5 In Arabic - Do, While Loop.html">Lesson 23 [Do, While Loop]</a></li>
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\24 PHP 5 In Arabic - Foreach Loop\24 PHP 5 In Arabic - Foreach Loop.html">Lesson 24 [Foreach Loop]</a></li>
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\25 PHP 5 In Arabic - All Loop Practice\25 PHP 5 In Arabic - All Loop Practice.html">Lesson 25 [All Loop Practice]</a></li>
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\26 PHP 5 In Arabic - Function Intro\26 PHP 5 In Arabic - Function Intro.html">Lesson 26 [Function Intro]</a></li>
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\27 PHP 5 In Arabic - Function With Arguments\27 PHP 5 In Arabic - Function With Arguments.html">Lesson 27 [Function With Arguments]</a></li>
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\28 PHP 5 In Arabic - Function With Return\28 PHP 5 In Arabic - Function With Return.html">Lesson 28 [Function With Return]</a></li>
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\29 PHP 5 In Arabic - Function Return vs Echo\29 PHP 5 In Arabic - Function Return vs Echo.html">Lesson 29 [Function Return vs Echo]</a></li>                        
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\30 PHP 5 In Arabic - Function Advanced\30 PHP 5 In Arabic - Function Advanced.html">Lesson 30 [Function Advanced]</a></li>
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\31 PHP 5 In Arabic - Array Intro\31 PHP 5 In Arabic - Array Intro.html">Lesson 31 [Array Intro]</a></li>                    
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\32 PHP 5 In Arabic - Array Indexed\32 PHP 5 In Arabic - Array Indexed.html">Lesson 32 [Array Indexed]</a></li>
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\33 PHP 5 In Arabic - Array Associative\33 PHP 5 In Arabic - Array Associative.html">Lesson 33 [Array Associative]</a></li>
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\34 PHP 5 In Arabic - Array Multidimensional\34 PHP 5 In Arabic - Array Multidimensional.html">Lesson 34 [Array Multidimensional]</a></li>
+                      <li><a target='_blank' href="My Web Pages\8 PHP Course\35 PHP 5 In Arabic - Array Practice\35 PHP 5 In Arabic - Array Practice.html">Lesson 35 [Array Practice]</a></li>
+                      
+                  
+                      <li class="drop-down">
+                        <a href="#">More => </a>
+                        <ul class='more' style="margin-top: -540px;" >
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\36 PHP 5 In Arabic - Array Methods - Search\36 PHP 5 In Arabic - Array Methods - Search.html">Lesson 36 [Array Methods - Search]</a></li>
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\37 PHP 5 In Arabic  - Array Methods - Add Items\37 PHP 5 In Arabic  - Array Methods - Add Items.html">Lesson 37 [Array Methods - Add Items]</a></li>
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\38 PHP 5 In Arabic - Array Methods - Remove Items\38 PHP 5 In Arabic - Array Methods - Remove Items.html">Lesson 38 [Array Methods - Remove Items]</a></li>
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\39 PHP 5 In Arabic - Array Methods - Sort Indexed Array\39 PHP 5 In Arabic - Array Methods - Sort Indexed Array.html">Lesson 39 [Array Methods - Sort Indexed Array]</a></li>
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\40 PHP 5 In Arabic - Array Methods - Sort Associative Array\40 PHP 5 In Arabic - Array Methods - Sort Associative Array.html">Lesson 40 [Array Methods - Sort Associative Array]</a></li>
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\41 PHP 5 In Arabic - Array Methods - Shuffle, Reverse\41 PHP 5 In Arabic - Array Methods - Shuffle, Reverse.html">Lesson 41 [Array Methods - Shuffle, Reverse]</a></li>
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\42 PHP 5 In Arabic - Array Methods - Array Fill\42 PHP 5 In Arabic - Array Methods - Array Fill.html">Lesson 42 [Array Methods - Array Fill]</a></li>
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\43 PHP 5 In Arabic - Array Methods - Array Sum\43 PHP 5 In Arabic - Array Methods - Array Sum.html">Lesson 43 [Array Methods - Array Sum]</a></li>
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\44 PHP 5 In Arabic - Array Methods - Array Rand\44 PHP 5 In Arabic - Array Methods - Array Rand.html">Lesson 44 [Array Methods - Array Rand]</a></li>
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\45 PHP 5 In Arabic - Array Methods - Array Unique\45 PHP 5 In Arabic - Array Methods - Array Unique.html">Lesson 45 [Array Methods - Array Unique]</a></li>                    
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\46 PHP 5 In Arabic - String Functions - Explode\46 PHP 5 In Arabic - String Functions - Explode.html">Lesson 46 [String Functions - Explode]</a></li>
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\47 PHP 5 In Arabic - String Functions - Implode\47 PHP 5 In Arabic - String Functions - Implode.html">Lesson 47 [String Functions - Implode]</a></li>
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\48 PHP 5 In Arabic - String Functions - Str_Split, Chunk_Split\48 PHP 5 In Arabic - String Functions - Str_Split, Chunk_Split.html">Lesson 48 [String Functions - Str_Split, Chunk_Split]</a></li>
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\49 PHP 5 In Arabic - String Functions - Str_Replace\49 PHP 5 In Arabic - String Functions - Str_Replace.html">Lesson 49 [String Functions - Str_Replace]</a></li>
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\50 PHP 5 In Arabic - String Functions - Str_[Repeat, Shuffle], StrLen\50 PHP 5 In Arabic - String Functions - Str_[Repeat, Shuffle], StrLen.html">Lesson 50 [String Functions - Str_[Repeat, Shuffle], StrLen]</a></li>
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\51 PHP 5 In Arabic - String Functions - AddSlashes, Strip_Tags\51 PHP 5 In Arabic - String Functions - AddSlashes, Strip_Tags.html">Lesson 51 [String Functions - AddSlashes, Strip_Tags]</a></li>
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\52 PHP 5 In Arabic - String Functions - StrToLower, StrToUpper\52 PHP 5 In Arabic - String Functions - StrToLower, StrToUpper.html">Lesson 52 [String Functions - StrToLower, StrToUpper]</a></li>
+                          <li><a target='_blank' href="My Web Pages\8 PHP Course\53 PHP 5 In Arabic - String Functions - Trim\53 PHP 5 In Arabic - String Functions - Trim.html">Lesson 53 [String Functions - Trim]</a></li>
+  
+                          
+                          <li class="drop-down">
+                            <a href="#">More => </a>
+                            <ul class='more' style="margin-top: -540px;" >                            
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\54 PHP 5 In Arabic - String Functions -  Str_Word_Count\54 PHP 5 In Arabic - String Functions -  Str_Word_Count.html">Lesson 54 [String Functions -  Str_Word_Count]</a></li>
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\55 PHP 5 In Arabic - String Functions -  Nl2br, Parse_Str\55 PHP 5 In Arabic - String Functions -  Nl2br, Parse_Str.html">Lesson 55 [String Functions -  Nl2br, Parse_Str]</a></li>
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\56 PHP 5 In Arabic - String Functions - StrPos, StriPos, StrrPos\56 PHP 5 In Arabic - String Functions - StrPos, StriPos, StrrPos.html">Lesson 56 [String Functions - StrPos, StriPos, StrrPos]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\57 PHP 5 In Arabic - String Functions - StrStr, StriStr, StrChr\57 PHP 5 In Arabic - String Functions - StrStr, StriStr, StrChr.html">Lesson 57 [String Functions - StrStr, StriStr, StrChr]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\58 PHP 5 In Arabic - String Functions - Strcmp, StrnCmp, StrRev\58 PHP 5 In Arabic - String Functions - Strcmp, StrnCmp, StrRev.html">Lesson 58 [String Functions - Strcmp, StrnCmp, StrRev]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\59 PHP 5 In Arabic - String Functions - SubStr\59 PHP 5 In Arabic - String Functions - SubStr.html">Lesson 59 [String Functions - SubStr]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\60 PHP 5 In Arabic - String Functions - Substr_[Compare, Count]\60 PHP 5 In Arabic - String Functions - Substr_[Compare, Count].html">Lesson 60 [String Functions - Substr_[Compare, Count]]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\61 PHP 5 In Arabic - Control Structure - Include, Require\61 PHP 5 In Arabic - Control Structure - Include, Require.html">Lesson 61 [Control Structure - Include, Require]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\62 PHP 5 In Arabic - Control Structure - Switch\62 PHP 5 In Arabic - Control Structure - Switch.html">Lesson 62 [Control Structure - Switch]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\63 PHP 5 In Arabic - File System - Intro\63 PHP 5 In Arabic - File System - Intro.html">Lesson 63 [File System - Intro]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\64 PHP 5 In Arabic - File System - File_Exists, Is_Writable\64 PHP 5 In Arabic - File System - File_Exists, Is_Writable.html">Lesson 64 [File System - File_Exists, Is_Writable]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\65 PHP 5 In Arabic - File System - MkDir, RmDir, Is_Dir\65 PHP 5 In Arabic - File System - MkDir, RmDir, Is_Dir.html">Lesson 65 [File System - MkDir, RmDir, Is_Dir]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\66 PHP 5 In Arabic - File System - Dirname, Basename\66 PHP 5 In Arabic - File System - Dirname, Basename.html">Lesson 66 [File System - Dirname, Basename]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\67 PHP 5 In Arabic - File System - Simple Training 1\67 PHP 5 In Arabic - File System - Simple Training 1.html">Lesson 67 [File System - Simple Training 1]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\68 PHP 5 In Arabic - File System - File Put Contents\68 PHP 5 In Arabic - File System - File Put Contents.html">Lesson 68 [File System - File Put Contents]</a></li>                                  
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\69 PHP 5 In Arabic - File System - File Get Contents\69 PHP 5 In Arabic - File System - File Get Contents.html">Lesson 69 [File System - File Get Contents]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\70 PHP 5 In Arabic - File System - Rename, Copy\70 PHP 5 In Arabic - File System - Rename, Copy.html">Lesson 70 [File System - Rename, Copy]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\71 PHP 5 In Arabic - File System - Pathinfo\71 PHP 5 In Arabic - File System - Pathinfo.html">Lesson 71 [File System - Pathinfo]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\72 PHP 5 In Arabic - File System - Unlink, RmDir + Examples\72 PHP 5 In Arabic - File System - Unlink, RmDir + Examples.html">Lesson 72 [File System - Unlink, RmDir + Examples]</a></li>
+                          
+                          
+                        
+                          <li class="drop-down">
+                            <a href="#">More => </a>
+                            <ul class='more' style="margin-top: -540px;" >                            
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\73 PHP 5 In Arabic - File System - Scandir\73 PHP 5 In Arabic - File System - Scandir.html">Lesson 73 [File System - Scandir]</a></li>                            
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\74 PHP 5 In Arabic - File System - Fopen\74 PHP 5 In Arabic - File System - Fopen.html">Lesson 74 [File System - Fopen]</a></li>
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\75 PHP 5 In Arabic - File System - Fread\75 PHP 5 In Arabic - File System - Fread.html">Lesson 75 [File System - Fread]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\76 PHP 5 In Arabic - File System - Fwrite\76 PHP 5 In Arabic - File System - Fwrite.html">Lesson 76 [File System - Fwrite]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\77 PHP 5 In Arabic - File System - Fseek\77 PHP 5 In Arabic - File System - Fseek.html">Lesson 77 [File System - Fseek]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\78 PHP 5 In Arabic - File System - Fclose + Training 2\78 PHP 5 In Arabic - File System - Fclose + Training 2.html">Lesson 78 [File System - Fclose + Training 2]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\79 PHP 5 In Arabic - Predefined Variables - Globals\79 PHP 5 In Arabic - Predefined Variables - Globals.html">Lesson 79 [Predefined Variables - Globals]</a></li>
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\80 PHP 5 In Arabic - Predefined Variables - Server\80 PHP 5 In Arabic - Predefined Variables - Server.html">Lesson 80 [Predefined Variables - Server]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\81 PHP 5 In Arabic - Predefined Variables - Get\81 PHP 5 In Arabic - Predefined Variables - Get.html">Lesson 81 [Predefined Variables - Get]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\82 PHP 5 In Arabic - Predefined Variables - Post\82 PHP 5 In Arabic - Predefined Variables - Post.html">Lesson 82 [Predefined Variables - Post]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\83 PHP 5 In Arabic - Predefined Variables - Request\83 PHP 5 In Arabic - Predefined Variables - Request.html">Lesson 83 [Predefined Variables - Request]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\84 PHP 5 In Arabic - Cookies - Check If Cookie Is Enabled\84 PHP 5 In Arabic - Cookies - Check If Cookie Is Enabled.html">Lesson 84 [Cookies - Check If Cookie Is Enabled]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\85 PHP 5 In Arabic - Cookies - Set Cookie + Examples\85 PHP 5 In Arabic - Cookies - Set Cookie + Examples.html">Lesson 85 [Cookies - Set Cookie + Examples]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\86 PHP 5 In Arabic - Cookies - Modify, Delete Cookie + Training\86 PHP 5 In Arabic - Cookies - Modify, Delete Cookie + Training.html">Lesson 86 [Cookies - Modify, Delete Cookie + Training]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\87 PHP 5 In Arabic - Session - Start _ Resume Session\87 PHP 5 In Arabic - Session - Start _ Resume Session.html">Lesson 87 [Session - Start _ Resume Session]</a></li>                                  
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\88 PHP 5 In Arabic - Session - Modify Session\88 PHP 5 In Arabic - Session - Modify Session.html">Lesson 88 [Session - Modify Session]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\89 PHP 5 In Arabic - Session - End _ Destroy Session\89 PHP 5 In Arabic - Session - End _ Destroy Session.html">Lesson 89 [Session - End _ Destroy Session]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\90 PHP 5 In Arabic - Session Training - Simple Counter\90 PHP 5 In Arabic - Session Training - Simple Counter.html">Lesson 90 [Session Training - Simple Counter]</a></li>      
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\91 PHP 5 In Arabic - Session Training - Simple Login\91 PHP 5 In Arabic - Session Training - Simple Login.html">Lesson 91 [Session Training - Simple Login]</a></li>
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\92 PHP 5 In Arabic - Misc Functions - Sleep, uSleep + Examples\92 PHP 5 In Arabic - Misc Functions - Sleep, uSleep + Examples.html">Lesson 92 [Misc Functions - Sleep, uSleep + Examples]</a></li>
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\93 PHP 5 In Arabic - Misc Functions - Exit, Die + Examples\93 PHP 5 In Arabic - Misc Functions - Exit, Die + Examples.html">Lesson 93 [Misc Functions - Exit, Die + Examples]</a></li>
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\94 PHP 5 In Arabic - Misc Functions - Uniqid + Examples\94 PHP 5 In Arabic - Misc Functions - Uniqid + Examples.html">Lesson 94 [Misc Functions - Uniqid + Examples]</a></li>                            
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\95 PHP 5 In Arabic - Filter - Whats Filter & Why To Use it\95 PHP 5 In Arabic - Filter - Whats Filter & Why To Use it.html">Lesson 95 [Filter - Whats Filter & Why To Use it]</a></li>
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\96 PHP 5 In Arabic - Filter - Filter_Var Basics\96 PHP 5 In Arabic - Filter - Filter_Var Basics.html">Lesson 96 [Filter - Filter_Var Basics]</a></li>
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\97 PHP 5 In Arabic - Filter - Filter_Var Advanced\97 PHP 5 In Arabic - Filter - Filter_Var Advanced.html">Lesson 97 [Filter - Filter_Var Advanced]</a></li>
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\98 PHP 5 In Arabic - Filter - Validate vs Sanitize\98 PHP 5 In Arabic - Filter - Validate vs Sanitize.html">Lesson 98 [Filter - Validate vs Sanitize]</a></li>
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\99 PHP 5 In Arabic - Date - Date Intro\99 PHP 5 In Arabic - Date - Date Intro.html">Lesson 99 [Date - Date Intro]</a></li>                            
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\100 PHP 5 In Arabic - Date - Date Advanced\100 PHP 5 In Arabic - Date - Date Advanced.html">Lesson 100 [Date - Date Advanced]</a></li>                            
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\101  PHP 5 In Arabic - Date - Strtotime\101  PHP 5 In Arabic - Date - Strtotime.html">Lesson 101 [Date - Strtotime]</a></li>
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\102 PHP 5 In Arabic - What's Php.ini File\102 PHP 5 In Arabic - What's Php.ini File.html">Lesson 102 [What's Php.ini File]</a></li>
+                              <li><a target='_blank' href="My Web Pages\8 PHP Course\103 PHP 5 In Arabic- Outro & Where To Study\103 PHP 5 In Arabic- Outro & Where To Study.html">Lesson 103 [Outro & Where To Study]</a></li>
+  
+                            </ul>
+                          </li>
+  
+                        </ul>
+                      </li>
+                                                                                      
+                    </ul>
+                  </li>
+                </ul>                            
+            </li>                    
+  
+                </ul>       -->
+          
+        </nav>      
+      <!-- .nav-menu -->
+
+      <!-- <h1 class="logo mr-auto"><a href="index.html"> My Courses Refereneces <span></span></a></h1> -->
+
+    </div>
+  </header> 
+  
+  <!-- End Header -->
+
+  <main id="main" data-aos="fade-up">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2> My PHP - OOP Pages </h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li id="title">PHP - OOP Course</li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container">
+        <div class="list">
+          <ul>             
+            <li><a target='_blank' href="My Web Pages\9 PHP OOP Course\1 Learn Object Oriented PHP - Introduction and What Is OOP\1 Learn Object Oriented PHP - Introduction and What Is OOP.html">Lesson 1 [Introduction And What's PHP]</a></li>                        
+            <li><a target='_blank' href="My Web Pages\9 PHP OOP Course\2 Learn Object Oriented PHP - What I Need to Learn\2 Learn Object Oriented PHP - What I Need to Learn.html">Lesson 2 [What I Need to Learn]</a></li>                        
+            <li><a target='_blank' href="My Web Pages\9 PHP OOP Course\3 Learn Object Oriented PHP - Class and Object\3 Learn Object Oriented PHP - Class and Object.html">Lesson 3 [Class and Object]</a></li>                        
+            <li><a target='_blank' href="My Web Pages\9 PHP OOP Course\4 Learn Object Oriented PHP - Class and Object Advanced Examples\4 Learn Object Oriented PHP - Class and Object Advanced Examples.html">Lesson 4 [Class and Object Advanced Examples]</a></li>            
+            <li><a target='_blank' href="My Web Pages\9 PHP OOP Course\5 Learn Object Oriented PHP - Class Properties\5 Learn Object Oriented PHP - Class Properties.html">Lesson 5 [Class Properties]</a></li>            
+            <li><a target='_blank' href="My Web Pages\9 PHP OOP Course\6 Learn Object Oriented PHP - Class Properties Change\6 Learn Object Oriented PHP - Class Properties Change.html">Lesson 6 [Class Properties Change]</a></li>                                                          
+            <li><a target='_blank' href="My Web Pages\9 PHP OOP Course\7 Learn Object Oriented PHP - Class Methods\7 Learn Object Oriented PHP - Class Methods.html">Lesson 7 [Class Methods]</a></li>            
+            <li><a target='_blank' href="My Web Pages\9 PHP OOP Course\8 Learn Object Oriented PHP - Pseudo Variable $this\8 Learn Object Oriented PHP - Pseudo Variable $this.html">Lesson 8 [Pseudo Variable $this]</a></li>            
+            <li><a target='_blank' href="My Web Pages\9 PHP OOP Course\9 Learn Object Oriented PHP - Class Constants\9 Learn Object Oriented PHP - Class Constants.html">Lesson 9 [Class Constants]</a></li>
+            <li><a target='_blank' href="My Web Pages\9 PHP OOP Course\10 Learn Object Oriented PHP - Self vs $this\10 Learn Object Oriented PHP - Self vs $this.html">Lesson 10 [Self vs $this]</a></li>            
+            <li><a target='_blank' href="My Web Pages\9 PHP OOP Course\11 Learn Object Oriented PHP - Methods with Arguments Training\11 Learn Object Oriented PHP - Methods with Arguments Training.html">Lesson 11 [Methods with Arguments Training]</a></li>            
+            <li><a target='_blank' href="My Web Pages\9 PHP OOP Course\12 Learn Object Oriented PHP - Encapsulation\12 Learn Object Oriented PHP - Encapsulation.html">Lesson 12 [Encapsulation]</a></li>            
+            <li><a target='_blank' href="My Web Pages\9 PHP OOP Course\13 Learn Object Oriented PHP - Inheritance\13 Learn Object Oriented PHP - Inheritance.html">Lesson 13 [Inheritance]</a></li>            
+            <li><a target='_blank' href="My Web Pages\9 PHP OOP Course\14 Learn Object Oriented PHP - Inheritance Override Training\14 Learn Object Oriented PHP - Inheritance Override Training.html">Lesson 14 [Inheritance Override Training]</a></li>            
+            <li><a target='_blank' href="My Web Pages\9 PHP OOP Course\15 Learn Object Oriented PHP - Inheritance Final Keyword\15 Learn Object Oriented PHP - Inheritance Final Keyword.html">Lesson 15 [Inheritance Final Keyword]</a></li>
+            <li><a target='_blank' href="My Web Pages\9 PHP OOP Course\16 Learn Object Oriented PHP - Class Abstraction Part 1\16 Learn Object Oriented PHP - Class Abstraction Part 1.html">Lesson 16 [Class Abstraction Part 1]</a></li>
+          </ul>
+        </div> 
+                
+        <!-- <p>
+          Example inner page template
+        </p> -->
+      </div>
+    </section>
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p> ...</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3> My Page <span>.</span></h3>
+            <p>
+              My st. <br>
+              My Town,Cairo<br>
+              Egypt <br><br>
+              <strong>Phone:</strong> +202 01151638804  <br>
+              <strong>Email:</strong> shadisayed.68911@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4> Hot Links </h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4> My Services </h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"> Web Design </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"> Web Development </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"> Web Administration </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"> Digital Marketing </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"> Graphic Design </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"> Video Design </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"> Animation Design </a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4> My Social Networks</h4>
+            <p> Join my Social Networks </p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span> ShidowPro </span></strong>. All Rights Reserved
+      </div>      
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

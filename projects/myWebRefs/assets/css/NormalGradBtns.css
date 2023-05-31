@@ -1,0 +1,98 @@
+.h-100 {
+    height: 100%;
+    top:100px;
+    margin-top:100px;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .container {
+    background: #efefef;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .buttons-grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+  }
+  
+  .buttons-grid-item {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gradient-button {
+    background-color: transparent;
+    --color-from: #444;
+    --color-to: #888;
+    background-image: linear-gradient(
+      to right,
+      var(--color-from),
+      var(--color-to)
+    );
+    background-blend-mode: overlay;
+    color: #fff;
+    border: none;
+    outline: 0 !important;
+    border-radius: 6px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-family: "Gudea", sans-serif;
+    box-shadow: 4px 6px 30px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in;
+  }
+  
+  .gradient-button:hover,
+  .gradient-button:focus {
+    background-color: rgba(80, 80, 80, 0.4);
+  }
+  
+  .gradient-button-1 {
+    --color-from: #e052a0;
+    --color-to: #f15c41;
+  }
+  
+  .gradient-button-2 {
+    --color-from: #8e92a7;
+    --color-to: #004e92;
+  }
+  
+  .gradient-button-3 {
+    --color-from: #00d2ff;
+    --color-to: #928dab;
+  }
+  
+  .gradient-button-4 {
+    --color-from: #42275a;
+    --color-to: #734b6d;
+  }
+  
+  .gradient-button-5 {
+    --color-from: #000;
+    --color-to: #734b6d;
+  }
+  
+  .gradient-button-6 {
+    --color-from: #834d9b;
+    --color-to: #d04ed6;
+  }
+  
+  .gradient-button-7 {
+    color: #165895;
+    --color-from: #a1c4fd;
+    --color-to: #c2e9fb;
+  }
