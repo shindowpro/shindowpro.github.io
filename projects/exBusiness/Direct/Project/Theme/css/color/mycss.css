@@ -1,0 +1,9 @@
+#slogan:hover {
+  transition: all ease-in-out 1s;
+  color: gold;
+  /* border: 3px solid gold; */
+  /* border-radius: 10%; */
+  text-decoration: underline;
+  /* font-size: x-large; */
+  /* font-weight: bold; */
+}
