@@ -2450,3 +2450,10 @@ section {
    }
    
    /*--------------------------------------------------------------
+
+   /* new Adds */
+   .portfolio li > a:hover,
+   .portfolio li > a:active, 
+   .portfolio li:hover {
+    color: #fff;
+   }
