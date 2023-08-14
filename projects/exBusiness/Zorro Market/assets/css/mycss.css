@@ -1,0 +1,46 @@
+#siteNav {
+  background-color: transparent;
+}
+
+#siteNav li a {
+  /* color: #fff; */
+  color: #111;
+}
+
+#siteNav li a:hover {
+  color: #fff;
+  text-decoration : underline;
+}
+
+#allCat:hover, #allCat:action {
+  border:solid 3px red;
+  color: #111;
+}
+
+.iconset,
+.iconset a {
+  color: #fff;
+  /* color: #111; */
+}
+.counter {
+  background-color: #f43e3e;
+}
+
+.header-7 .search-inline .input-box .action {
+  background: transparent;
+  margin-top: -5px
+}
+
+.collection-slider-8items .collection-item a .img {
+  width: 50%;
+  margin: 5px auto;
+}
+
+.collection-slider-8items .collection-item a .details,
+.collection-slider-8items .collection-item a .details * {
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin: 5px auto;
+}
+
