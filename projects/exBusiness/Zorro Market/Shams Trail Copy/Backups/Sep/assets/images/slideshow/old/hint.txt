@@ -1,0 +1,3 @@
+Hero side images dimensions :
+width : 1772 px
+height: 709 px 
